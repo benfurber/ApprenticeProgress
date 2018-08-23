@@ -1,3 +1,13 @@
 {
-  "presets": ["react-native"]
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "screens": "./app/screens",
+        }
+      },
+    ],
+  ],
+  "presets": ["flow", "react-native"]
 }
