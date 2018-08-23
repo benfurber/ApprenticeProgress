@@ -4,10 +4,11 @@
       "module-resolver",
       {
         "alias": {
+          "components": "./app/components",
           "screens": "./app/screens",
         }
       },
     ],
   ],
-  "presets": ["flow", "react-native"]
+  "presets": ["react-native"]
 }

@@ -1,20 +1,23 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Container } from "native-base";
+import { Goal } from "components";
 
 export class Goals extends Component {
   getGoals(goalsData) {
-    return goalsData.goals.map(goal => {
-      return goal.title;
+    return goalsData.goals.map((goal, index) => {
+      return this.displayGoal(goal, index);
     });
+  }
+
+  displayGoal(goal, index) {
+    return <Goal data={ goal } key={ index } />;
   }
 
   render() {
     return (
-      <View>
-        <Text>{
-          this.getGoals(goalsData)
-        }</Text>
-      </View>
+      <Container>
+        { this.getGoals(goalsData) }
+      </Container>
     );
   }
 }
