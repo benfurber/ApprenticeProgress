@@ -25,12 +25,58 @@ export class Goals extends Component {
 const goalsData = {
   goals: [
     {
-      "title": "Goal 1",
-      "description": "Desc",
+      "title": "I contribute to thoughtbot being a good place to work",
+      "tags": "Team thoughtbot",
+      "score": 1,
+      "actions": [
+        "1",
+        "2",
+      ],
     },
     {
-      "title": "Goal 2",
-      "description": "Desc",
+      "title": "I iterate over my existing knowledge effectively",
+      "tags": "Team thoughtbot",
+      "score": 2,
+      "actions": [
+        "1",
+        "2",
+      ],
+    },
+    {
+      "title": "I’m a great pair programmer",
+      "tags": "Team thoughtbot",
+      "score": 3,
+      "actions": [
+        "1",
+        "2",
+      ],
+    },
+    {
+      "title": "I help others become better ",
+      "tags": "Team thoughtbot",
+      "score": 1,
+      "actions": [
+        "1",
+        "2",
+      ],
+    },
+    {
+      "title": "I’m passionate about software/products",
+      "tags": "Team thoughtbot",
+      "score": 3,
+      "actions": [
+        "1",
+        "2",
+      ],
+    },
+    {
+      "title": "I set my own direction",
+      "tags": "Team thoughtbot",
+      "score": 4,
+      "actions": [
+        "1",
+        "2",
+      ],
     },
   ],
 };

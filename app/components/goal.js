@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Card, Text } from "native-base";
+import { Badge, Card, Text } from "native-base";
+import styles from "styles";
 
 export class Goal extends Component {
   constructor(props) {
@@ -8,8 +9,11 @@ export class Goal extends Component {
 
   render() {
     return (
-      <Card>
-        <Text>{ this.props.data.title }</Text>
+      <Card style={styles.card}>
+        <Text style={styles.cardText}>{this.props.data.title}</Text>
+        <Badge>
+          <Text>{this.props.data.tags}</Text>
+        </Badge>
       </Card>
     );
   }
