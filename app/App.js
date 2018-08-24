@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from "react";
-import { Body, Container, Header, Title } from "native-base";
+import { Body, Container, Content, Footer, Header, Title } from "native-base";
 import { Goals } from "screens";
 
 type Props = {};
@@ -21,8 +21,12 @@ export default class App extends Component<Props> {
         </Header>
 
         <Body>
-          <Goals />
+          <Content padder>
+            <Goals />
+          </Content>
         </Body>
+
+        <Footer />
 
       </Container>
     );
