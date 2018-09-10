@@ -2,11 +2,11 @@ import "react-native";
 import React from "react";
 import {shallow} from "enzyme";
 
-import App from "../App";
+import Feed from "../Feed";
 
-describe("App", () => {
+describe("Feed", () => {
   it("renders correctly", () => {
-    const component = shallow(<App />);
+    const component = shallow(<Feed />);
 
     expect(component).toMatchSnapshot();
   });
