@@ -1,7 +1,9 @@
 // @flow
 
 export type GoalSummaryType = {
-  title: string,
   description: string,
   tag: string,
+  title: string,
 };
+
+export type OnPressType = () => void;

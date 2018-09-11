@@ -25,7 +25,8 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
+      "activeOpacity": 0.2,
+      "children": <Styled(Card)>
         <Styled(CardItem)
           header={true}
         >
@@ -37,124 +38,19 @@ ShallowWrapper {
               One
             </Styled(Text)>
           </Styled(Badge)>
-        </Styled(CardItem)>,
+        </Styled(CardItem)>
         <Styled(CardItem)>
           <Styled(Body)>
             <Styled(Text)>
               Hello world
             </Styled(Text)>
           </Styled(Body)>
-        </Styled(CardItem)>,
-      ],
-      "virtual": undefined,
+        </Styled(CardItem)>
+      </Styled(Card)>,
+      "onPress": [Function],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(H3)>
-              Testing title
-            </Styled(H3)>,
-            <Styled(Badge)>
-              <Styled(Text)>
-                One
-              </Styled(Text)>
-            </Styled(Badge)>,
-          ],
-          "header": true,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Testing title",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "Testing title",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)>
-                One
-              </Styled(Text)>,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "One",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "One",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <Styled(Body)>
-            <Styled(Text)>
-              Hello world
-            </Styled(Text)>
-          </Styled(Body)>,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Text)>
-              Hello world
-            </Styled(Text)>,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Hello world",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "Hello world",
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -285,6 +181,174 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "activeOpacity": 0.2,
+        "children": <Styled(Card)>
+          <Styled(CardItem)
+            header={true}
+          >
+            <Styled(H3)>
+              Testing title
+            </Styled(H3)>
+            <Styled(Badge)>
+              <Styled(Text)>
+                One
+              </Styled(Text)>
+            </Styled(Badge)>
+          </Styled(CardItem)>
+          <Styled(CardItem)>
+            <Styled(Body)>
+              <Styled(Text)>
+                Hello world
+              </Styled(Text)>
+            </Styled(Body)>
+          </Styled(CardItem)>
+        </Styled(Card)>,
+        "onPress": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(CardItem)
+              header={true}
+            >
+              <Styled(H3)>
+                Testing title
+              </Styled(H3)>
+              <Styled(Badge)>
+                <Styled(Text)>
+                  One
+                </Styled(Text)>
+              </Styled(Badge)>
+            </Styled(CardItem)>,
+            <Styled(CardItem)>
+              <Styled(Body)>
+                <Styled(Text)>
+                  Hello world
+                </Styled(Text)>
+              </Styled(Body)>
+            </Styled(CardItem)>,
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Styled(H3)>
+                  Testing title
+                </Styled(H3)>,
+                <Styled(Badge)>
+                  <Styled(Text)>
+                    One
+                  </Styled(Text)>
+                </Styled(Badge)>,
+              ],
+              "header": true,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Testing title",
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "Testing title",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Styled(Text)>
+                    One
+                  </Styled(Text)>,
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "One",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "One",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Body)>
+                <Styled(Text)>
+                  Hello world
+                </Styled(Text)>
+              </Styled(Body)>,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)>
+                  Hello world
+                </Styled(Text)>,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Hello world",
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "Hello world",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
       "type": [Function],
     },
   ],

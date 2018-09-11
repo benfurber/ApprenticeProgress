@@ -15,4 +15,19 @@ describe("goalSummary", () => {
 
     expect(component).toMatchSnapshot();
   });
+
+  it("reacts onPress", () => {
+    const onPressMock = jest.fn();
+    
+    const data = {
+      description: "Hello world",
+      title: "Testing title",
+      tag: "One",
+    };
+    const component = shallow(<GoalSummary data={data} onPress={onPressMock} />);
+
+    component.simulate("press");
+
+    expect(onPressMock).toHaveBeenCalled();
+  });
 });
