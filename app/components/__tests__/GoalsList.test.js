@@ -11,7 +11,7 @@ describe("GoalsList", () => {
         description: "Hello world 1",
         title: "Testing title",
         tag: "Tag",
-      }
+      },
     };
     const component = shallow(<GoalsList goals={goals} />);
 

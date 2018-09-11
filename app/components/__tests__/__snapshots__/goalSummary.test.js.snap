@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`goalSummary Has a valid snapshot 1`] = `
+exports[`goalSummary has a valid snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <GoalSummary
     data={
       Object {
         "description": "Hello world",
+        "tag": "One",
         "title": "Testing title",
       }
     }
@@ -32,7 +33,9 @@ ShallowWrapper {
             Testing title
           </Styled(H3)>
           <Styled(Badge)>
-            <Styled(Text) />
+            <Styled(Text)>
+              One
+            </Styled(Text)>
           </Styled(Badge)>
         </Styled(CardItem)>,
         <Styled(CardItem)>
@@ -57,7 +60,9 @@ ShallowWrapper {
               Testing title
             </Styled(H3)>,
             <Styled(Badge)>
-              <Styled(Text) />
+              <Styled(Text)>
+                One
+              </Styled(Text)>
             </Styled(Badge)>,
           ],
           "header": true,
@@ -82,7 +87,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <Styled(Text) />,
+              "children": <Styled(Text)>
+                One
+              </Styled(Text)>,
               "virtual": undefined,
             },
             "ref": null,
@@ -91,11 +98,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": undefined,
+                "children": "One",
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "One",
               "type": [Function],
             },
             "type": [Function],
@@ -160,7 +167,9 @@ ShallowWrapper {
               Testing title
             </Styled(H3)>
             <Styled(Badge)>
-              <Styled(Text) />
+              <Styled(Text)>
+                One
+              </Styled(Text)>
             </Styled(Badge)>
           </Styled(CardItem)>,
           <Styled(CardItem)>
@@ -185,7 +194,9 @@ ShallowWrapper {
                 Testing title
               </Styled(H3)>,
               <Styled(Badge)>
-                <Styled(Text) />
+                <Styled(Text)>
+                  One
+                </Styled(Text)>
               </Styled(Badge)>,
             ],
             "header": true,
@@ -210,7 +221,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <Styled(Text) />,
+                "children": <Styled(Text)>
+                  One
+                </Styled(Text)>,
                 "virtual": undefined,
               },
               "ref": null,
@@ -219,11 +232,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": undefined,
+                  "children": "One",
                   "virtual": undefined,
                 },
                 "ref": null,
-                "rendered": null,
+                "rendered": "One",
                 "type": [Function],
               },
               "type": [Function],
