@@ -15,21 +15,21 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {},
     "ref": null,
     "rendered": null,
-    "type": undefined,
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {},
       "ref": null,
       "rendered": null,
-      "type": undefined,
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
