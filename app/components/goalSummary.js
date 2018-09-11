@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from "react";
 import {
   Body,
@@ -9,16 +11,27 @@ import {
   Text,
 } from "native-base";
 
-class GoalSummary extends Component {
+type Props = {
+  data: object,
+};
+
+class GoalSummary extends Component<Props> {
   render() {
+    const data = this.props.data;
+
+    const description = data.description;
+    const title = data.title;
+
     return (
       <Container>
-        <Header />
+        <Header>
+          {title}
+        </Header>
         <Content>
           <Card>
             <CardItem>
               <Body>
-                <Text>Hello world</Text>
+                <Text>{description}</Text>
               </Body>
             </CardItem>
           </Card>

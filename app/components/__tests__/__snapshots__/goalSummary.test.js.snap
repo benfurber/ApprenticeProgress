@@ -3,7 +3,14 @@
 exports[`goalSummary Has a valid snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <GoalSummary />,
+  Symbol(enzyme.__unrendered__): <GoalSummary
+    data={
+      Object {
+        "description": "Hello world",
+        "title": "Testing title",
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,7 +25,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Header) />,
+        <Styled(Header)>
+          Testing title
+        </Styled(Header)>,
         <Styled(Content)>
           <Styled(Card)>
             <Styled(CardItem)>
@@ -40,10 +49,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "children": "Testing title",
           "virtual": undefined,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "Testing title",
         "type": [Function],
       },
       Object {
@@ -132,7 +142,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Header) />,
+          <Styled(Header)>
+            Testing title
+          </Styled(Header)>,
           <Styled(Content)>
             <Styled(Card)>
               <Styled(CardItem)>
@@ -154,10 +166,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "children": "Testing title",
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "Testing title",
           "type": [Function],
         },
         Object {
