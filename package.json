@@ -8,6 +8,7 @@
     "test": "jest -o --watch"
   },
   "dependencies": {
+    "native-base": "^2.8.0",
     "react": "16.5.0",
     "react-native": "0.56.0"
   },

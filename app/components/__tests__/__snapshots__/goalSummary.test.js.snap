@@ -12,9 +12,233 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
-  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(Header) />,
+        <Styled(Content)>
+          <Styled(Card)>
+            <Styled(CardItem)>
+              <Styled(Body)>
+                <Styled(Text)>
+                  Hello world
+                </Styled(Text)>
+              </Styled(Body)>
+            </Styled(CardItem)>
+          </Styled(Card)>
+        </Styled(Content)>,
+      ],
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Styled(Card)>
+            <Styled(CardItem)>
+              <Styled(Body)>
+                <Styled(Text)>
+                  Hello world
+                </Styled(Text)>
+              </Styled(Body)>
+            </Styled(CardItem)>
+          </Styled(Card)>,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(CardItem)>
+              <Styled(Body)>
+                <Styled(Text)>
+                  Hello world
+                </Styled(Text)>
+              </Styled(Body)>
+            </Styled(CardItem)>,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Body)>
+                <Styled(Text)>
+                  Hello world
+                </Styled(Text)>
+              </Styled(Body)>,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Text)>
+                  Hello world
+                </Styled(Text)>,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Hello world",
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "Hello world",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
   Symbol(enzyme.__nodes__): Array [
-    null,
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Header) />,
+          <Styled(Content)>
+            <Styled(Card)>
+              <Styled(CardItem)>
+                <Styled(Body)>
+                  <Styled(Text)>
+                    Hello world
+                  </Styled(Text)>
+                </Styled(Body)>
+              </Styled(CardItem)>
+            </Styled(Card)>
+          </Styled(Content)>,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Card)>
+              <Styled(CardItem)>
+                <Styled(Body)>
+                  <Styled(Text)>
+                    Hello world
+                  </Styled(Text)>
+                </Styled(Body)>
+              </Styled(CardItem)>
+            </Styled(Card)>,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(CardItem)>
+                <Styled(Body)>
+                  <Styled(Text)>
+                    Hello world
+                  </Styled(Text)>
+                </Styled(Body)>
+              </Styled(CardItem)>,
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(Body)>
+                  <Styled(Text)>
+                    Hello world
+                  </Styled(Text)>
+                </Styled(Body)>,
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Styled(Text)>
+                    Hello world
+                  </Styled(Text)>,
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Hello world",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Hello world",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {

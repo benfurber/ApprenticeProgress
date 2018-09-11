@@ -27,9 +27,7 @@ module.exports = {
   coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: [
-    "/node_modules/"
-  ],
+  coveragePathIgnorePatterns: ["/node_modules/"],
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -115,9 +113,7 @@ module.exports = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  "setupFiles": [
-    "./jest-setup.js"
-  ],
+  setupFiles: ["./jest-setup.js"],
 
   // The path to a module that runs some code to configure or set up the testing framework before each test
   // setupTestFrameworkScriptFile: null,
@@ -135,10 +131,7 @@ module.exports = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch: [
-    "**/__tests__/**/*.js?(x)",
-    "**/?(*.)+(spec|test).js?(x)"
-  ],
+  testMatch: ["**/__tests__/**/*.js?(x)", "**/?(*.)+(spec|test).js?(x)"],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -164,15 +157,15 @@ module.exports = {
   // "transform": {
   //   "^.+\\.jsx?$": "babel-jest"
   // },
-  
+
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   transformIgnorePatterns: [
-    "node_modules/(?!(jest-)?react-native)"
+    "/node_modules/(?!(jest-)?react-native|native-base-shoutem-theme)/",
   ],
 
-  "transform": {
-    "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
-  }
+  transform: {
+    "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+  },
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
