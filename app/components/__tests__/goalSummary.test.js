@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import { shallow } from "enzyme";
 
-import { GoalSummary } from "../goalSummary";
+import { GoalSummary } from "../GoalSummary";
 
 describe("goalSummary", () => {
   it("Has a valid snapshot", () => {

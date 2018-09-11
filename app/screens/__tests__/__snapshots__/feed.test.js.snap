@@ -18,35 +18,21 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Component
-          style={
+        <Styled(Header)>
+          <Styled(Text)>
+            ApprenticeProgress
+          </Styled(Text)>
+        </Styled(Header)>,
+        <GoalSummary
+          data={
             Object {
-              "fontSize": 20,
-              "margin": 10,
-              "textAlign": "center",
+              "description": "Hello world",
+              "title": "Hello",
             }
           }
-        >
-          Welcome to React Native!
-        </Component>,
-        <Component
-          style={
-            Object {
-              "color": "#333333",
-              "marginBottom": 5,
-              "textAlign": "center",
-            }
-          }
-        >
-          To get started, edit App.js
-        </Component>,
+        />,
       ],
-      "style": Object {
-        "alignItems": "center",
-        "backgroundColor": "#F5FCFF",
-        "flex": 1,
-        "justifyContent": "center",
-      },
+      "virtual": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -55,15 +41,24 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Welcome to React Native!",
-          "style": Object {
-            "fontSize": 20,
-            "margin": 10,
-            "textAlign": "center",
-          },
+          "children": <Styled(Text)>
+            ApprenticeProgress
+          </Styled(Text)>,
+          "virtual": undefined,
         },
         "ref": null,
-        "rendered": "Welcome to React Native!",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "ApprenticeProgress",
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "ApprenticeProgress",
+          "type": [Function],
+        },
         "type": [Function],
       },
       Object {
@@ -71,15 +66,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "To get started, edit App.js",
-          "style": Object {
-            "color": "#333333",
-            "marginBottom": 5,
-            "textAlign": "center",
+          "data": Object {
+            "description": "Hello world",
+            "title": "Hello",
           },
         },
         "ref": null,
-        "rendered": "To get started, edit App.js",
+        "rendered": null,
         "type": [Function],
       },
     ],
@@ -92,35 +85,21 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Component
-            style={
+          <Styled(Header)>
+            <Styled(Text)>
+              ApprenticeProgress
+            </Styled(Text)>
+          </Styled(Header)>,
+          <GoalSummary
+            data={
               Object {
-                "fontSize": 20,
-                "margin": 10,
-                "textAlign": "center",
+                "description": "Hello world",
+                "title": "Hello",
               }
             }
-          >
-            Welcome to React Native!
-          </Component>,
-          <Component
-            style={
-              Object {
-                "color": "#333333",
-                "marginBottom": 5,
-                "textAlign": "center",
-              }
-            }
-          >
-            To get started, edit App.js
-          </Component>,
+          />,
         ],
-        "style": Object {
-          "alignItems": "center",
-          "backgroundColor": "#F5FCFF",
-          "flex": 1,
-          "justifyContent": "center",
-        },
+        "virtual": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -129,15 +108,24 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Welcome to React Native!",
-            "style": Object {
-              "fontSize": 20,
-              "margin": 10,
-              "textAlign": "center",
-            },
+            "children": <Styled(Text)>
+              ApprenticeProgress
+            </Styled(Text)>,
+            "virtual": undefined,
           },
           "ref": null,
-          "rendered": "Welcome to React Native!",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "ApprenticeProgress",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "ApprenticeProgress",
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -145,15 +133,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "To get started, edit App.js",
-            "style": Object {
-              "color": "#333333",
-              "marginBottom": 5,
-              "textAlign": "center",
+            "data": Object {
+              "description": "Hello world",
+              "title": "Hello",
             },
           },
           "ref": null,
-          "rendered": "To get started, edit App.js",
+          "rendered": null,
           "type": [Function],
         },
       ],

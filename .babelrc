@@ -4,7 +4,8 @@
       "module-resolver",
       {
         "alias": {
-          "screens": "./app/screens"
+          "screens": "./app/screens",
+          "components": "./app/components"
         }
       }
     ]

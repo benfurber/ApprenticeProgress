@@ -5,9 +5,6 @@ import {
   Body,
   Card,
   CardItem,
-  Container,
-  Content,
-  Header,
   Text,
 } from "native-base";
 
@@ -23,20 +20,16 @@ class GoalSummary extends Component<Props> {
     const title = data.title;
 
     return (
-      <Container>
-        <Header>
-          {title}
-        </Header>
-        <Content>
-          <Card>
-            <CardItem>
-              <Body>
-                <Text>{description}</Text>
-              </Body>
-            </CardItem>
-          </Card>
-        </Content>
-      </Container>
+      <Card>
+        <CardItem header>
+          <Text>{title}</Text>
+        </CardItem>
+        <CardItem>
+          <Body>
+            <Text>{description}</Text>
+          </Body>
+        </CardItem>
+      </Card>
     );
   }
 }
