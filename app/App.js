@@ -6,15 +6,15 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Feed} from './screens/feed'
+import React, {Component} from "react";
+import {Feed} from "screens";
 
 class App extends Component {
   render() {
     return (
       <Feed />
     );
-  }
+  };
 };
 
 export {App};

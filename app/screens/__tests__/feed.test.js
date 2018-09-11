@@ -2,7 +2,7 @@ import "react-native";
 import React from "react";
 import {shallow} from "enzyme";
 
-import {Feed} from "../Feed";
+import {Feed} from "../feed";
 
 describe("Feed", () => {
   it("renders correctly", () => {
@@ -11,5 +11,3 @@ describe("Feed", () => {
     expect(component).toMatchSnapshot();
   });
 });
-
-
