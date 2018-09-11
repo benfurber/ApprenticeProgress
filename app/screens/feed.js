@@ -1,18 +1,19 @@
 import React, { Component } from "react";
-import { Container, Header, Text } from "native-base";
+import { Container, Header, H1 } from "native-base";
 
-import { GoalSummary } from "../components/GoalSummary";
+import { GoalsList } from "../components/GoalsList";
 
 class Feed extends Component {
   render() {
     return (
       <Container>
         <Header>
-          <Text>ApprenticeProgress</Text>
+          <H1>ApprenticeProgress</H1>
         </Header>
-        <GoalSummary
-          data={{ title: "Hello", description: "Hello world", tag: "One" }}
+        <GoalsList
+          goals={{ 1: { title: "Hello", description: "Hello world", tag: "One" } }}
         />
+
       </Container>
     );
   }

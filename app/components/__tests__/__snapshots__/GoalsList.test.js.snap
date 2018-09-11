@@ -1,9 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Feed renders correctly 1`] = `
+exports[`GoalsList has a valid snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Feed />,
+  Symbol(enzyme.__unrendered__): <GoalsList
+    goals={
+      Object {
+        "1": Object {
+          "description": "Hello world 1",
+          "tag": "Tag",
+          "title": "Testing title",
+        },
+        "2": Object {
+          "description": "Hello world 2",
+          "tag": "Tag",
+          "title": "Testing title",
+        },
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,19 +33,21 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Header)>
-          <Styled(H1)>
-            ApprenticeProgress
-          </Styled(H1)>
-        </Styled(Header)>,
-        <GoalsList
-          goals={
+        <GoalSummary
+          data={
             Object {
-              "1": Object {
-                "description": "Hello world",
-                "tag": "One",
-                "title": "Hello",
-              },
+              "description": "Hello world 1",
+              "tag": "Tag",
+              "title": "Testing title",
+            }
+          }
+        />,
+        <GoalSummary
+          data={
+            Object {
+              "description": "Hello world 2",
+              "tag": "Tag",
+              "title": "Testing title",
             }
           }
         />,
@@ -41,40 +58,28 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0",
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(H1)>
-            ApprenticeProgress
-          </Styled(H1)>,
-          "virtual": undefined,
+          "data": Object {
+            "description": "Hello world 1",
+            "tag": "Tag",
+            "title": "Testing title",
+          },
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "ApprenticeProgress",
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": "ApprenticeProgress",
-          "type": [Function],
-        },
+        "rendered": null,
         "type": [Function],
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1",
         "nodeType": "class",
         "props": Object {
-          "goals": Object {
-            "1": Object {
-              "description": "Hello world",
-              "tag": "One",
-              "title": "Hello",
-            },
+          "data": Object {
+            "description": "Hello world 2",
+            "tag": "Tag",
+            "title": "Testing title",
           },
         },
         "ref": null,
@@ -91,19 +96,21 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Header)>
-            <Styled(H1)>
-              ApprenticeProgress
-            </Styled(H1)>
-          </Styled(Header)>,
-          <GoalsList
-            goals={
+          <GoalSummary
+            data={
               Object {
-                "1": Object {
-                  "description": "Hello world",
-                  "tag": "One",
-                  "title": "Hello",
-                },
+                "description": "Hello world 1",
+                "tag": "Tag",
+                "title": "Testing title",
+              }
+            }
+          />,
+          <GoalSummary
+            data={
+              Object {
+                "description": "Hello world 2",
+                "tag": "Tag",
+                "title": "Testing title",
               }
             }
           />,
@@ -114,40 +121,28 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0",
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(H1)>
-              ApprenticeProgress
-            </Styled(H1)>,
-            "virtual": undefined,
+            "data": Object {
+              "description": "Hello world 1",
+              "tag": "Tag",
+              "title": "Testing title",
+            },
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "ApprenticeProgress",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "ApprenticeProgress",
-            "type": [Function],
-          },
+          "rendered": null,
           "type": [Function],
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1",
           "nodeType": "class",
           "props": Object {
-            "goals": Object {
-              "1": Object {
-                "description": "Hello world",
-                "tag": "One",
-                "title": "Hello",
-              },
+            "data": Object {
+              "description": "Hello world 2",
+              "tag": "Tag",
+              "title": "Testing title",
             },
           },
           "ref": null,
