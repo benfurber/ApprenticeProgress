@@ -1,32 +1,20 @@
 import React, { Component } from "react";
-import { Container, Text } from "native-base";
+import { Container } from "native-base";
 
 import { GoalSummary } from "./GoalSummary";
 
 class GoalsList extends Component {
   goals = this.props.goals;
 
-  renderGoal = (goal, index) => {
-    return (
-      <GoalSummary
-        key={index}
-        data={{
-          title: goal.title,
-          description: goal.description,
-          tag: goal.tag,
-        }}
-      />
-    );
+  renderGoal = (goal, goalId) => {
+    return <GoalSummary key={goalId} data={goal} />;
   };
 
   renderGoals = () => {
-    return Object.values(this.goals).map((goal, index) => {
-      const goalData = {
-        description: goal.description,
-        title: goal.title,
-        tag: goal.tag,
-      };
-      return this.renderGoal(goalData, index);
+    const goalData = Object.keys(this.goals);
+
+    return goalData.map(goalId => {
+      return this.renderGoal(this.goals[goalId], goalId);
     });
   };
 

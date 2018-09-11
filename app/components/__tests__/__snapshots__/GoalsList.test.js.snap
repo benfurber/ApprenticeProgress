@@ -11,11 +11,6 @@ ShallowWrapper {
           "tag": "Tag",
           "title": "Testing title",
         },
-        "2": Object {
-          "description": "Hello world 2",
-          "tag": "Tag",
-          "title": "Testing title",
-        },
       }
     }
   />,
@@ -42,15 +37,6 @@ ShallowWrapper {
             }
           }
         />,
-        <GoalSummary
-          data={
-            Object {
-              "description": "Hello world 2",
-              "tag": "Tag",
-              "title": "Testing title",
-            }
-          }
-        />,
       ],
       "virtual": undefined,
     },
@@ -58,26 +44,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
-        "nodeType": "class",
-        "props": Object {
-          "data": Object {
-            "description": "Hello world 1",
-            "tag": "Tag",
-            "title": "Testing title",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
         "key": "1",
         "nodeType": "class",
         "props": Object {
           "data": Object {
-            "description": "Hello world 2",
+            "description": "Hello world 1",
             "tag": "Tag",
             "title": "Testing title",
           },
@@ -105,15 +76,6 @@ ShallowWrapper {
               }
             }
           />,
-          <GoalSummary
-            data={
-              Object {
-                "description": "Hello world 2",
-                "tag": "Tag",
-                "title": "Testing title",
-              }
-            }
-          />,
         ],
         "virtual": undefined,
       },
@@ -121,26 +83,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
-          "nodeType": "class",
-          "props": Object {
-            "data": Object {
-              "description": "Hello world 1",
-              "tag": "Tag",
-              "title": "Testing title",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
           "key": "1",
           "nodeType": "class",
           "props": Object {
             "data": Object {
-              "description": "Hello world 2",
+              "description": "Hello world 1",
               "tag": "Tag",
               "title": "Testing title",
             },
