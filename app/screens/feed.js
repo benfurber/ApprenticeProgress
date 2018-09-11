@@ -10,7 +10,9 @@ class Feed extends Component {
         <Header>
           <Text>ApprenticeProgress</Text>
         </Header>
-        <GoalSummary data={{ title: "Hello", description: "Hello world" }} />
+        <GoalSummary
+          data={{ title: "Hello", description: "Hello world", tag: "One" }}
+        />
       </Container>
     );
   }

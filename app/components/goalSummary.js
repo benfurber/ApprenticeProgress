@@ -1,28 +1,26 @@
 // @flow
 
 import React, { Component } from "react";
-import {
-  Body,
-  Card,
-  CardItem,
-  Text,
-} from "native-base";
+import { Badge, Body, Card, CardItem, Text, H3 } from "native-base";
+import type { GoalSummaryType } from "../types";
 
-type Props = {
-  data: any,
-};
+type Props = { data: GoalSummaryType };
 
 class GoalSummary extends Component<Props> {
   render() {
     const data = this.props.data;
 
     const description = data.description;
+    const tag = data.tag;
     const title = data.title;
 
     return (
       <Card>
         <CardItem header>
-          <Text>{title}</Text>
+          <H3>{title}</H3>
+          <Badge>
+            <Text>{tag}</Text>
+          </Badge>
         </CardItem>
         <CardItem>
           <Body>
