@@ -12,7 +12,7 @@ import {
 } from "native-base";
 
 type Props = {
-  data: object,
+  data: any,
 };
 
 class GoalSummary extends Component<Props> {

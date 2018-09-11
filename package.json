@@ -5,7 +5,8 @@
   "scripts": {
     "fix": "rm node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
-    "test": "jest -o --watch"
+    "test": "flow && jest",
+    "jest": "jest -o --watch"
   },
   "dependencies": {
     "native-base": "^2.8.0",

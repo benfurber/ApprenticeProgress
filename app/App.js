@@ -1,15 +1,11 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+// @flow
 
 import React, {Component} from "react";
 import {Feed} from "screens";
 
-class App extends Component {
+type Props = {};
+
+class App extends Component<Props> {
   render() {
     return (
       <Feed />
