@@ -14,7 +14,7 @@ class GoalSummary extends Component<Props> {
     const details = this.props.details;
     const onPress = this.props.onPress || this.onPress;
 
-    const description = details.description;
+    const score = details.score;
     const tag = details.tag;
     const title = details.title;
 
@@ -22,14 +22,13 @@ class GoalSummary extends Component<Props> {
       <TouchableOpacity onPress={onPress}>
         <Card>
           <CardItem header>
-            <H3>{title}</H3>
-            <Badge>
-              <Text>{tag}</Text>
-            </Badge>
+            <H3>{title} ({score}/5)</H3>
           </CardItem>
           <CardItem>
             <Body>
-              <Text>{description}</Text>
+              <Badge>
+                <Text>{tag}</Text>
+              </Badge>
             </Body>
           </CardItem>
         </Card>
