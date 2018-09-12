@@ -3,20 +3,20 @@
 import React, { Component } from "react";
 import { TouchableOpacity } from "react-native";
 import { Badge, Body, Card, CardItem, Text, H3 } from "native-base";
-import type { GoalSummaryType, OnPressType } from "../types";
+import type { GoalDetailsSummaryType, OnPressType } from "../types";
 
-type Props = { data: GoalSummaryType, onPress?: OnPressType };
+type Props = { details: GoalDetailsSummaryType, onPress?: OnPressType };
 
 class GoalSummary extends Component<Props> {
   onPress = () => {};
 
   render() {
-    const data = this.props.data;
+    const details = this.props.details;
     const onPress = this.props.onPress || this.onPress;
 
-    const description = data.description;
-    const tag = data.tag;
-    const title = data.title;
+    const description = details.description;
+    const tag = details.tag;
+    const title = details.title;
 
     return (
       <TouchableOpacity onPress={onPress}>

@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "fix": "rm node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
+    "jest": "jest --watch",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
-    "test": "flow && jest",
-    "jest": "jest -o --watch"
+    "test": "lint . && jest && flow"
   },
   "dependencies": {
     "native-base": "^2.8.0",

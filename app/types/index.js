@@ -1,6 +1,6 @@
 // @flow
 
-export type GoalSummaryType = {
+export type GoalDetailsSummaryType = {
   description: string,
   tag: string,
   title: string,

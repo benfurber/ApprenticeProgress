@@ -4,7 +4,7 @@ exports[`goalSummary has a valid snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <GoalSummary
-    data={
+    details={
       Object {
         "description": "Hello world",
         "tag": "One",
