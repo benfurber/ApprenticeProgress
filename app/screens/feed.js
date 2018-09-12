@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Header, H1 } from "native-base";
+import { Container, Content, Header, H1 } from "native-base";
 
 import { GoalsList } from "../components/GoalsList";
 
@@ -55,7 +55,9 @@ class Feed extends Component {
         <Header>
           <H1>ApprenticeProgress</H1>
         </Header>
-        <GoalsList goals={goalsData} />
+        <Content>
+          <GoalsList goals={goalsData} />
+        </Content>
       </Container>
     );
   }
