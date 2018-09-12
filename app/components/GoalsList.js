@@ -7,7 +7,7 @@ class GoalsList extends Component {
   goals = this.props.goals;
 
   renderGoal = (goal, goalId) => {
-    return <GoalSummary key={goalId} data={goal} />;
+    return <GoalSummary key={goalId} details={goal} />;
   };
 
   renderGoals = () => {

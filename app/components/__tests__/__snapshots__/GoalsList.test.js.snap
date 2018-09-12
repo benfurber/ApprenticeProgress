@@ -29,7 +29,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <GoalSummary
-          data={
+          details={
             Object {
               "description": "Hello world 1",
               "tag": "Tag",
@@ -47,7 +47,7 @@ ShallowWrapper {
         "key": "1",
         "nodeType": "class",
         "props": Object {
-          "data": Object {
+          "details": Object {
             "description": "Hello world 1",
             "tag": "Tag",
             "title": "Testing title",
@@ -68,7 +68,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <GoalSummary
-            data={
+            details={
               Object {
                 "description": "Hello world 1",
                 "tag": "Tag",
@@ -86,7 +86,7 @@ ShallowWrapper {
           "key": "1",
           "nodeType": "class",
           "props": Object {
-            "data": Object {
+            "details": Object {
               "description": "Hello world 1",
               "tag": "Tag",
               "title": "Testing title",

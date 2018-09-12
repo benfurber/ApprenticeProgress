@@ -27,9 +27,64 @@ ShallowWrapper {
           goals={
             Object {
               "1": Object {
-                "description": "Hello world",
-                "tag": "One",
-                "title": "Hello",
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 1,
+                "tag": "Team thoughtbot",
+                "title": "I contribute to thoughtbot being a good place to work",
+              },
+              "2": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 2,
+                "tag": "Team thoughtbot",
+                "title": "I iterate over my existing knowledge effectively",
+              },
+              "3": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 3,
+                "tag": "Team thoughtbot",
+                "title": "I’m a great pair programmer",
+              },
+              "4": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 1,
+                "tag": "Team thoughtbot",
+                "title": "I help others become better ",
+              },
+              "5": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 3,
+                "tag": "Team thoughtbot",
+                "title": "I’m passionate about software/products",
+              },
+              "6": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 4,
+                "tag": "Team thoughtbot",
+                "title": "I set my own direction",
               },
             }
           }
@@ -71,9 +126,64 @@ ShallowWrapper {
         "props": Object {
           "goals": Object {
             "1": Object {
-              "description": "Hello world",
-              "tag": "One",
-              "title": "Hello",
+              "actions": Array [
+                "1",
+                "2",
+              ],
+              "description": "",
+              "score": 1,
+              "tag": "Team thoughtbot",
+              "title": "I contribute to thoughtbot being a good place to work",
+            },
+            "2": Object {
+              "actions": Array [
+                "1",
+                "2",
+              ],
+              "description": "",
+              "score": 2,
+              "tag": "Team thoughtbot",
+              "title": "I iterate over my existing knowledge effectively",
+            },
+            "3": Object {
+              "actions": Array [
+                "1",
+                "2",
+              ],
+              "description": "",
+              "score": 3,
+              "tag": "Team thoughtbot",
+              "title": "I’m a great pair programmer",
+            },
+            "4": Object {
+              "actions": Array [
+                "1",
+                "2",
+              ],
+              "description": "",
+              "score": 1,
+              "tag": "Team thoughtbot",
+              "title": "I help others become better ",
+            },
+            "5": Object {
+              "actions": Array [
+                "1",
+                "2",
+              ],
+              "description": "",
+              "score": 3,
+              "tag": "Team thoughtbot",
+              "title": "I’m passionate about software/products",
+            },
+            "6": Object {
+              "actions": Array [
+                "1",
+                "2",
+              ],
+              "description": "",
+              "score": 4,
+              "tag": "Team thoughtbot",
+              "title": "I set my own direction",
             },
           },
         },
@@ -100,9 +210,64 @@ ShallowWrapper {
             goals={
               Object {
                 "1": Object {
-                  "description": "Hello world",
-                  "tag": "One",
-                  "title": "Hello",
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 1,
+                  "tag": "Team thoughtbot",
+                  "title": "I contribute to thoughtbot being a good place to work",
+                },
+                "2": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 2,
+                  "tag": "Team thoughtbot",
+                  "title": "I iterate over my existing knowledge effectively",
+                },
+                "3": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 3,
+                  "tag": "Team thoughtbot",
+                  "title": "I’m a great pair programmer",
+                },
+                "4": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 1,
+                  "tag": "Team thoughtbot",
+                  "title": "I help others become better ",
+                },
+                "5": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 3,
+                  "tag": "Team thoughtbot",
+                  "title": "I’m passionate about software/products",
+                },
+                "6": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 4,
+                  "tag": "Team thoughtbot",
+                  "title": "I set my own direction",
                 },
               }
             }
@@ -144,9 +309,64 @@ ShallowWrapper {
           "props": Object {
             "goals": Object {
               "1": Object {
-                "description": "Hello world",
-                "tag": "One",
-                "title": "Hello",
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 1,
+                "tag": "Team thoughtbot",
+                "title": "I contribute to thoughtbot being a good place to work",
+              },
+              "2": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 2,
+                "tag": "Team thoughtbot",
+                "title": "I iterate over my existing knowledge effectively",
+              },
+              "3": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 3,
+                "tag": "Team thoughtbot",
+                "title": "I’m a great pair programmer",
+              },
+              "4": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 1,
+                "tag": "Team thoughtbot",
+                "title": "I help others become better ",
+              },
+              "5": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 3,
+                "tag": "Team thoughtbot",
+                "title": "I’m passionate about software/products",
+              },
+              "6": Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "score": 4,
+                "tag": "Team thoughtbot",
+                "title": "I set my own direction",
               },
             },
           },

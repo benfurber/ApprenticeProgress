@@ -3,9 +3,9 @@
 import React, { Component } from "react";
 import { TouchableOpacity } from "react-native";
 import { Badge, Body, Card, CardItem, Text, H3 } from "native-base";
-import type { GoalDetailsSummaryType, OnPressType } from "../types";
+import type { GoalDetailsType, OnPressType } from "../types";
 
-type Props = { details: GoalDetailsSummaryType, onPress?: OnPressType };
+type Props = { details: GoalDetailsType, onPress?: OnPressType };
 
 class GoalSummary extends Component<Props> {
   onPress = () => {};
