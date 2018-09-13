@@ -1,7 +1,7 @@
 // @flow
 
-export type GoalDetailsSummaryType = {
-  actions: Array<numbers>,
+export type GoalDetailsType = {
+  actions: Array<string>,
   description: string,
   score: number,
   tag: string,
