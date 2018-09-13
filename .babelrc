@@ -1,3 +1,14 @@
 {
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "screens": "./app/screens",
+          "components": "./app/components"
+        }
+      }
+    ]
+  ],
   "presets": ["react-native"]
 }

@@ -4,23 +4,38 @@
   "private": true,
   "scripts": {
     "fix": "rm node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
+    "jest": "jest --watch",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
-    "test": "jest -o --watch"
+    "test": "lint . && jest && flow"
   },
   "dependencies": {
+    "native-base": "^2.8.0",
     "react": "16.5.0",
     "react-native": "0.56.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "babel-core": "^7.0.0-0",
+    "babel-eslint": "^9.0.0",
     "babel-jest": "^23.4.2",
+    "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-react-native": "5.0.2",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.22.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native": "^3.3.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "flow-bin": "^0.80.0",
     "jest": "^23.5.0",
+    "react-dom": "^16.5.0",
     "react-test-renderer": "16.5.0",
     "regenerator-runtime": "^0.12.1"
   }
