@@ -23,189 +23,7 @@ ShallowWrapper {
             ApprenticeProgress
           </Styled(H1)>
         </Styled(Header)>,
-        <GoalsList
-          goals={
-            Object {
-              "1": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I contribute to thoughtbot being a good place to work",
-              },
-              "2": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 2,
-                "tag": "Team thoughtbot",
-                "title": "I iterate over my existing knowledge effectively",
-              },
-              "3": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m a great pair programmer",
-              },
-              "4": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I help others become better ",
-              },
-              "5": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m passionate about software/products",
-              },
-              "6": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 4,
-                "tag": "Team thoughtbot",
-                "title": "I set my own direction",
-              },
-            }
-          }
-        />,
-      ],
-      "virtual": undefined,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <Styled(H1)>
-            ApprenticeProgress
-          </Styled(H1)>,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "ApprenticeProgress",
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": "ApprenticeProgress",
-          "type": [Function],
-        },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "goals": Object {
-            "1": Object {
-              "actions": Array [
-                "1",
-                "2",
-              ],
-              "description": "",
-              "score": 1,
-              "tag": "Team thoughtbot",
-              "title": "I contribute to thoughtbot being a good place to work",
-            },
-            "2": Object {
-              "actions": Array [
-                "1",
-                "2",
-              ],
-              "description": "",
-              "score": 2,
-              "tag": "Team thoughtbot",
-              "title": "I iterate over my existing knowledge effectively",
-            },
-            "3": Object {
-              "actions": Array [
-                "1",
-                "2",
-              ],
-              "description": "",
-              "score": 3,
-              "tag": "Team thoughtbot",
-              "title": "I’m a great pair programmer",
-            },
-            "4": Object {
-              "actions": Array [
-                "1",
-                "2",
-              ],
-              "description": "",
-              "score": 1,
-              "tag": "Team thoughtbot",
-              "title": "I help others become better ",
-            },
-            "5": Object {
-              "actions": Array [
-                "1",
-                "2",
-              ],
-              "description": "",
-              "score": 3,
-              "tag": "Team thoughtbot",
-              "title": "I’m passionate about software/products",
-            },
-            "6": Object {
-              "actions": Array [
-                "1",
-                "2",
-              ],
-              "description": "",
-              "score": 4,
-              "tag": "Team thoughtbot",
-              "title": "I set my own direction",
-            },
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <Styled(Header)>
-            <Styled(H1)>
-              ApprenticeProgress
-            </Styled(H1)>
-          </Styled(Header)>,
+        <Styled(Content)>
           <GoalsList
             goals={
               Object {
@@ -271,38 +89,113 @@ ShallowWrapper {
                 },
               }
             }
-          />,
-        ],
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
+          />
+        </Styled(Content)>,
+      ],
+      "virtual": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Styled(H1)>
+            ApprenticeProgress
+          </Styled(H1)>,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(H1)>
-              ApprenticeProgress
-            </Styled(H1)>,
+            "children": "ApprenticeProgress",
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "ApprenticeProgress",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "ApprenticeProgress",
-            "type": [Function],
-          },
+          "rendered": "ApprenticeProgress",
           "type": [Function],
         },
-        Object {
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <GoalsList
+            goals={
+              Object {
+                "1": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 1,
+                  "tag": "Team thoughtbot",
+                  "title": "I contribute to thoughtbot being a good place to work",
+                },
+                "2": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 2,
+                  "tag": "Team thoughtbot",
+                  "title": "I iterate over my existing knowledge effectively",
+                },
+                "3": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 3,
+                  "tag": "Team thoughtbot",
+                  "title": "I’m a great pair programmer",
+                },
+                "4": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 1,
+                  "tag": "Team thoughtbot",
+                  "title": "I help others become better ",
+                },
+                "5": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 3,
+                  "tag": "Team thoughtbot",
+                  "title": "I’m passionate about software/products",
+                },
+                "6": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 4,
+                  "tag": "Team thoughtbot",
+                  "title": "I set my own direction",
+                },
+              }
+            }
+          />,
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
@@ -372,6 +265,269 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(Header)>
+            <Styled(H1)>
+              ApprenticeProgress
+            </Styled(H1)>
+          </Styled(Header)>,
+          <Styled(Content)>
+            <GoalsList
+              goals={
+                Object {
+                  "1": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 1,
+                    "tag": "Team thoughtbot",
+                    "title": "I contribute to thoughtbot being a good place to work",
+                  },
+                  "2": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 2,
+                    "tag": "Team thoughtbot",
+                    "title": "I iterate over my existing knowledge effectively",
+                  },
+                  "3": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 3,
+                    "tag": "Team thoughtbot",
+                    "title": "I’m a great pair programmer",
+                  },
+                  "4": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 1,
+                    "tag": "Team thoughtbot",
+                    "title": "I help others become better ",
+                  },
+                  "5": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 3,
+                    "tag": "Team thoughtbot",
+                    "title": "I’m passionate about software/products",
+                  },
+                  "6": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 4,
+                    "tag": "Team thoughtbot",
+                    "title": "I set my own direction",
+                  },
+                }
+              }
+            />
+          </Styled(Content)>,
+        ],
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(H1)>
+              ApprenticeProgress
+            </Styled(H1)>,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "ApprenticeProgress",
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "ApprenticeProgress",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <GoalsList
+              goals={
+                Object {
+                  "1": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 1,
+                    "tag": "Team thoughtbot",
+                    "title": "I contribute to thoughtbot being a good place to work",
+                  },
+                  "2": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 2,
+                    "tag": "Team thoughtbot",
+                    "title": "I iterate over my existing knowledge effectively",
+                  },
+                  "3": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 3,
+                    "tag": "Team thoughtbot",
+                    "title": "I’m a great pair programmer",
+                  },
+                  "4": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 1,
+                    "tag": "Team thoughtbot",
+                    "title": "I help others become better ",
+                  },
+                  "5": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 3,
+                    "tag": "Team thoughtbot",
+                    "title": "I’m passionate about software/products",
+                  },
+                  "6": Object {
+                    "actions": Array [
+                      "1",
+                      "2",
+                    ],
+                    "description": "",
+                    "score": 4,
+                    "tag": "Team thoughtbot",
+                    "title": "I set my own direction",
+                  },
+                }
+              }
+            />,
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "goals": Object {
+                "1": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 1,
+                  "tag": "Team thoughtbot",
+                  "title": "I contribute to thoughtbot being a good place to work",
+                },
+                "2": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 2,
+                  "tag": "Team thoughtbot",
+                  "title": "I iterate over my existing knowledge effectively",
+                },
+                "3": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 3,
+                  "tag": "Team thoughtbot",
+                  "title": "I’m a great pair programmer",
+                },
+                "4": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 1,
+                  "tag": "Team thoughtbot",
+                  "title": "I help others become better ",
+                },
+                "5": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 3,
+                  "tag": "Team thoughtbot",
+                  "title": "I’m passionate about software/products",
+                },
+                "6": Object {
+                  "actions": Array [
+                    "1",
+                    "2",
+                  ],
+                  "description": "",
+                  "score": 4,
+                  "tag": "Team thoughtbot",
+                  "title": "I set my own direction",
+                },
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
       ],

@@ -1,7 +1,9 @@
+// @flow
+
 import React, { Component } from "react";
 import { Container, Content, Header, H1 } from "native-base";
 
-import { GoalsList } from "../components/GoalsList";
+import { GoalsList } from "components";
 
 class Feed extends Component {
   render() {

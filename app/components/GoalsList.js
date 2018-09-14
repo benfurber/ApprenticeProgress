@@ -1,25 +1,25 @@
+// @flow
+
 import React, { Component } from "react";
 import { Container } from "native-base";
 
-import { GoalSummary } from "./GoalSummary";
+import { GoalSummary } from "components";
+import type { GoalsDataType } from "types";
 
-class GoalsList extends Component {
-  goals = this.props.goals;
+type Props = { goals: GoalsDataType };
 
-  renderGoal = (goal, goalId) => {
-    return <GoalSummary key={goalId} details={goal} />;
-  };
-
-  renderGoals = () => {
-    const goalData = Object.keys(this.goals);
-
-    return goalData.map(goalId => {
-      return this.renderGoal(this.goals[goalId], goalId);
-    });
-  };
-
+class GoalsList extends Component<Props> {
   render() {
-    return <Container>{this.renderGoals()}</Container>;
+    const { goals } = this.props;
+    const goalIds = Object.keys(goals);
+
+    return (
+      <Container>
+        {goalIds.map(goalId => (
+          <GoalSummary goalId={goalId} details={goals[goalId]} />
+        ))}
+      </Container>
+    );
   }
 }
 
