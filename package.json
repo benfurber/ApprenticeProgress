@@ -6,7 +6,8 @@
     "fix": "rm node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
     "jest": "jest --watch",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
-    "test": "lint . && jest && flow"
+    "test": "lint . && jest && flow",
+    "storybook": "storybook start -p 7007"
   },
   "dependencies": {
     "native-base": "^2.8.0",
@@ -15,11 +16,16 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@storybook/addon-actions": "^3.4.10",
+    "@storybook/addon-links": "^3.4.10",
+    "@storybook/addons": "^3.4.10",
+    "@storybook/react-native": "^3.4.10",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.4.2",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-react-native": "5.0.2",
+    "babel-runtime": "^6.26.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.5.0",
