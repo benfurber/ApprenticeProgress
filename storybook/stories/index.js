@@ -15,7 +15,7 @@ storiesOf("Screens", module)
     <Goal
       details={{
         actions: ["1", "2"],
-        description: "",
+        description: "Words here about a goal",
         score: 4,
         tag: "Team thoughtbot",
         title: "I set my own direction",
