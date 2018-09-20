@@ -1,3 +1,5 @@
+// @flow
+
 import React from "react";
 import { shallow } from "enzyme";
 
@@ -7,7 +9,7 @@ import { GoalSummary } from "../GoalSummary";
 describe("GoalsList", () => {
   it("has a valid snapshot", () => {
     const goals = {
-      1: {
+      [1]: {
         description: "Hello world 1",
         title: "Testing title",
         tag: "Tag",
@@ -20,12 +22,12 @@ describe("GoalsList", () => {
 
   it("renders the right number of GoalSummaries", () => {
     const goals = {
-      1: {
+      [1]: {
         description: "Hello world 1",
         title: "Testing title",
         tag: "Tag",
       },
-      2: {
+      [2]: {
         description: "Hello world 2",
         title: "Testing title",
         tag: "Tag",

@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
-import { Feed } from "./screens/feed";
+import { Feed } from "screens";
 
 type Props = {};
 

@@ -3,7 +3,8 @@
 import React, { Component } from "react";
 import { TouchableOpacity } from "react-native";
 import { Badge, Body, Card, CardItem, Text, H3 } from "native-base";
-import type { GoalDetailsType, OnPressType } from "../types";
+
+import type { GoalDetailsType, OnPressType } from "types";
 
 type Props = { details: GoalDetailsType, onPress?: OnPressType };
 
