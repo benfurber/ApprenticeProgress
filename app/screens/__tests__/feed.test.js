@@ -3,7 +3,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import { Feed } from "../feed";
+import { Feed } from "../Feed";
 
 describe("Feed", () => {
   it("renders correctly", () => {

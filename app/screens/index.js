@@ -1,2 +1,2 @@
-export { Feed } from "./feed";
-export { Goal } from "./goal";
+export { Feed } from "./Feed";
+export { Goal } from "./Goal";

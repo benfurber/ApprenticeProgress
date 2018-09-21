@@ -3,7 +3,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import { Goal } from "../goal";
+import { Goal } from "../Goal";
 
 describe("Goal", () => {
   it("has a valid snapshot", () => {
