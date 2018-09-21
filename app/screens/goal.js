@@ -10,6 +10,7 @@ import {
   Text,
 } from "native-base";
 
+import { styles } from "styles";
 class Goal extends Component {
   render() {
     const { score, tag, title, description } = this.props.details;

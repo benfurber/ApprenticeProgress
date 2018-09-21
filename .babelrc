@@ -6,6 +6,7 @@
         "alias": {
           "components": "./app/components",
           "screens": "./app/screens",
+          "styles": "./app/styles",
           "types": "./app/types"
         }
       }
