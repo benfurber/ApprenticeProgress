@@ -14,30 +14,7 @@ class ProgressBar extends Component {
         </View>
 
         <View style={[styles.row, styles.rowButtons]}>
-          <View style={styles.cell}>
-            <View style={styles.dash} />
-            <Text>0</Text>
-          </View>
-          <View style={styles.cell}>
-            <View style={styles.dash} />
-            <Text>1</Text>
-          </View>
-          <View style={styles.cell}>
-            <View style={styles.dash} />
-            <Text>2</Text>
-          </View>
-          <View style={styles.cell}>
-            <View style={styles.dash} />
-            <Text>3</Text>
-          </View>
-          <View style={styles.cell}>
-            <View style={styles.dash} />
-            <Text>4</Text>
-          </View>
-          <View style={styles.cell}>
-            <View style={styles.dash} />
-            <Text>5</Text>
-          </View>
+          {this.renderLabels()}
         </View>
       </View>
     );
@@ -56,6 +33,23 @@ class ProgressBar extends Component {
     ];
 
     return barScoreArray[score];
+  }
+
+  renderLabels() {
+    let labels = [];
+    let label = 0;
+
+    while (label < 6) {
+      labels.push(
+        <View key={label} style={styles.cell}>
+          <View style={styles.dash} />
+          <Text>{label}</Text>
+        </View>
+      );
+      label++;
+    }
+
+    return labels;
   }
 }
 
