@@ -1,7 +1,11 @@
+// @flow
+
 import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-class ProgressBar extends Component {
+type Props = { score: number }
+
+class ProgressBar extends Component<Props> {
   render() {
     return (
       <View styles={styles.table}>
