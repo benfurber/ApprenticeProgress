@@ -7,35 +7,31 @@ import Welcome from "./Welcome";
 import { GoalSummary, ProgressBar } from "components";
 import { Goal } from "screens";
 
-storiesOf("Currently working on", module).add("...", () => (
-  <Container>
-    <Content>
-      <ProgressBar score={0} />
-      <ProgressBar score={1} />
-      <ProgressBar score={2} />
-      <ProgressBar score={3} />
-      <ProgressBar score={4} />
-      <ProgressBar score={5} />
-    </Content>
-  </Container>
+storiesOf("Currently working on", module).add("Goal", () => (
+  <Goal
+    details={{
+      actions: ["1", "2"],
+      description: "Words here about a goal",
+      score: 4,
+      tag: "Team thoughtbot",
+      title: "I set my own direction",
+    }}
+  />
 ));
 
-storiesOf("Welcome", module).add("to Storybook", () => (
-  <Welcome />
-));
+storiesOf("Welcome", module).add("to Storybook", () => <Welcome />);
 
-storiesOf("Screens", module)
-  .add("Goal", () => (
-    <Goal
-      details={{
-        actions: ["1", "2"],
-        description: "Words here about a goal",
-        score: 4,
-        tag: "Team thoughtbot",
-        title: "I set my own direction",
-      }}
-    />
-  ));
+storiesOf("Screens", module).add("Goal", () => (
+  <Goal
+    details={{
+      actions: ["1", "2"],
+      description: "Words here about a goal",
+      score: 4,
+      tag: "Team thoughtbot",
+      title: "I set my own direction",
+    }}
+  />
+));
 
 storiesOf("Components", module)
   .add("GoalSummary", () => (
@@ -47,4 +43,16 @@ storiesOf("Components", module)
         score: 1,
       }}
     />
+  ))
+  .add("ProgressBar", () => (
+    <Container>
+      <Content>
+        <ProgressBar score={0} />
+        <ProgressBar score={1} />
+        <ProgressBar score={2} />
+        <ProgressBar score={3} />
+        <ProgressBar score={4} />
+        <ProgressBar score={5} />
+      </Content>
+    </Container>
   ));
