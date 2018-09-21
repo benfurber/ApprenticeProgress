@@ -8,19 +8,19 @@ class ProgressBar extends Component {
         <View style={[styles.row, styles.Bars]}>
           <View style={styles.cellPadder} />
           <View style={styles.barBackground}>
-            <View style={[styles.bar, this.selectScoreStyle()]} />
+            <View style={[styles.bar, this._selectScoreStyle()]} />
           </View>
           <View style={styles.cellPadder} />
         </View>
 
         <View style={[styles.row, styles.rowButtons]}>
-          {this.renderLabels()}
+          {this._renderLabels()}
         </View>
       </View>
     );
   }
 
-  selectScoreStyle() {
+  _selectScoreStyle() {
     const { score } = this.props || 0;
 
     const barScoreArray = [
@@ -35,7 +35,7 @@ class ProgressBar extends Component {
     return barScoreArray[score];
   }
 
-  renderLabels() {
+  _renderLabels() {
     let labels = [];
     let label = 0;
 
