@@ -1,15 +1,12 @@
-// @flow
-
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
-type Props = { score: number }
 import { styles } from "styles";
 
-class ProgressBar extends Component<Props> {
+class ProgressBar extends Component {
   render() {
     return (
-      <View styles={styles.table}>
+      <View styles={[styles.table, this.props.style]}>
         <View style={[styles.row, styles.Bars]}>
           <View style={styles.cellPadder} />
           <View style={styles.barBackground}>
