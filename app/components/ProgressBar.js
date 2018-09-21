@@ -8,7 +8,7 @@ class ProgressBar extends Component {
         <View style={[styles.row, styles.Bars]}>
           <View style={styles.cellPadder} />
           <View style={styles.barBackground}>
-            <View style={[styles.bar, this.scoreStyle()]} />
+            <View style={[styles.bar, this.selectScoreStyle()]} />
           </View>
           <View style={styles.cellPadder} />
         </View>
@@ -43,25 +43,20 @@ class ProgressBar extends Component {
     );
   }
 
-  scoreStyle() {
+  selectScoreStyle() {
     const { score } = this.props || 0;
 
-    switch (score) {
-      case 1:
-        return styles.barScore1;
-      case 2:
-        return styles.barScore2;
-      case 3:
-        return styles.barScore3;
-      case 4:
-        return styles.barScore4;
-      case 5:
-        return styles.barScore5;
-      default:
-        return styles.barScore0;
-    };
-  };
+    const barScoreArray = [
+      styles.barScore0,
+      styles.barScore1,
+      styles.barScore2,
+      styles.barScore3,
+      styles.barScore4,
+      styles.barScore5,
+    ];
 
+    return barScoreArray[score];
+  }
 }
 
 const styles = StyleSheet.create({
