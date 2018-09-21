@@ -16,7 +16,7 @@ class GoalsList extends Component<Props> {
     return (
       <Container>
         {goalIds.map(goalId => (
-          <GoalSummary key={goalId} details={goals[goalId]} />
+          <GoalSummary key={goalId} details={goals[goalId]} navigation={this.props.navigation} />
         ))}
       </Container>
     );

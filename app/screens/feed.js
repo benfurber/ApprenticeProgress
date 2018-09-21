@@ -8,11 +8,15 @@ import { GoalsList } from "components";
 type Props = {};
 
 class Feed extends Component<Props> {
+  static navigationOptions = {
+    title: "ApprenticeProgress",
+  };
+
   render() {
     const goalsData = {
       [1]: {
         actions: ["1", "2"],
-        description: "",
+        description: "HELLO",
         score: 1,
         tag: "Team thoughtbot",
         title: "I contribute to thoughtbot being a good place to work",
@@ -56,11 +60,8 @@ class Feed extends Component<Props> {
 
     return (
       <Container>
-        <Header>
-          <H1>ApprenticeProgress</H1>
-        </Header>
         <Content>
-          <GoalsList goals={goalsData} />
+          <GoalsList goals={goalsData} navigation={this.props.navigation} />
         </Content>
       </Container>
     );

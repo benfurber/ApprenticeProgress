@@ -8,12 +8,15 @@ import type { GoalDetailsType, OnPressType } from "types";
 
 type Props = { details: GoalDetailsType, onPress?: OnPressType };
 
-class GoalSummary extends Component<Props> {
-  onPress = () => {};
+const handlePress = (navigation, details) => () => {
+  console.log("Hello");
+  navigation.navigate("Goal", {details});
+};
 
+class GoalSummary extends Component<Props> {
   render() {
-    const details = this.props.details;
-    const onPress = this.props.onPress || this.onPress;
+    const { details, navigation } = this.props;
+    const onPress = this.props.onPress || handlePress(navigation, details);
 
     const score = details.score;
     const tag = details.tag;

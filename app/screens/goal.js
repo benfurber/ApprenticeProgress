@@ -17,7 +17,8 @@ import { styles } from "styles";
 
 class Goal extends Component {
   render() {
-    const { score, tag, title, description } = this.props.details;
+    const details = this.props.navigation.getParam("details");
+    const { actions, score, tag, title, description } = details;
 
     return (
       <Container>
@@ -32,16 +33,14 @@ class Goal extends Component {
           </View>
           <View style={styles.element}>
             <H3>Actions: </H3>
-            <List>{this._renderActions()}</List>
+            <List>{this._renderActions(actions)}</List>
           </View>
         </Content>
       </Container>
     );
   }
 
-  _renderActions() {
-    const { actions } = this.props.details;
-
+  _renderActions(actions) {
     return actions.map((action, index) => (
       <ListItem key={index} style={{marginLeft: 0}}>
         <Text>{action}</Text>
