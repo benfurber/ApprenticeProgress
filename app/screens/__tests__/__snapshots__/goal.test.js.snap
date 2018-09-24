@@ -4,16 +4,18 @@ exports[`Goal has a valid snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Goal
-    details={
+    mockParams={
       Object {
-        "actions": Array [
-          "1",
-          "2",
-        ],
-        "description": "Words here about a goal",
-        "score": 4,
-        "tag": "Team thoughtbot",
-        "title": "I set my own direction",
+        "details": Object {
+          "actions": Array [
+            "1",
+            "2",
+          ],
+          "description": "Words here about a goal",
+          "score": 4,
+          "tag": "Team thoughtbot",
+          "title": "I set my own direction",
+        },
       }
     }
   />,

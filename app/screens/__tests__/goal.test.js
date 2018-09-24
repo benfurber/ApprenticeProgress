@@ -7,15 +7,17 @@ import { Goal } from "../Goal";
 
 describe("Goal", () => {
   it("has a valid snapshot", () => {
-    const details = {
-      actions: ["1", "2"],
-      description: "Words here about a goal",
-      score: 4,
-      tag: "Team thoughtbot",
-      title: "I set my own direction",
+    const mockParams = {
+      "details": {
+        actions: ["1", "2"],
+        description: "Words here about a goal",
+        score: 4,
+        tag: "Team thoughtbot",
+        title: "I set my own direction",
+      },
     };
 
-    const screen = shallow(<Goal details={details} />);
+    const screen = shallow(<Goal mockParams={mockParams} />);
 
     expect(screen).toMatchSnapshot();
   });

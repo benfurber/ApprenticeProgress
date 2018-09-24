@@ -17,7 +17,13 @@ import { styles } from "styles";
 
 class Goal extends Component {
   render() {
-    const details = this.props.navigation.getParam("details");
+    let details;
+    if (this.props.navigation === undefined) {
+      details = this.props.mockParams.details;
+    } else {
+      details = this.props.navigation.getParam("details");
+    }
+
     const { actions, score, tag, title, description } = details;
 
     return (
