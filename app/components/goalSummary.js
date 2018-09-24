@@ -9,7 +9,6 @@ import type { GoalDetailsType, OnPressType } from "types";
 type Props = { details: GoalDetailsType, onPress?: OnPressType };
 
 const handlePress = (navigation, details) => () => {
-  console.log("Hello");
   navigation.navigate("Goal", {details});
 };
 
