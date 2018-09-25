@@ -1,4 +1,5 @@
-import "react-native";
+// @flow
+
 import React from "react";
 import { shallow } from "enzyme";
 

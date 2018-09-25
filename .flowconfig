@@ -67,4 +67,4 @@ module.system.node.resolve_dirname=node_modules
 module.system.node.resolve_dirname=app
 
 [version]
-^0.80.0
+^0.81.0

@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from "react";
 import {
   Badge,
@@ -14,8 +16,11 @@ import {
 
 import { ProgressBar } from "components";
 import { styles } from "styles";
+import type { navigationType, mockParamsType } from "types";
 
-class Goal extends Component {
+type Props = {navigation?: navigationType; mockParams?: mockParamsType };
+
+class Goal extends Component<Props> {
   render() {
     let details;
     if (this.props.navigation === undefined) {

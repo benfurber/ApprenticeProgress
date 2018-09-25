@@ -4,9 +4,9 @@ import React, { Component } from "react";
 import { Container } from "native-base";
 
 import { GoalSummary } from "components";
-import type { GoalsDataType } from "types";
+import type { GoalsDataType, navigationType } from "types";
 
-type Props = { goals: GoalsDataType };
+type Props = { goals: GoalsDataType, navigation: navigationType };
 
 class GoalsList extends Component<Props> {
   render() {

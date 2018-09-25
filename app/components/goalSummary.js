@@ -4,12 +4,16 @@ import React, { Component } from "react";
 import { TouchableOpacity } from "react-native";
 import { Badge, Body, Card, CardItem, Text, H3 } from "native-base";
 
-import type { GoalDetailsType, OnPressType } from "types";
+import type { GoalDetailsType, OnPressType, navigationType } from "types";
 
-type Props = { details: GoalDetailsType, onPress?: OnPressType };
+type Props = {
+  details: GoalDetailsType,
+  onPress?: OnPressType,
+  navigation: navigationType,
+};
 
 const handlePress = (navigation, details) => () => {
-  navigation.navigate("Goal", {details});
+  navigation.navigate("Goal", { details });
 };
 
 class GoalSummary extends Component<Props> {
@@ -25,7 +29,10 @@ class GoalSummary extends Component<Props> {
       <TouchableOpacity onPress={onPress}>
         <Card>
           <CardItem header>
-            <H3>{title} ({score}/5)</H3>
+            <H3>
+              {title} ({score}
+              /5)
+            </H3>
           </CardItem>
           <CardItem>
             <Body>

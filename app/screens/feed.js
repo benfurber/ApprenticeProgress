@@ -1,11 +1,14 @@
 // @flow
 
 import React, { Component } from "react";
-import { Container, Content, Header, H1 } from "native-base";
+import { Container, Content } from "native-base";
 
 import { GoalsList } from "components";
+import type { navigationType } from "types";
 
-type Props = {};
+type Props = {
+  navigation: navigationType,
+};
 
 class Feed extends Component<Props> {
   static navigationOptions = {

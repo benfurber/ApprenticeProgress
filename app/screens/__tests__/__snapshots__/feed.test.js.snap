@@ -3,7 +3,9 @@
 exports[`Feed renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Feed />,
+  Symbol(enzyme.__unrendered__): <Feed
+    navigation={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -83,6 +85,7 @@ ShallowWrapper {
               },
             }
           }
+          navigation={[MockFunction]}
         />
       </Styled(Content)>,
       "virtual": undefined,
@@ -158,6 +161,7 @@ ShallowWrapper {
               },
             }
           }
+          navigation={[MockFunction]}
         />,
         "virtual": undefined,
       },
@@ -229,7 +233,7 @@ ShallowWrapper {
               "title": "I set my own direction",
             },
           },
-          "navigation": undefined,
+          "navigation": [MockFunction],
         },
         "ref": null,
         "rendered": null,
@@ -311,6 +315,7 @@ ShallowWrapper {
                 },
               }
             }
+            navigation={[MockFunction]}
           />
         </Styled(Content)>,
         "virtual": undefined,
@@ -386,6 +391,7 @@ ShallowWrapper {
                 },
               }
             }
+            navigation={[MockFunction]}
           />,
           "virtual": undefined,
         },
@@ -457,7 +463,7 @@ ShallowWrapper {
                 "title": "I set my own direction",
               },
             },
-            "navigation": undefined,
+            "navigation": [MockFunction],
           },
           "ref": null,
           "rendered": null,
