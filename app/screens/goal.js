@@ -18,24 +18,20 @@ import { ProgressBar } from "components";
 import { styles } from "styles";
 import type { navigationType, mockParamsType } from "types";
 
-type Props = {navigation?: navigationType; mockParams?: mockParamsType };
+type Props = { navigation: navigationType, mockParams?: mockParamsType };
 
 class Goal extends Component<Props> {
   render() {
-    let details;
-    if (this.props.navigation === undefined) {
-      details = this.props.mockParams.details;
-    } else {
-      details = this.props.navigation.getParam("details");
-    }
-
+    const details = this._getDetails();
     const { actions, score, tag, title, description } = details;
 
     return (
       <Container>
         <Header style={styles.header}>
-          <H2 styles={{padding: 20}}>{title}</H2>
-          <Badge><Text>{tag}</Text></Badge>
+          <H2 styles={{ padding: 20 }}>{title}</H2>
+          <Badge>
+            <Text>{tag}</Text>
+          </Badge>
         </Header>
         <Content style={styles.content}>
           <ProgressBar score={score} />
@@ -53,10 +49,16 @@ class Goal extends Component<Props> {
 
   _renderActions(actions) {
     return actions.map((action, index) => (
-      <ListItem key={index} style={{marginLeft: 0}}>
+      <ListItem key={index} style={{ marginLeft: 0 }}>
         <Text>{action}</Text>
       </ListItem>
     ));
+  }
+
+  _getDetails() {
+    return (
+      this.props.mockParams.details || this.props.navigation.getParam("details")
+    );
   }
 }
 

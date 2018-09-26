@@ -17,7 +17,7 @@ describe("Goal", () => {
       },
     };
 
-    const screen = shallow(<Goal mockParams={mockParams} />);
+    const screen = shallow(<Goal navigation={jest.fn()} mockParams={mockParams} />);
 
     expect(screen).toMatchSnapshot();
   });
