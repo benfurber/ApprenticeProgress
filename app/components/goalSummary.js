@@ -21,9 +21,7 @@ class GoalSummary extends Component<Props> {
     const { details, navigation } = this.props;
     const onPress = this.props.onPress || handlePress(navigation, details);
 
-    const score = details.score;
-    const tag = details.tag;
-    const title = details.title;
+    const { score, tag, title } = details;
 
     return (
       <TouchableOpacity onPress={onPress}>
