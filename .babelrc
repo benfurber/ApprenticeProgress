@@ -5,6 +5,7 @@
       {
         "alias": {
           "components": "./app/components",
+          "mocks": "./app/__mocks__",
           "screens": "./app/screens",
           "styles": "./app/styles",
           "types": "./app/types"

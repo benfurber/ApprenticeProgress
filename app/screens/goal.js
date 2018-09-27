@@ -16,13 +16,13 @@ import {
 
 import { ProgressBar } from "components";
 import { styles } from "styles";
-import type { navigationType, mockParamsType } from "types";
+import type { navigationType } from "types";
 
-type Props = { navigation: navigationType, mockParams?: mockParamsType };
+type Props = { navigation: navigationType };
 
 class Goal extends Component<Props> {
   render() {
-    const details = this._getDetails();
+    const details = this.props.navigation.getParam("details");
     const { actions, score, tag, title, description } = details;
 
     return (
@@ -53,13 +53,6 @@ class Goal extends Component<Props> {
         <Text>{action}</Text>
       </ListItem>
     ));
-  }
-
-  _getDetails() {
-    if (this.props.navigation.mockDetails) {
-      return this.props.navigation.mockDetails;
-    }
-    return this.props.navigation.getParam("details");
   }
 }
 

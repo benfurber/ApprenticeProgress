@@ -6,9 +6,17 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <GoalSummary
     details={
       Object {
+        "actions": Array [],
         "description": "Hello world",
+        "score": 0,
         "tag": "One",
         "title": "Testing title",
+      }
+    }
+    navigation={
+      Object {
+        "getParam": [Function],
+        "navigate": [MockFunction],
       }
     }
   />,
@@ -33,6 +41,7 @@ ShallowWrapper {
           <Styled(H3)>
             Testing title
              (
+            0
             /5)
           </Styled(H3)>
         </Styled(CardItem)>
@@ -61,6 +70,7 @@ ShallowWrapper {
             <Styled(H3)>
               Testing title
                (
+              0
               /5)
             </Styled(H3)>
           </Styled(CardItem)>,
@@ -86,6 +96,7 @@ ShallowWrapper {
             "children": <Styled(H3)>
               Testing title
                (
+              0
               /5)
             </Styled(H3)>,
             "header": true,
@@ -100,7 +111,7 @@ ShallowWrapper {
               "children": Array [
                 "Testing title",
                 " (",
-                undefined,
+                0,
                 "/5)",
               ],
               "virtual": undefined,
@@ -109,7 +120,7 @@ ShallowWrapper {
             "rendered": Array [
               "Testing title",
               " (",
-              undefined,
+              0,
               "/5)",
             ],
             "type": [Function],
@@ -192,6 +203,7 @@ ShallowWrapper {
             <Styled(H3)>
               Testing title
                (
+              0
               /5)
             </Styled(H3)>
           </Styled(CardItem)>
@@ -220,6 +232,7 @@ ShallowWrapper {
               <Styled(H3)>
                 Testing title
                  (
+                0
                 /5)
               </Styled(H3)>
             </Styled(CardItem)>,
@@ -245,6 +258,7 @@ ShallowWrapper {
               "children": <Styled(H3)>
                 Testing title
                  (
+                0
                 /5)
               </Styled(H3)>,
               "header": true,
@@ -259,7 +273,7 @@ ShallowWrapper {
                 "children": Array [
                   "Testing title",
                   " (",
-                  undefined,
+                  0,
                   "/5)",
                 ],
                 "virtual": undefined,
@@ -268,7 +282,7 @@ ShallowWrapper {
               "rendered": Array [
                 "Testing title",
                 " (",
-                undefined,
+                0,
                 "/5)",
               ],
               "type": [Function],

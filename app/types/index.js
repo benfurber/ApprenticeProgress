@@ -17,10 +17,12 @@ export type GoalDetailsType = {
 export type OnPressType = () => void;
 
 export type mockParamsType = {
-  details: mockParamsDetailsType,
-}
+  mockParams: {
+    details: mockParamsDetailsType,
+  },
+};
 
-type mockParamsDetailsType = {
+export type mockParamsDetailsType = {
   actions: Array<string>,
   description: string,
   score: number,
@@ -28,4 +30,7 @@ type mockParamsDetailsType = {
   title: string,
 };
 
-export type navigationType = () => any;
+export type navigationType = {
+  getParam: (string) => any,
+  navigate: (string, {}) => any,
+};

@@ -6,16 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Goal
     navigation={
       Object {
-        "mockDetails": Object {
-          "actions": Array [
-            "1",
-            "2",
-          ],
-          "description": "Words here about a goal",
-          "score": 4,
-          "tag": "Team thoughtbot",
-          "title": "I set my own direction",
-        },
+        "getParam": [Function],
+        "navigate": [MockFunction],
       }
     }
   />,

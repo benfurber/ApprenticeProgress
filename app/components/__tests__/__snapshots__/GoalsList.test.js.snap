@@ -13,6 +13,12 @@ ShallowWrapper {
         },
       }
     }
+    navigation={
+      Object {
+        "getParam": [Function],
+        "navigate": [MockFunction],
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -36,6 +42,12 @@ ShallowWrapper {
               "title": "Testing title",
             }
           }
+          navigation={
+            Object {
+              "getParam": [Function],
+              "navigate": [MockFunction],
+            }
+          }
         />,
       ],
       "virtual": undefined,
@@ -52,7 +64,10 @@ ShallowWrapper {
             "tag": "Tag",
             "title": "Testing title",
           },
-          "navigation": undefined,
+          "navigation": Object {
+            "getParam": [Function],
+            "navigate": [MockFunction],
+          },
         },
         "ref": null,
         "rendered": null,
@@ -76,6 +91,12 @@ ShallowWrapper {
                 "title": "Testing title",
               }
             }
+            navigation={
+              Object {
+                "getParam": [Function],
+                "navigate": [MockFunction],
+              }
+            }
           />,
         ],
         "virtual": undefined,
@@ -92,7 +113,10 @@ ShallowWrapper {
               "tag": "Tag",
               "title": "Testing title",
             },
-            "navigation": undefined,
+            "navigation": Object {
+              "getParam": [Function],
+              "navigate": [MockFunction],
+            },
           },
           "ref": null,
           "rendered": null,

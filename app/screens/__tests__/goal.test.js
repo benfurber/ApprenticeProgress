@@ -7,8 +7,8 @@ import { Goal } from "../Goal";
 
 describe("Goal", () => {
   it("has a valid snapshot", () => {
-    const mockParams = {
-      "mockDetails": {
+    const params = {
+      "details": {
         actions: ["1", "2"],
         description: "Words here about a goal",
         score: 4,
@@ -16,8 +16,14 @@ describe("Goal", () => {
         title: "I set my own direction",
       },
     };
+    const getParam = string => params[string];
 
-    const screen = shallow(<Goal navigation={mockParams} />);
+    const navigation = {
+      getParam,
+      navigate: jest.fn(),
+    };
+
+    const screen = shallow(<Goal navigation={navigation} />);
 
     expect(screen).toMatchSnapshot();
   });
