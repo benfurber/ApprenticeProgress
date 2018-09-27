@@ -4,9 +4,9 @@ exports[`Goal has a valid snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Goal
-    mockParams={
+    navigation={
       Object {
-        "details": Object {
+        "mockDetails": Object {
           "actions": Array [
             "1",
             "2",
@@ -18,7 +18,6 @@ ShallowWrapper {
         },
       }
     }
-    navigation={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

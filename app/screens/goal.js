@@ -56,9 +56,10 @@ class Goal extends Component<Props> {
   }
 
   _getDetails() {
-    return (
-      this.props.mockParams.details || this.props.navigation.getParam("details")
-    );
+    if (this.props.navigation.mockDetails) {
+      return this.props.navigation.mockDetails;
+    }
+    return this.props.navigation.getParam("details");
   }
 }
 
