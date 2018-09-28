@@ -21,19 +21,25 @@ import type { navigationType } from "types";
 type Props = { navigation: navigationType };
 
 class Goal extends Component<Props> {
+  static navigationOptions = () => {
+    return {
+      title: "Goal",
+    };
+  };
+
   render() {
     const details = this.props.navigation.getParam("details");
     const { actions, score, tag, title, description } = details;
 
     return (
       <Container>
-        <Header style={styles.header}>
-          <H2 styles={{ padding: 20 }}>{title}</H2>
-          <Badge>
-            <Text>{tag}</Text>
-          </Badge>
-        </Header>
         <Content style={styles.content}>
+          <View style={styles.element}>
+            <H2>{title}</H2>
+            <Badge>
+              <Text>{tag}</Text>
+            </Badge>
+          </View>
           <ProgressBar score={score} />
           <View style={styles.element}>
             <Text>{description}</Text>

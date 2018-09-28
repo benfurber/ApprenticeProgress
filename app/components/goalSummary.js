@@ -13,7 +13,7 @@ type Props = {
 };
 
 const handlePress = (navigation, details) => () => {
-  navigation.navigate("Goal", { details });
+  navigation.navigate("Goal", { details, title: details.title });
 };
 
 class GoalSummary extends Component<Props> {
