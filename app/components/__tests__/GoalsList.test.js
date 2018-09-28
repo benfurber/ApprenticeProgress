@@ -5,6 +5,8 @@ import { shallow } from "enzyme";
 
 import { GoalsList } from "../GoalsList";
 import { GoalSummary } from "../GoalSummary";
+import navigationMock from "mocks";
+
 
 describe("GoalsList", () => {
   it("has a valid snapshot", () => {
@@ -15,7 +17,7 @@ describe("GoalsList", () => {
         tag: "Tag",
       },
     };
-    const component = shallow(<GoalsList goals={goals} />);
+    const component = shallow(<GoalsList goals={goals} navigation={navigationMock} />);
 
     expect(component).toMatchSnapshot();
   });
@@ -33,7 +35,7 @@ describe("GoalsList", () => {
         tag: "Tag",
       },
     };
-    const component = shallow(<GoalsList goals={goals} />);
+    const component = shallow(<GoalsList goals={goals} navigation={navigationMock} />);
 
     expect(component.find(GoalSummary)).toHaveLength(2);
   });

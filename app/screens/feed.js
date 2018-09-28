@@ -1,18 +1,25 @@
 // @flow
 
 import React, { Component } from "react";
-import { Container, Content, Header, H1 } from "native-base";
+import { Container, Content } from "native-base";
 
 import { GoalsList } from "components";
+import type { navigationType } from "types";
 
-type Props = {};
+type Props = {
+  navigation: navigationType,
+};
 
 class Feed extends Component<Props> {
+  static navigationOptions = {
+    title: "ApprenticeProgress",
+  };
+
   render() {
     const goalsData = {
       [1]: {
         actions: ["1", "2"],
-        description: "",
+        description: "HELLO",
         score: 1,
         tag: "Team thoughtbot",
         title: "I contribute to thoughtbot being a good place to work",
@@ -56,11 +63,8 @@ class Feed extends Component<Props> {
 
     return (
       <Container>
-        <Header>
-          <H1>ApprenticeProgress</H1>
-        </Header>
         <Content>
-          <GoalsList goals={goalsData} />
+          <GoalsList goals={goalsData} navigation={this.props.navigation} />
         </Content>
       </Container>
     );

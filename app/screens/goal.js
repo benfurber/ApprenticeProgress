@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from "react";
 import {
   Badge,
@@ -14,36 +16,46 @@ import {
 
 import { ProgressBar } from "components";
 import { styles } from "styles";
+import type { navigationType } from "types";
 
-class Goal extends Component {
+type Props = { navigation: navigationType };
+
+class Goal extends Component<Props> {
+  static navigationOptions = () => {
+    return {
+      title: "Goal",
+    };
+  };
+
   render() {
-    const { score, tag, title, description } = this.props.details;
+    const details = this.props.navigation.getParam("details");
+    const { actions, score, tag, title, description } = details;
 
     return (
       <Container>
-        <Header style={styles.header}>
-          <H2 styles={{padding: 20}}>{title}</H2>
-          <Badge><Text>{tag}</Text></Badge>
-        </Header>
         <Content style={styles.content}>
+          <View style={styles.element}>
+            <H2>{title}</H2>
+            <Badge>
+              <Text>{tag}</Text>
+            </Badge>
+          </View>
           <ProgressBar score={score} />
           <View style={styles.element}>
             <Text>{description}</Text>
           </View>
           <View style={styles.element}>
             <H3>Actions: </H3>
-            <List>{this._renderActions()}</List>
+            <List>{this._renderActions(actions)}</List>
           </View>
         </Content>
       </Container>
     );
   }
 
-  _renderActions() {
-    const { actions } = this.props.details;
-
+  _renderActions(actions) {
     return actions.map((action, index) => (
-      <ListItem key={index} style={{marginLeft: 0}}>
+      <ListItem key={index} style={{ marginLeft: 0 }}>
         <Text>{action}</Text>
       </ListItem>
     ));
