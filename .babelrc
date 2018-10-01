@@ -4,6 +4,7 @@
       "module-resolver",
       {
         "alias": {
+          "appRedux": "./app/redux",
           "components": "./app/components",
           "mocks": "./app/__mocks__",
           "screens": "./app/screens",
