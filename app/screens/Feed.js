@@ -31,7 +31,7 @@ class Feed extends Component<Props> {
 }
 
 const mapStateToProps = state => {
-  return { goals: state.goals };
+  return { state };
 };
 
 const mapDispatchToProps = dispatch => ({
