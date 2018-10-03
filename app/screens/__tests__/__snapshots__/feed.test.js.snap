@@ -3,11 +3,21 @@
 exports[`Feed renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Feed
+  Symbol(enzyme.__unrendered__): <Connect(Feed)
     navigation={
       Object {
         "getParam": [Function],
         "navigate": [MockFunction],
+      }
+    }
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
       }
     }
   />,
@@ -24,168 +34,123 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(Content)>
-        <GoalsList
-          goals={
-            Object {
-              "1": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "HELLO",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I contribute to thoughtbot being a good place to work",
-              },
-              "2": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 2,
-                "tag": "Team thoughtbot",
-                "title": "I iterate over my existing knowledge effectively",
-              },
-              "3": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m a great pair programmer",
-              },
-              "4": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I help others become better ",
-              },
-              "5": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m passionate about software/products",
-              },
-              "6": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 4,
-                "tag": "Team thoughtbot",
-                "title": "I set my own direction",
-              },
-            }
-          }
-          navigation={
-            Object {
-              "getParam": [Function],
-              "navigate": [MockFunction],
-            }
-          }
-        />
-      </Styled(Content)>,
-      "virtual": undefined,
+      "goalsAction": Object {
+        "type": "goals/get",
+      },
+      "navigation": Object {
+        "getParam": [Function],
+        "navigate": [MockFunction],
+      },
+      "state": Object {
+        "goals": Object {
+          "1": Object {
+            "actions": Array [
+              "1",
+              "2",
+            ],
+            "description": "HELLO",
+            "score": 1,
+            "tag": "Team thoughtbot",
+            "title": "I contribute to thoughtbot being a good place to work",
+          },
+          "2": Object {
+            "actions": Array [
+              "1",
+              "2",
+            ],
+            "description": "",
+            "score": 2,
+            "tag": "Team thoughtbot",
+            "title": "I iterate over my existing knowledge effectively",
+          },
+          "3": Object {
+            "actions": Array [
+              "1",
+              "2",
+            ],
+            "description": "",
+            "score": 3,
+            "tag": "Team thoughtbot",
+            "title": "I’m a great pair programmer",
+          },
+          "4": Object {
+            "actions": Array [
+              "1",
+              "2",
+            ],
+            "description": "",
+            "score": 1,
+            "tag": "Team thoughtbot",
+            "title": "I help others become better ",
+          },
+          "5": Object {
+            "actions": Array [
+              "1",
+              "2",
+            ],
+            "description": "",
+            "score": 3,
+            "tag": "Team thoughtbot",
+            "title": "I’m passionate about software/products",
+          },
+          "6": Object {
+            "actions": Array [
+              "1",
+              "2",
+            ],
+            "description": "",
+            "score": 4,
+            "tag": "Team thoughtbot",
+            "title": "I set my own direction",
+          },
+        },
+      },
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "storeSubscription": Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      },
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <GoalsList
-          goals={
-            Object {
-              "1": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "HELLO",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I contribute to thoughtbot being a good place to work",
-              },
-              "2": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 2,
-                "tag": "Team thoughtbot",
-                "title": "I iterate over my existing knowledge effectively",
-              },
-              "3": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m a great pair programmer",
-              },
-              "4": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I help others become better ",
-              },
-              "5": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m passionate about software/products",
-              },
-              "6": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 4,
-                "tag": "Team thoughtbot",
-                "title": "I set my own direction",
-              },
-            }
-          }
-          navigation={
-            Object {
-              "getParam": [Function],
-              "navigate": [MockFunction],
-            }
-          }
-        />,
-        "virtual": undefined,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
+        "goalsAction": Object {
+          "type": "goals/get",
+        },
+        "navigation": Object {
+          "getParam": [Function],
+          "navigate": [MockFunction],
+        },
+        "state": Object {
           "goals": Object {
             "1": Object {
               "actions": Array [
@@ -248,260 +213,37 @@ ShallowWrapper {
               "title": "I set my own direction",
             },
           },
-          "navigation": Object {
-            "getParam": [Function],
-            "navigate": [MockFunction],
-          },
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Styled(Content)>
-          <GoalsList
-            goals={
-              Object {
-                "1": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "HELLO",
-                  "score": 1,
-                  "tag": "Team thoughtbot",
-                  "title": "I contribute to thoughtbot being a good place to work",
-                },
-                "2": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 2,
-                  "tag": "Team thoughtbot",
-                  "title": "I iterate over my existing knowledge effectively",
-                },
-                "3": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 3,
-                  "tag": "Team thoughtbot",
-                  "title": "I’m a great pair programmer",
-                },
-                "4": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 1,
-                  "tag": "Team thoughtbot",
-                  "title": "I help others become better ",
-                },
-                "5": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 3,
-                  "tag": "Team thoughtbot",
-                  "title": "I’m passionate about software/products",
-                },
-                "6": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 4,
-                  "tag": "Team thoughtbot",
-                  "title": "I set my own direction",
-                },
-              }
-            }
-            navigation={
-              Object {
-                "getParam": [Function],
-                "navigate": [MockFunction],
-              }
-            }
-          />
-        </Styled(Content)>,
-        "virtual": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "storeSubscription": Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "get": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": [Function],
+        },
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <GoalsList
-            goals={
-              Object {
-                "1": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "HELLO",
-                  "score": 1,
-                  "tag": "Team thoughtbot",
-                  "title": "I contribute to thoughtbot being a good place to work",
-                },
-                "2": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 2,
-                  "tag": "Team thoughtbot",
-                  "title": "I iterate over my existing knowledge effectively",
-                },
-                "3": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 3,
-                  "tag": "Team thoughtbot",
-                  "title": "I’m a great pair programmer",
-                },
-                "4": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 1,
-                  "tag": "Team thoughtbot",
-                  "title": "I help others become better ",
-                },
-                "5": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 3,
-                  "tag": "Team thoughtbot",
-                  "title": "I’m passionate about software/products",
-                },
-                "6": Object {
-                  "actions": Array [
-                    "1",
-                    "2",
-                  ],
-                  "description": "",
-                  "score": 4,
-                  "tag": "Team thoughtbot",
-                  "title": "I set my own direction",
-                },
-              }
-            }
-            navigation={
-              Object {
-                "getParam": [Function],
-                "navigate": [MockFunction],
-              }
-            }
-          />,
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "goals": Object {
-              "1": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "HELLO",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I contribute to thoughtbot being a good place to work",
-              },
-              "2": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 2,
-                "tag": "Team thoughtbot",
-                "title": "I iterate over my existing knowledge effectively",
-              },
-              "3": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m a great pair programmer",
-              },
-              "4": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 1,
-                "tag": "Team thoughtbot",
-                "title": "I help others become better ",
-              },
-              "5": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 3,
-                "tag": "Team thoughtbot",
-                "title": "I’m passionate about software/products",
-              },
-              "6": Object {
-                "actions": Array [
-                  "1",
-                  "2",
-                ],
-                "description": "",
-                "score": 4,
-                "tag": "Team thoughtbot",
-                "title": "I set my own direction",
-              },
-            },
-            "navigation": Object {
-              "getParam": [Function],
-              "navigate": [MockFunction],
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": [Function],
-      },
+      "rendered": null,
       "type": [Function],
     },
   ],
