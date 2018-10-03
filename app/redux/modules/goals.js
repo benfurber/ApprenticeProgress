@@ -1,16 +1,16 @@
 const GET = "goals/get";
 
-export const get = () => ({ type: GET });
+const goalsAction = () => ({ type: GET });
 
-export const INITIAL_STATE = {
-  value: "not hello",
-};
+const INITIAL_STATE = { [0]: "not hello" };
 
-export default function reducer(state = INITIAL_STATE, action) {
+const goalsReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case GET:
-      return { ...state, value: "Hello" };
+      return { ...state, [0]: "Hello" };
     default:
       return state;
   }
 };
+
+export { goalsAction, goalsReducer };

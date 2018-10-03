@@ -5,7 +5,7 @@ import { Container, Content } from "native-base";
 import { connect } from "react-redux";
 
 import { GoalsList } from "components";
-import * as goalActions from "redux-modules/goals";
+import { goalsAction } from "redux-modules/goals";
 import type { navigationType } from "types";
 
 type Props = {
@@ -73,11 +73,19 @@ class Feed extends Component<Props> {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    goals: state.goals,
+  };
+};
+
+const mapDispatchToProps = dispatch => ({
+  goalsAction: dispatch(goalsAction()),
+});
+
 const connectedFeed = connect(
-  () => ({}),
-  {
-    get: goalActions.get,
-  }
+  mapStateToProps,
+  mapDispatchToProps
 )(Feed);
 
 export { connectedFeed as Feed };
