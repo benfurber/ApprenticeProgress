@@ -1,5 +1,11 @@
-const initialState = {};
+import { combineReducers } from "redux";
 
-export default (state = initialState) => {
-  return state;
+import goalsReducer from "./goals";
+
+const appReducer = combineReducers({
+  goalsReducer,
+});
+
+export default (state, action) => {
+  return appReducer(state, action);
 };

@@ -6296,8 +6296,8 @@ nan@^2.9.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.11.0.tgz#574e360e4d954ab16966ec102c0c049fd961a099"
 
 nanoid@^1.0.7:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-1.2.5.tgz#122bcd6bf185651480369315f20c9ae1519efc35"
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-1.2.6.tgz#5b9427cabf41f5df1fc371b14c969ffcd3b095aa"
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -7945,6 +7945,10 @@ redux-devtools-instrument@^1.9.0:
   dependencies:
     lodash "^4.2.0"
     symbol-observable "^1.0.2"
+
+redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
 
 redux@^4.0.0:
   version "4.0.0"

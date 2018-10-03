@@ -2,8 +2,10 @@
 
 import React, { Component } from "react";
 import { Container, Content } from "native-base";
+import { connect } from "react-redux";
 
 import { GoalsList } from "components";
+import * as goalActions from "redux-modules/goals";
 import type { navigationType } from "types";
 
 type Props = {
@@ -71,4 +73,11 @@ class Feed extends Component<Props> {
   }
 }
 
-export { Feed };
+const connectedFeed = connect(
+  () => ({}),
+  {
+    get: goalActions.get,
+  }
+)(Feed);
+
+export { connectedFeed as Feed };
