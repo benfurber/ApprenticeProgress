@@ -32,10 +32,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#ED3E44",
   },
   developer: {
-    backgroundColor: "#EE8434",
+    backgroundColor: "#EF8D3F",
   },
   consultant: {
-    backgroundColor: "#AE8799",
+    backgroundColor: "#BE3284",
   },
 });
 
