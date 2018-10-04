@@ -38,7 +38,7 @@ class ProgressBar extends Component<Props> {
       styles.barScore5,
     ];
 
-    return barScoreArray[score];
+    return barScoreArray[Math.round(score)];
   }
 
   _renderLabels() {
