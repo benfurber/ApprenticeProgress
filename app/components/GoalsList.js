@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
-import { Container } from "native-base";
+import { Content } from "native-base";
 
 import { GoalSummary } from "components";
 import type { GoalsDataType, navigationType } from "types";
@@ -14,11 +14,11 @@ class GoalsList extends Component<Props> {
     const goalIds = Object.keys(goals);
 
     return (
-      <Container>
+      <Content>
         {goalIds.map(goalId => (
           <GoalSummary key={goalId} details={goals[goalId]} navigation={this.props.navigation} />
         ))}
-      </Container>
+      </Content>
     );
   }
 }
