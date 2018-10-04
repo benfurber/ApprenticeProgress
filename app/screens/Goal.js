@@ -9,7 +9,6 @@ import {
   ListItem,
   H2,
   H3,
-  Header,
   Text,
   View,
 } from "native-base";
