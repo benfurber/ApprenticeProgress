@@ -54,6 +54,10 @@ class Goal extends Component<Props> {
   }
 
   _renderActions(actions) {
+    if (actions.length === 0) {
+      return <Text>None (should probably add some)</Text>;
+    };
+
     return actions.map((action, index) => (
       <ListItem key={index} style={{ marginLeft: 0 }}>
         <Text>{action}</Text>
