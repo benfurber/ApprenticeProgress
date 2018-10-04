@@ -2,7 +2,6 @@
 
 import React, { Component } from "react";
 import {
-  Badge,
   Container,
   Content,
   List,
@@ -13,7 +12,7 @@ import {
   View,
 } from "native-base";
 
-import { ProgressBar } from "components";
+import { ProgressBar, Tag } from "components";
 import { styles } from "styles";
 import type { navigationType } from "types";
 
@@ -35,9 +34,7 @@ class Goal extends Component<Props> {
         <Content style={styles.content}>
           <View style={styles.element}>
             <H2>{title}</H2>
-            <Badge>
-              <Text>{tag}</Text>
-            </Badge>
+            <Tag text={tag} />
           </View>
           <ProgressBar score={score} />
           <View style={styles.element}>

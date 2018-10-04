@@ -42,11 +42,9 @@ ShallowWrapper {
           <Styled(H2)>
             I set my own direction
           </Styled(H2)>
-          <Styled(Badge)>
-            <Styled(Text)>
-              Team thoughtbot
-            </Styled(Text)>
-          </Styled(Badge)>
+          <Tag
+            text="Team thoughtbot"
+          />
         </Styled(ViewNB)>
         <ProgressBar
           score={4}
@@ -120,11 +118,9 @@ ShallowWrapper {
             <Styled(H2)>
               I set my own direction
             </Styled(H2)>
-            <Styled(Badge)>
-              <Styled(Text)>
-                Team thoughtbot
-              </Styled(Text)>
-            </Styled(Badge)>
+            <Tag
+              text="Team thoughtbot"
+            />
           </Styled(ViewNB)>,
           <ProgressBar
             score={4}
@@ -194,11 +190,9 @@ ShallowWrapper {
               <Styled(H2)>
                 I set my own direction
               </Styled(H2)>,
-              <Styled(Badge)>
-                <Styled(Text)>
-                  Team thoughtbot
-                </Styled(Text)>
-              </Styled(Badge)>,
+              <Tag
+                text="Team thoughtbot"
+              />,
             ],
             "style": Object {
               "paddingHorizontal": 30,
@@ -225,30 +219,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  undefined,
-                  <Styled(Text)>
-                    Team thoughtbot
-                  </Styled(Text)>,
-                ],
-                "virtual": undefined,
+                "text": "Team thoughtbot",
               },
               "ref": null,
-              "rendered": Array [
-                undefined,
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Team thoughtbot",
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": "Team thoughtbot",
-                  "type": [Function],
-                },
-              ],
+              "rendered": null,
               "type": [Function],
             },
           ],
@@ -472,11 +446,9 @@ ShallowWrapper {
             <Styled(H2)>
               I set my own direction
             </Styled(H2)>
-            <Styled(Badge)>
-              <Styled(Text)>
-                Team thoughtbot
-              </Styled(Text)>
-            </Styled(Badge)>
+            <Tag
+              text="Team thoughtbot"
+            />
           </Styled(ViewNB)>
           <ProgressBar
             score={4}
@@ -550,11 +522,9 @@ ShallowWrapper {
               <Styled(H2)>
                 I set my own direction
               </Styled(H2)>
-              <Styled(Badge)>
-                <Styled(Text)>
-                  Team thoughtbot
-                </Styled(Text)>
-              </Styled(Badge)>
+              <Tag
+                text="Team thoughtbot"
+              />
             </Styled(ViewNB)>,
             <ProgressBar
               score={4}
@@ -624,11 +594,9 @@ ShallowWrapper {
                 <Styled(H2)>
                   I set my own direction
                 </Styled(H2)>,
-                <Styled(Badge)>
-                  <Styled(Text)>
-                    Team thoughtbot
-                  </Styled(Text)>
-                </Styled(Badge)>,
+                <Tag
+                  text="Team thoughtbot"
+                />,
               ],
               "style": Object {
                 "paddingHorizontal": 30,
@@ -655,30 +623,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": Array [
-                    undefined,
-                    <Styled(Text)>
-                      Team thoughtbot
-                    </Styled(Text)>,
-                  ],
-                  "virtual": undefined,
+                  "text": "Team thoughtbot",
                 },
                 "ref": null,
-                "rendered": Array [
-                  undefined,
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Team thoughtbot",
-                      "virtual": undefined,
-                    },
-                    "ref": null,
-                    "rendered": "Team thoughtbot",
-                    "type": [Function],
-                  },
-                ],
+                "rendered": null,
                 "type": [Function],
               },
             ],

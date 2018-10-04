@@ -2,8 +2,9 @@
 
 import React, { Component } from "react";
 import { TouchableOpacity } from "react-native";
-import { Badge, Body, Card, CardItem, Text, H3 } from "native-base";
+import { Body, Card, CardItem, H3 } from "native-base";
 
+import { Tag } from "components";
 import type { GoalDetailsType, OnPressType, navigationType } from "types";
 
 type Props = {
@@ -34,9 +35,7 @@ class GoalSummary extends Component<Props> {
           </CardItem>
           <CardItem>
             <Body>
-              <Badge>
-                <Text>{tag}</Text>
-              </Badge>
+              <Tag text={tag} />
             </Body>
           </CardItem>
         </Card>
