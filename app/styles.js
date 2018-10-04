@@ -18,10 +18,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     ...standards.elementPadding,
   },
-  tag: {
-    backgroundColor: "green",
-  },
-    row: {
+  row: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
