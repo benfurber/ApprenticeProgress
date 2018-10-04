@@ -4,8 +4,6 @@ const GET = "goals/get";
 
 const goalsAction = () => ({ type: GET });
 
-const INITIAL_STATE = {};
-
 const goalsReducer = (state, action) => {
   switch (action.type) {
     case GET:

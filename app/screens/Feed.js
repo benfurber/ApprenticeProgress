@@ -8,10 +8,11 @@ import { GoalsList } from "components";
 import { goalsAction } from "redux-modules";
 import type { navigationType } from "types";
 
-import { goalsData } from "../data/goals";
-
 type Props = {
   navigation: navigationType,
+  state: {
+    goals: {},
+  },
 };
 
 class Feed extends Component<Props> {
@@ -20,10 +21,13 @@ class Feed extends Component<Props> {
   };
 
   render() {
+    const { navigation, state } = this.props;
+    const { goals } = state;
+
     return (
       <Container>
         <Content>
-          <GoalsList goals={goalsData} navigation={this.props.navigation} />
+          <GoalsList goals={goals} navigation={navigation} />
         </Content>
       </Container>
     );
