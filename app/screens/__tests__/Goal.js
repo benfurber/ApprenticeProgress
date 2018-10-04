@@ -9,8 +9,10 @@ describe("Goal", () => {
   it("has a valid snapshot", () => {
     const params = {
       "details": {
+        id: 1,
         actions: ["1", "2"],
         description: "Words here about a goal",
+        evidence: [],
         score: 4,
         tag: "Team thoughtbot",
         title: "I set my own direction",

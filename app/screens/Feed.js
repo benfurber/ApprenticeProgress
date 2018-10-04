@@ -30,7 +30,8 @@ class Feed extends Component<Props> {
       </Container>
     );
   }
-}
+
+};
 
 const mapStateToProps = state => {
   return { state };
