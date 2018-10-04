@@ -62,6 +62,20 @@ const styles = StyleSheet.create({
     marginBottom: 3,
     backgroundColor: "#666",
   },
+
+  highlightBox: {
+    backgroundColor: "#DBD4CB",
+    borderColor: "#5A6268",
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+  },
+
+  textDescription: {
+    color: "#3d3e44",
+    fontSize: 18,
+    fontStyle: "italic",
+    paddingBottom: 5,
+  },
 });
 
 export { styles };

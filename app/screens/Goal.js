@@ -27,7 +27,7 @@ class Goal extends Component<Props> {
 
   render() {
     const details = this.props.navigation.getParam("details");
-    const { actions, score, tag, title, description } = details;
+    const { actions, description, evidence, score, tag, title } = details;
 
     return (
       <Container>
@@ -36,25 +36,34 @@ class Goal extends Component<Props> {
             <H2>{title}</H2>
             <Tag text={tag} />
           </View>
-          <ProgressBar score={score} />
           <View style={styles.element}>
-            <Text>{description}</Text>
+            <Text style={styles.textDescription}>{description}</Text>
+          </View>
+          <View style={styles.highlightBox}>
+            <View style={styles.element}>
+              <H3>Progress: </H3>
+            </View>
+            <ProgressBar score={score} />
+            <View style={styles.element}>
+              <H3>Evidence: </H3>
+              <List>{this._renderList(evidence)}</List>
+            </View>
           </View>
           <View style={styles.element}>
             <H3>Actions: </H3>
-            <List>{this._renderActions(actions)}</List>
+            <List>{this._renderList(actions)}</List>
           </View>
         </Content>
       </Container>
     );
   }
 
-  _renderActions(actions) {
-    if (actions.length === 0) {
+  _renderList(list) {
+    if (list.length === 0) {
       return <Text>None (should probably add some)</Text>;
-    };
+    }
 
-    return actions.map((action, index) => (
+    return list.map((action, index) => (
       <ListItem key={index} style={{ marginLeft: 0 }}>
         <Text>{action}</Text>
       </ListItem>
