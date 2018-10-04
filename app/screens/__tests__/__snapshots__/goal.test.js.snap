@@ -225,24 +225,30 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <Styled(Text)>
-                  Team thoughtbot
-                </Styled(Text)>,
+                "children": Array [
+                  undefined,
+                  <Styled(Text)>
+                    Team thoughtbot
+                  </Styled(Text)>,
+                ],
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Team thoughtbot",
-                  "virtual": undefined,
+              "rendered": Array [
+                undefined,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Team thoughtbot",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Team thoughtbot",
+                  "type": [Function],
                 },
-                "ref": null,
-                "rendered": "Team thoughtbot",
-                "type": [Function],
-              },
+              ],
               "type": [Function],
             },
           ],
@@ -649,24 +655,30 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": <Styled(Text)>
-                    Team thoughtbot
-                  </Styled(Text)>,
+                  "children": Array [
+                    undefined,
+                    <Styled(Text)>
+                      Team thoughtbot
+                    </Styled(Text)>,
+                  ],
                   "virtual": undefined,
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Team thoughtbot",
-                    "virtual": undefined,
+                "rendered": Array [
+                  undefined,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Team thoughtbot",
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": "Team thoughtbot",
+                    "type": [Function],
                   },
-                  "ref": null,
-                  "rendered": "Team thoughtbot",
-                  "type": [Function],
-                },
+                ],
                 "type": [Function],
               },
             ],
