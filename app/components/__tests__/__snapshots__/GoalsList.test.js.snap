@@ -8,7 +8,8 @@ ShallowWrapper {
       Object {
         "1": Object {
           "description": "Hello world 1",
-          "tag": "Tag",
+          "id": 1,
+          "tag": "I'm team thoughtbot",
           "title": "Testing title",
         },
       }
@@ -38,7 +39,8 @@ ShallowWrapper {
           details={
             Object {
               "description": "Hello world 1",
-              "tag": "Tag",
+              "id": 1,
+              "tag": "I'm team thoughtbot",
               "title": "Testing title",
             }
           }
@@ -61,7 +63,8 @@ ShallowWrapper {
         "props": Object {
           "details": Object {
             "description": "Hello world 1",
-            "tag": "Tag",
+            "id": 1,
+            "tag": "I'm team thoughtbot",
             "title": "Testing title",
           },
           "navigation": Object {
@@ -87,7 +90,8 @@ ShallowWrapper {
             details={
               Object {
                 "description": "Hello world 1",
-                "tag": "Tag",
+                "id": 1,
+                "tag": "I'm team thoughtbot",
                 "title": "Testing title",
               }
             }
@@ -110,7 +114,8 @@ ShallowWrapper {
           "props": Object {
             "details": Object {
               "description": "Hello world 1",
-              "tag": "Tag",
+              "id": 1,
+              "tag": "I'm team thoughtbot",
               "title": "Testing title",
             },
             "navigation": Object {
