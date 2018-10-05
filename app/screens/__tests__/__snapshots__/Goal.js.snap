@@ -42,15 +42,10 @@ ShallowWrapper {
           <Styled(H2)>
             I set my own direction
           </Styled(H2)>
-          <Styled(Badge)>
-            <Styled(Text)>
-              Team thoughtbot
-            </Styled(Text)>
-          </Styled(Badge)>
+          <Tag
+            text="Team thoughtbot"
+          />
         </Styled(ViewNB)>
-        <ProgressBar
-          score={4}
-        />
         <Styled(ViewNB)
           style={
             Object {
@@ -59,9 +54,61 @@ ShallowWrapper {
             }
           }
         >
-          <Styled(Text)>
+          <Styled(Text)
+            style={
+              Object {
+                "color": "#3d3e44",
+                "fontSize": 18,
+                "fontStyle": "italic",
+                "paddingBottom": 5,
+              }
+            }
+          >
             Words here about a goal
           </Styled(Text)>
+        </Styled(ViewNB)>
+        <Styled(ViewNB)
+          style={
+            Object {
+              "backgroundColor": "#DBD4CB",
+              "borderBottomWidth": 2,
+              "borderColor": "#5A6268",
+              "borderTopWidth": 2,
+            }
+          }
+        >
+          <Styled(ViewNB)
+            style={
+              Object {
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
+              }
+            }
+          >
+            <Styled(H3)>
+              Progress: 
+            </Styled(H3)>
+          </Styled(ViewNB)>
+          <ProgressBar
+            score={4}
+          />
+          <Styled(ViewNB)
+            style={
+              Object {
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
+              }
+            }
+          >
+            <Styled(H3)>
+              Evidence: 
+            </Styled(H3)>
+            <Styled(List)>
+              <Styled(Text)>
+                None (should probably add some)
+              </Styled(Text)>
+            </Styled(List)>
+          </Styled(ViewNB)>
         </Styled(ViewNB)>
         <Styled(ViewNB)
           style={
@@ -120,15 +167,10 @@ ShallowWrapper {
             <Styled(H2)>
               I set my own direction
             </Styled(H2)>
-            <Styled(Badge)>
-              <Styled(Text)>
-                Team thoughtbot
-              </Styled(Text)>
-            </Styled(Badge)>
+            <Tag
+              text="Team thoughtbot"
+            />
           </Styled(ViewNB)>,
-          <ProgressBar
-            score={4}
-          />,
           <Styled(ViewNB)
             style={
               Object {
@@ -137,9 +179,61 @@ ShallowWrapper {
               }
             }
           >
-            <Styled(Text)>
+            <Styled(Text)
+              style={
+                Object {
+                  "color": "#3d3e44",
+                  "fontSize": 18,
+                  "fontStyle": "italic",
+                  "paddingBottom": 5,
+                }
+              }
+            >
               Words here about a goal
             </Styled(Text)>
+          </Styled(ViewNB)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "backgroundColor": "#DBD4CB",
+                "borderBottomWidth": 2,
+                "borderColor": "#5A6268",
+                "borderTopWidth": 2,
+              }
+            }
+          >
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Styled(H3)>
+                Progress: 
+              </Styled(H3)>
+            </Styled(ViewNB)>
+            <ProgressBar
+              score={4}
+            />
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Styled(H3)>
+                Evidence: 
+              </Styled(H3)>
+              <Styled(List)>
+                <Styled(Text)>
+                  None (should probably add some)
+                </Styled(Text)>
+              </Styled(List)>
+            </Styled(ViewNB)>
           </Styled(ViewNB)>,
           <Styled(ViewNB)
             style={
@@ -194,11 +288,9 @@ ShallowWrapper {
               <Styled(H2)>
                 I set my own direction
               </Styled(H2)>,
-              <Styled(Badge)>
-                <Styled(Text)>
-                  Team thoughtbot
-                </Styled(Text)>
-              </Styled(Badge)>,
+              <Tag
+                text="Team thoughtbot"
+              />,
             ],
             "style": Object {
               "paddingHorizontal": 30,
@@ -225,24 +317,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <Styled(Text)>
-                  Team thoughtbot
-                </Styled(Text)>,
-                "virtual": undefined,
+                "text": "Team thoughtbot",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Team thoughtbot",
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "Team thoughtbot",
-                "type": [Function],
-              },
+              "rendered": null,
               "type": [Function],
             },
           ],
@@ -253,18 +331,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "score": 4,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Styled(Text)>
+            "children": <Styled(Text)
+              style={
+                Object {
+                  "color": "#3d3e44",
+                  "fontSize": 18,
+                  "fontStyle": "italic",
+                  "paddingBottom": 5,
+                }
+              }
+            >
               Words here about a goal
             </Styled(Text)>,
             "style": Object {
@@ -280,12 +356,173 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Words here about a goal",
+              "style": Object {
+                "color": "#3d3e44",
+                "fontSize": 18,
+                "fontStyle": "italic",
+                "paddingBottom": 5,
+              },
               "virtual": undefined,
             },
             "ref": null,
             "rendered": "Words here about a goal",
             "type": [Function],
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "paddingHorizontal": 30,
+                    "paddingVertical": 10,
+                  }
+                }
+              >
+                <Styled(H3)>
+                  Progress: 
+                </Styled(H3)>
+              </Styled(ViewNB)>,
+              <ProgressBar
+                score={4}
+              />,
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "paddingHorizontal": 30,
+                    "paddingVertical": 10,
+                  }
+                }
+              >
+                <Styled(H3)>
+                  Evidence: 
+                </Styled(H3)>
+                <Styled(List)>
+                  <Styled(Text)>
+                    None (should probably add some)
+                  </Styled(Text)>
+                </Styled(List)>
+              </Styled(ViewNB)>,
+            ],
+            "style": Object {
+              "backgroundColor": "#DBD4CB",
+              "borderBottomWidth": 2,
+              "borderColor": "#5A6268",
+              "borderTopWidth": 2,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(H3)>
+                  Progress: 
+                </Styled(H3)>,
+                "style": Object {
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Progress: ",
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "Progress: ",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "score": 4,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Styled(H3)>
+                    Evidence: 
+                  </Styled(H3)>,
+                  <Styled(List)>
+                    <Styled(Text)>
+                      None (should probably add some)
+                    </Styled(Text)>
+                  </Styled(List)>,
+                ],
+                "style": Object {
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Evidence: ",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Evidence: ",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Styled(Text)>
+                      None (should probably add some)
+                    </Styled(Text)>,
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "None (should probably add some)",
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": "None (should probably add some)",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -466,15 +703,10 @@ ShallowWrapper {
             <Styled(H2)>
               I set my own direction
             </Styled(H2)>
-            <Styled(Badge)>
-              <Styled(Text)>
-                Team thoughtbot
-              </Styled(Text)>
-            </Styled(Badge)>
+            <Tag
+              text="Team thoughtbot"
+            />
           </Styled(ViewNB)>
-          <ProgressBar
-            score={4}
-          />
           <Styled(ViewNB)
             style={
               Object {
@@ -483,9 +715,61 @@ ShallowWrapper {
               }
             }
           >
-            <Styled(Text)>
+            <Styled(Text)
+              style={
+                Object {
+                  "color": "#3d3e44",
+                  "fontSize": 18,
+                  "fontStyle": "italic",
+                  "paddingBottom": 5,
+                }
+              }
+            >
               Words here about a goal
             </Styled(Text)>
+          </Styled(ViewNB)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "backgroundColor": "#DBD4CB",
+                "borderBottomWidth": 2,
+                "borderColor": "#5A6268",
+                "borderTopWidth": 2,
+              }
+            }
+          >
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Styled(H3)>
+                Progress: 
+              </Styled(H3)>
+            </Styled(ViewNB)>
+            <ProgressBar
+              score={4}
+            />
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Styled(H3)>
+                Evidence: 
+              </Styled(H3)>
+              <Styled(List)>
+                <Styled(Text)>
+                  None (should probably add some)
+                </Styled(Text)>
+              </Styled(List)>
+            </Styled(ViewNB)>
           </Styled(ViewNB)>
           <Styled(ViewNB)
             style={
@@ -544,15 +828,10 @@ ShallowWrapper {
               <Styled(H2)>
                 I set my own direction
               </Styled(H2)>
-              <Styled(Badge)>
-                <Styled(Text)>
-                  Team thoughtbot
-                </Styled(Text)>
-              </Styled(Badge)>
+              <Tag
+                text="Team thoughtbot"
+              />
             </Styled(ViewNB)>,
-            <ProgressBar
-              score={4}
-            />,
             <Styled(ViewNB)
               style={
                 Object {
@@ -561,9 +840,61 @@ ShallowWrapper {
                 }
               }
             >
-              <Styled(Text)>
+              <Styled(Text)
+                style={
+                  Object {
+                    "color": "#3d3e44",
+                    "fontSize": 18,
+                    "fontStyle": "italic",
+                    "paddingBottom": 5,
+                  }
+                }
+              >
                 Words here about a goal
               </Styled(Text)>
+            </Styled(ViewNB)>,
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "backgroundColor": "#DBD4CB",
+                  "borderBottomWidth": 2,
+                  "borderColor": "#5A6268",
+                  "borderTopWidth": 2,
+                }
+              }
+            >
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "paddingHorizontal": 30,
+                    "paddingVertical": 10,
+                  }
+                }
+              >
+                <Styled(H3)>
+                  Progress: 
+                </Styled(H3)>
+              </Styled(ViewNB)>
+              <ProgressBar
+                score={4}
+              />
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "paddingHorizontal": 30,
+                    "paddingVertical": 10,
+                  }
+                }
+              >
+                <Styled(H3)>
+                  Evidence: 
+                </Styled(H3)>
+                <Styled(List)>
+                  <Styled(Text)>
+                    None (should probably add some)
+                  </Styled(Text)>
+                </Styled(List)>
+              </Styled(ViewNB)>
             </Styled(ViewNB)>,
             <Styled(ViewNB)
               style={
@@ -618,11 +949,9 @@ ShallowWrapper {
                 <Styled(H2)>
                   I set my own direction
                 </Styled(H2)>,
-                <Styled(Badge)>
-                  <Styled(Text)>
-                    Team thoughtbot
-                  </Styled(Text)>
-                </Styled(Badge)>,
+                <Tag
+                  text="Team thoughtbot"
+                />,
               ],
               "style": Object {
                 "paddingHorizontal": 30,
@@ -649,24 +978,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": <Styled(Text)>
-                    Team thoughtbot
-                  </Styled(Text)>,
-                  "virtual": undefined,
+                  "text": "Team thoughtbot",
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Team thoughtbot",
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": "Team thoughtbot",
-                  "type": [Function],
-                },
+                "rendered": null,
                 "type": [Function],
               },
             ],
@@ -677,18 +992,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "score": 4,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)>
+              "children": <Styled(Text)
+                style={
+                  Object {
+                    "color": "#3d3e44",
+                    "fontSize": 18,
+                    "fontStyle": "italic",
+                    "paddingBottom": 5,
+                  }
+                }
+              >
                 Words here about a goal
               </Styled(Text)>,
               "style": Object {
@@ -704,12 +1017,173 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": "Words here about a goal",
+                "style": Object {
+                  "color": "#3d3e44",
+                  "fontSize": 18,
+                  "fontStyle": "italic",
+                  "paddingBottom": 5,
+                },
                 "virtual": undefined,
               },
               "ref": null,
               "rendered": "Words here about a goal",
               "type": [Function],
             },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Styled(ViewNB)
+                  style={
+                    Object {
+                      "paddingHorizontal": 30,
+                      "paddingVertical": 10,
+                    }
+                  }
+                >
+                  <Styled(H3)>
+                    Progress: 
+                  </Styled(H3)>
+                </Styled(ViewNB)>,
+                <ProgressBar
+                  score={4}
+                />,
+                <Styled(ViewNB)
+                  style={
+                    Object {
+                      "paddingHorizontal": 30,
+                      "paddingVertical": 10,
+                    }
+                  }
+                >
+                  <Styled(H3)>
+                    Evidence: 
+                  </Styled(H3)>
+                  <Styled(List)>
+                    <Styled(Text)>
+                      None (should probably add some)
+                    </Styled(Text)>
+                  </Styled(List)>
+                </Styled(ViewNB)>,
+              ],
+              "style": Object {
+                "backgroundColor": "#DBD4CB",
+                "borderBottomWidth": 2,
+                "borderColor": "#5A6268",
+                "borderTopWidth": 2,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Styled(H3)>
+                    Progress: 
+                  </Styled(H3)>,
+                  "style": Object {
+                    "paddingHorizontal": 30,
+                    "paddingVertical": 10,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Progress: ",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Progress: ",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "score": 4,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Styled(H3)>
+                      Evidence: 
+                    </Styled(H3)>,
+                    <Styled(List)>
+                      <Styled(Text)>
+                        None (should probably add some)
+                      </Styled(Text)>
+                    </Styled(List)>,
+                  ],
+                  "style": Object {
+                    "paddingHorizontal": 30,
+                    "paddingVertical": 10,
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Evidence: ",
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": "Evidence: ",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Styled(Text)>
+                        None (should probably add some)
+                      </Styled(Text)>,
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "None (should probably add some)",
+                        "virtual": undefined,
+                      },
+                      "ref": null,
+                      "rendered": "None (should probably add some)",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           Object {

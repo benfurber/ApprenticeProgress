@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
-import { Container, Content } from "native-base";
+import { Container } from "native-base";
 import { connect } from "react-redux";
 
 import { GoalsList } from "components";
@@ -26,13 +26,12 @@ class Feed extends Component<Props> {
 
     return (
       <Container>
-        <Content>
-          <GoalsList goals={goals} navigation={navigation} />
-        </Content>
+        <GoalsList goals={goals} navigation={navigation} />
       </Container>
     );
   }
-}
+
+};
 
 const mapStateToProps = state => {
   return { state };

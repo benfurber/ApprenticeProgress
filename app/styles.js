@@ -18,10 +18,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     ...standards.elementPadding,
   },
-  tag: {
-    backgroundColor: "green",
-  },
-    row: {
+  row: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
@@ -64,6 +61,20 @@ const styles = StyleSheet.create({
     width: 1,
     marginBottom: 3,
     backgroundColor: "#666",
+  },
+
+  highlightBox: {
+    backgroundColor: "#DBD4CB",
+    borderColor: "#5A6268",
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+  },
+
+  textDescription: {
+    color: "#3d3e44",
+    fontSize: 18,
+    fontStyle: "italic",
+    paddingBottom: 5,
   },
 });
 

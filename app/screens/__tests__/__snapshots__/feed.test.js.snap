@@ -52,6 +52,7 @@ ShallowWrapper {
             "evidence": Array [
               "Sorting snacks, etc. for office.",
             ],
+            "id": 1,
             "score": 4,
             "tag": "Team thoughtbot",
             "title": "I contribute to thoughtbot being a good place to work",
@@ -62,6 +63,7 @@ ShallowWrapper {
             "evidence": Array [
               "Can explain the basics to non-developers",
             ],
+            "id": 10,
             "score": 3,
             "tag": "I'm a developer",
             "title": "I understand how React Native works",
@@ -75,6 +77,7 @@ ShallowWrapper {
             "evidence": Array [
               "",
             ],
+            "id": 11,
             "score": 3,
             "tag": "I'm a developer",
             "title": "I understand how the web/databases works",
@@ -87,6 +90,7 @@ ShallowWrapper {
             "evidence": Array [
               "Good day-to-day communication with first client",
             ],
+            "id": 12,
             "score": 3,
             "tag": "I'm a consultant",
             "title": "I communicate clearly with clients",
@@ -99,6 +103,7 @@ ShallowWrapper {
             "evidence": Array [
               "Could give boilerplate thoughtbot explanation",
             ],
+            "id": 13,
             "score": 2,
             "tag": "I'm a consultant",
             "title": "I can clearly explain to others where/when thoughtbot can add value",
@@ -109,6 +114,7 @@ ShallowWrapper {
             "evidence": Array [
               "Have shown eye for detail in commits, communication and meetings",
             ],
+            "id": 14,
             "score": 3,
             "tag": "I'm a consultant",
             "title": "I understand how technical/design decisions will impact clients",
@@ -119,6 +125,7 @@ ShallowWrapper {
             "evidence": Array [
               "First client continue to be happy with output",
             ],
+            "id": 15,
             "score": 0,
             "tag": "I'm a consultant",
             "title": "My teams build software clients’ love",
@@ -133,6 +140,7 @@ ShallowWrapper {
             "evidence": Array [
               "Completed a 5 point story with only gentle support.",
             ],
+            "id": 2,
             "score": 3,
             "tag": "Team thoughtbot",
             "title": "I iterate over my existing knowledge effectively",
@@ -143,6 +151,7 @@ ShallowWrapper {
             "evidence": Array [
               "Refreshing the pairing programming skills of pairs",
             ],
+            "id": 3,
             "score": 4,
             "tag": "Team thoughtbot",
             "title": "I’m a great pair programmer",
@@ -155,6 +164,7 @@ ShallowWrapper {
             "evidence": Array [
               "Refreshing the pairing programming skills of pairs",
             ],
+            "id": 4,
             "score": 2,
             "tag": "Team thoughtbot",
             "title": "I help others become better",
@@ -169,6 +179,7 @@ ShallowWrapper {
               "Eye for detail",
               "Wanting to make products better (not just story minimum)",
             ],
+            "id": 5,
             "score": 3,
             "tag": "Team thoughtbot",
             "title": "I’m passionate about software/products",
@@ -179,6 +190,7 @@ ShallowWrapper {
             "evidence": Array [
               "",
             ],
+            "id": 6,
             "score": 4,
             "tag": "Team thoughtbot",
             "title": "I set my own direction",
@@ -192,6 +204,7 @@ ShallowWrapper {
               "Can explain difference and value of different types of components.",
               "Came up with the idea of the internal link component",
             ],
+            "id": 7,
             "score": 2.5,
             "tag": "I'm a developer",
             "title": "I can write high quality code for React Native",
@@ -205,6 +218,7 @@ ShallowWrapper {
             "evidence": Array [
               "Over initial hurdle of basics",
             ],
+            "id": 8,
             "score": 2.5,
             "tag": "I'm a developer",
             "title": "I can write high quality test suites for React Native",
@@ -218,6 +232,7 @@ ShallowWrapper {
             "evidence": Array [
               "Completed a few screens/components",
             ],
+            "id": 9,
             "score": 2.5,
             "tag": "I'm a developer",
             "title": "I can build apps in React Native",
@@ -280,6 +295,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Sorting snacks, etc. for office.",
               ],
+              "id": 1,
               "score": 4,
               "tag": "Team thoughtbot",
               "title": "I contribute to thoughtbot being a good place to work",
@@ -290,6 +306,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Can explain the basics to non-developers",
               ],
+              "id": 10,
               "score": 3,
               "tag": "I'm a developer",
               "title": "I understand how React Native works",
@@ -303,6 +320,7 @@ ShallowWrapper {
               "evidence": Array [
                 "",
               ],
+              "id": 11,
               "score": 3,
               "tag": "I'm a developer",
               "title": "I understand how the web/databases works",
@@ -315,6 +333,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Good day-to-day communication with first client",
               ],
+              "id": 12,
               "score": 3,
               "tag": "I'm a consultant",
               "title": "I communicate clearly with clients",
@@ -327,6 +346,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Could give boilerplate thoughtbot explanation",
               ],
+              "id": 13,
               "score": 2,
               "tag": "I'm a consultant",
               "title": "I can clearly explain to others where/when thoughtbot can add value",
@@ -337,6 +357,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Have shown eye for detail in commits, communication and meetings",
               ],
+              "id": 14,
               "score": 3,
               "tag": "I'm a consultant",
               "title": "I understand how technical/design decisions will impact clients",
@@ -347,6 +368,7 @@ ShallowWrapper {
               "evidence": Array [
                 "First client continue to be happy with output",
               ],
+              "id": 15,
               "score": 0,
               "tag": "I'm a consultant",
               "title": "My teams build software clients’ love",
@@ -361,6 +383,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Completed a 5 point story with only gentle support.",
               ],
+              "id": 2,
               "score": 3,
               "tag": "Team thoughtbot",
               "title": "I iterate over my existing knowledge effectively",
@@ -371,6 +394,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Refreshing the pairing programming skills of pairs",
               ],
+              "id": 3,
               "score": 4,
               "tag": "Team thoughtbot",
               "title": "I’m a great pair programmer",
@@ -383,6 +407,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Refreshing the pairing programming skills of pairs",
               ],
+              "id": 4,
               "score": 2,
               "tag": "Team thoughtbot",
               "title": "I help others become better",
@@ -397,6 +422,7 @@ ShallowWrapper {
                 "Eye for detail",
                 "Wanting to make products better (not just story minimum)",
               ],
+              "id": 5,
               "score": 3,
               "tag": "Team thoughtbot",
               "title": "I’m passionate about software/products",
@@ -407,6 +433,7 @@ ShallowWrapper {
               "evidence": Array [
                 "",
               ],
+              "id": 6,
               "score": 4,
               "tag": "Team thoughtbot",
               "title": "I set my own direction",
@@ -420,6 +447,7 @@ ShallowWrapper {
                 "Can explain difference and value of different types of components.",
                 "Came up with the idea of the internal link component",
               ],
+              "id": 7,
               "score": 2.5,
               "tag": "I'm a developer",
               "title": "I can write high quality code for React Native",
@@ -433,6 +461,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Over initial hurdle of basics",
               ],
+              "id": 8,
               "score": 2.5,
               "tag": "I'm a developer",
               "title": "I can write high quality test suites for React Native",
@@ -446,6 +475,7 @@ ShallowWrapper {
               "evidence": Array [
                 "Completed a few screens/components",
               ],
+              "id": 9,
               "score": 2.5,
               "tag": "I'm a developer",
               "title": "I can build apps in React Native",

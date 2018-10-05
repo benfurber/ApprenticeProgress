@@ -10,7 +10,8 @@
           "redux-store": "./app/redux/store",
           "screens": "./app/screens",
           "styles": "./app/styles",
-          "types": "./app/types"
+          "types": "./app/types",
+          "utils": "./app/utils"
         }
       }
     ]

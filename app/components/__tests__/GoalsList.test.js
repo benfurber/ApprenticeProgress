@@ -12,9 +12,10 @@ describe("GoalsList", () => {
   it("has a valid snapshot", () => {
     const goals = {
       [1]: {
+        id: 1,
         description: "Hello world 1",
         title: "Testing title",
-        tag: "Tag",
+        tag: "I'm team thoughtbot",
       },
     };
     const component = shallow(<GoalsList goals={goals} navigation={navigationMock} />);
@@ -25,14 +26,16 @@ describe("GoalsList", () => {
   it("renders the right number of GoalSummaries", () => {
     const goals = {
       [1]: {
+        id: 1,
         description: "Hello world 1",
-        title: "Testing title",
-        tag: "Tag",
+        title: "B - Testing title",
+        tag: "I'm team thoughtbot",
       },
       [2]: {
+        id: 2,
         description: "Hello world 2",
-        title: "Testing title",
-        tag: "Tag",
+        title: "A - Testing title",
+        tag: "I'm a developer",
       },
     };
     const component = shallow(<GoalsList goals={goals} navigation={navigationMock} />);
