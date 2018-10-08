@@ -1,5 +1,5 @@
-const goalsData = {
-  [1]: {
+const goalsData = [
+  {
     id: 1,
     actions: [
       "Help make the office a great place to work",
@@ -11,7 +11,7 @@ const goalsData = {
     tag: "Team thoughtbot",
     title: "I contribute to thoughtbot being a good place to work",
   },
-  [2]: {
+  {
     id: 2,
     actions: [
       "Continue to learn React Native",
@@ -24,7 +24,7 @@ const goalsData = {
     tag: "Team thoughtbot",
     title: "I iterate over my existing knowledge effectively",
   },
-  [3]: {
+  {
     id: 3,
     actions: [],
     description: "Collaborating with colleagues is essential to innovation.",
@@ -33,7 +33,7 @@ const goalsData = {
     tag: "Team thoughtbot",
     title: "I’m a great pair programmer",
   },
-  [4]: {
+  {
     id: 4,
     actions: ["Run workshop for team to discuss effective pairing methods"],
     description: "Everyone in thoughtbot helps each other learn and grow",
@@ -42,7 +42,7 @@ const goalsData = {
     tag: "Team thoughtbot",
     title: "I help others become better",
   },
-  [5]: {
+  {
     id: 5,
     actions: ["1", "2"],
     description: "",
@@ -54,7 +54,7 @@ const goalsData = {
     tag: "Team thoughtbot",
     title: "I’m passionate about software/products",
   },
-  [6]: {
+  {
     id: 6,
     actions: [],
     description: "Self management requires that you can motivate yourself to do better.",
@@ -63,7 +63,7 @@ const goalsData = {
     tag: "Team thoughtbot",
     title: "I set my own direction",
   },
-  [7]: {
+  {
     id: 7,
     actions: ["Implement redux"],
     description: "Code is object orientated, easy to read/understand and easy to change.",
@@ -75,7 +75,7 @@ const goalsData = {
     tag: "I'm a developer",
     title: "I can write high quality code for React Native",
   },
-  [8]: {
+  {
     id: 8,
     actions: [
       "Continue to write more complex tests",
@@ -87,7 +87,7 @@ const goalsData = {
     tag: "I'm a developer",
     title: "I can write high quality test suites for React Native",
   },
-  [9]: {
+  {
     id: 9,
     actions: [
       "Contribute to client projects",
@@ -99,7 +99,7 @@ const goalsData = {
     tag: "I'm a developer",
     title: "I can build apps in React Native",
   },
-  [10]: {
+  {
     id: 10,
     actions: [],
     description: "",
@@ -108,7 +108,7 @@ const goalsData = {
     tag: "I'm a developer",
     title: "I understand how React Native works",
   },
-  [11]: {
+  {
     id: 11,
     actions: [
       "Build an API",
@@ -120,7 +120,7 @@ const goalsData = {
     tag: "I'm a developer",
     title: "I understand how the web/databases works",
   },
-  [12]: {
+  {
     id: 12,
     actions: ["Example of difficult conversations"],
     description: "Central to how thoughtbot work.",
@@ -129,7 +129,7 @@ const goalsData = {
     tag: "I'm a consultant",
     title: "I communicate clearly with clients",
   },
-  [13]: {
+  {
     id: 13,
     actions: ["Participate in a sales meeting"],
     description: "All thoughtbot staff contribute to the sales process.",
@@ -138,7 +138,7 @@ const goalsData = {
     tag: "I'm a consultant",
     title: "I can clearly explain to others where/when thoughtbot can add value",
   },
-  [14]: {
+  {
     id: 14,
     actions: [],
     description: "All thoughtbot developers aspire to be CTOs for clients.",
@@ -149,7 +149,7 @@ const goalsData = {
     tag: "I'm a consultant",
     title: "I understand how technical/design decisions will impact clients",
   },
-  [15]: {
+  {
     id: 15,
     actions: [],
     description: "thoughtbot build software clients and users want.",
@@ -158,6 +158,6 @@ const goalsData = {
     tag: "I'm a consultant",
     title: "My teams build software clients’ love",
   },
-};
+];
 
 export { goalsData };

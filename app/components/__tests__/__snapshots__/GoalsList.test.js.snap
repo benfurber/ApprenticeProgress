@@ -5,14 +5,14 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <GoalsList
     goals={
-      Object {
-        "1": Object {
+      Array [
+        Object {
           "description": "Hello world 1",
           "id": 1,
           "tag": "I'm team thoughtbot",
           "title": "Testing title",
         },
-      }
+      ]
     }
     navigation={
       Object {
