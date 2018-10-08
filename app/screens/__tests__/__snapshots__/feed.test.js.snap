@@ -3,45 +3,15 @@
 exports[`Feed renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Feed)
+  Symbol(enzyme.__unrendered__): <Feed
     navigation={
       Object {
         "getParam": [Function],
         "navigate": [MockFunction],
       }
     }
-    store={
+    state={
       Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "goalsAction": Object {
-        "type": "goals/get",
-      },
-      "navigation": Object {
-        "getParam": [Function],
-        "navigate": [MockFunction],
-      },
-      "state": Object {
         "goals": Array [
           Object {
             "actions": Array [
@@ -238,37 +208,441 @@ ShallowWrapper {
             "title": "My teams build software clients’ love",
           },
         ],
-      },
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-      "storeSubscription": Subscription {
-        "listeners": Object {
-          "clear": [Function],
-          "get": [Function],
-          "notify": [Function],
-          "subscribe": [Function],
-        },
-        "onStateChange": [Function],
-        "parentSub": undefined,
-        "store": Object {
-          "clearActions": [Function],
-          "dispatch": [Function],
-          "getActions": [Function],
-          "getState": [Function],
-          "replaceReducer": [Function],
-          "subscribe": [Function],
-        },
-        "unsubscribe": [Function],
-      },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <GoalsList
+        goals={
+          Array [
+            Object {
+              "actions": Array [
+                "Help make the office a great place to work",
+                "Pick up tasks others normally do when appropriate",
+              ],
+              "description": "thoughtbot must be a great place to work for all staff.",
+              "evidence": Array [
+                "Sorting snacks, etc. for office.",
+              ],
+              "id": 1,
+              "score": 4,
+              "tag": "Team thoughtbot",
+              "title": "I contribute to thoughtbot being a good place to work",
+            },
+            Object {
+              "actions": Array [
+                "Continue to learn React Native",
+                "Pick up client projects quickly",
+                "Solve own bugs/technical challenges without needing support",
+              ],
+              "description": "I can support my own learning.",
+              "evidence": Array [
+                "Completed a 5 point story with only gentle support.",
+              ],
+              "id": 2,
+              "score": 3,
+              "tag": "Team thoughtbot",
+              "title": "I iterate over my existing knowledge effectively",
+            },
+            Object {
+              "actions": Array [],
+              "description": "Collaborating with colleagues is essential to innovation.",
+              "evidence": Array [
+                "Refreshing the pairing programming skills of pairs",
+              ],
+              "id": 3,
+              "score": 4,
+              "tag": "Team thoughtbot",
+              "title": "I’m a great pair programmer",
+            },
+            Object {
+              "actions": Array [
+                "Run workshop for team to discuss effective pairing methods",
+              ],
+              "description": "Everyone in thoughtbot helps each other learn and grow",
+              "evidence": Array [
+                "Refreshing the pairing programming skills of pairs",
+              ],
+              "id": 4,
+              "score": 2,
+              "tag": "Team thoughtbot",
+              "title": "I help others become better",
+            },
+            Object {
+              "actions": Array [
+                "1",
+                "2",
+              ],
+              "description": "",
+              "evidence": Array [
+                "Eye for detail",
+                "Wanting to make products better (not just story minimum)",
+              ],
+              "id": 5,
+              "score": 3,
+              "tag": "Team thoughtbot",
+              "title": "I’m passionate about software/products",
+            },
+            Object {
+              "actions": Array [],
+              "description": "Self management requires that you can motivate yourself to do better.",
+              "evidence": Array [
+                "",
+              ],
+              "id": 6,
+              "score": 4,
+              "tag": "Team thoughtbot",
+              "title": "I set my own direction",
+            },
+            Object {
+              "actions": Array [
+                "Implement redux",
+              ],
+              "description": "Code is object orientated, easy to read/understand and easy to change.",
+              "evidence": Array [
+                "Can explain difference and value of different types of components.",
+                "Came up with the idea of the internal link component",
+              ],
+              "id": 7,
+              "score": 2.5,
+              "tag": "I'm a developer",
+              "title": "I can write high quality code for React Native",
+            },
+            Object {
+              "actions": Array [
+                "Continue to write more complex tests",
+                "Write unit tests for redux",
+              ],
+              "description": "Test driven development is central to how thoughtbot work.",
+              "evidence": Array [
+                "Over initial hurdle of basics",
+              ],
+              "id": 8,
+              "score": 2.5,
+              "tag": "I'm a developer",
+              "title": "I can write high quality test suites for React Native",
+            },
+            Object {
+              "actions": Array [
+                "Contribute to client projects",
+                "Build breakable toy",
+              ],
+              "description": "Bit difficult to do job otherwise...",
+              "evidence": Array [
+                "Completed a few screens/components",
+              ],
+              "id": 9,
+              "score": 2.5,
+              "tag": "I'm a developer",
+              "title": "I can build apps in React Native",
+            },
+            Object {
+              "actions": Array [],
+              "description": "",
+              "evidence": Array [
+                "Can explain the basics to non-developers",
+              ],
+              "id": 10,
+              "score": 3,
+              "tag": "I'm a developer",
+              "title": "I understand how React Native works",
+            },
+            Object {
+              "actions": Array [
+                "Build an API",
+                "Deploy an app to the marketplace",
+              ],
+              "description": "Fundamentals of the how the internet is possible.",
+              "evidence": Array [
+                "",
+              ],
+              "id": 11,
+              "score": 3,
+              "tag": "I'm a developer",
+              "title": "I understand how the web/databases works",
+            },
+            Object {
+              "actions": Array [
+                "Example of difficult conversations",
+              ],
+              "description": "Central to how thoughtbot work.",
+              "evidence": Array [
+                "Good day-to-day communication with first client",
+              ],
+              "id": 12,
+              "score": 3,
+              "tag": "I'm a consultant",
+              "title": "I communicate clearly with clients",
+            },
+            Object {
+              "actions": Array [
+                "Participate in a sales meeting",
+              ],
+              "description": "All thoughtbot staff contribute to the sales process.",
+              "evidence": Array [
+                "Could give boilerplate thoughtbot explanation",
+              ],
+              "id": 13,
+              "score": 2,
+              "tag": "I'm a consultant",
+              "title": "I can clearly explain to others where/when thoughtbot can add value",
+            },
+            Object {
+              "actions": Array [],
+              "description": "All thoughtbot developers aspire to be CTOs for clients.",
+              "evidence": Array [
+                "Have shown eye for detail in commits, communication and meetings",
+              ],
+              "id": 14,
+              "score": 3,
+              "tag": "I'm a consultant",
+              "title": "I understand how technical/design decisions will impact clients",
+            },
+            Object {
+              "actions": Array [],
+              "description": "thoughtbot build software clients and users want.",
+              "evidence": Array [
+                "First client continue to be happy with output",
+              ],
+              "id": 15,
+              "score": 0,
+              "tag": "I'm a consultant",
+              "title": "My teams build software clients’ love",
+            },
+          ]
+        }
+        navigation={
+          Object {
+            "getParam": [Function],
+            "navigate": [MockFunction],
+          }
+        }
+      />,
+      "virtual": undefined,
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "goals": Array [
+          Object {
+            "actions": Array [
+              "Help make the office a great place to work",
+              "Pick up tasks others normally do when appropriate",
+            ],
+            "description": "thoughtbot must be a great place to work for all staff.",
+            "evidence": Array [
+              "Sorting snacks, etc. for office.",
+            ],
+            "id": 1,
+            "score": 4,
+            "tag": "Team thoughtbot",
+            "title": "I contribute to thoughtbot being a good place to work",
+          },
+          Object {
+            "actions": Array [
+              "Continue to learn React Native",
+              "Pick up client projects quickly",
+              "Solve own bugs/technical challenges without needing support",
+            ],
+            "description": "I can support my own learning.",
+            "evidence": Array [
+              "Completed a 5 point story with only gentle support.",
+            ],
+            "id": 2,
+            "score": 3,
+            "tag": "Team thoughtbot",
+            "title": "I iterate over my existing knowledge effectively",
+          },
+          Object {
+            "actions": Array [],
+            "description": "Collaborating with colleagues is essential to innovation.",
+            "evidence": Array [
+              "Refreshing the pairing programming skills of pairs",
+            ],
+            "id": 3,
+            "score": 4,
+            "tag": "Team thoughtbot",
+            "title": "I’m a great pair programmer",
+          },
+          Object {
+            "actions": Array [
+              "Run workshop for team to discuss effective pairing methods",
+            ],
+            "description": "Everyone in thoughtbot helps each other learn and grow",
+            "evidence": Array [
+              "Refreshing the pairing programming skills of pairs",
+            ],
+            "id": 4,
+            "score": 2,
+            "tag": "Team thoughtbot",
+            "title": "I help others become better",
+          },
+          Object {
+            "actions": Array [
+              "1",
+              "2",
+            ],
+            "description": "",
+            "evidence": Array [
+              "Eye for detail",
+              "Wanting to make products better (not just story minimum)",
+            ],
+            "id": 5,
+            "score": 3,
+            "tag": "Team thoughtbot",
+            "title": "I’m passionate about software/products",
+          },
+          Object {
+            "actions": Array [],
+            "description": "Self management requires that you can motivate yourself to do better.",
+            "evidence": Array [
+              "",
+            ],
+            "id": 6,
+            "score": 4,
+            "tag": "Team thoughtbot",
+            "title": "I set my own direction",
+          },
+          Object {
+            "actions": Array [
+              "Implement redux",
+            ],
+            "description": "Code is object orientated, easy to read/understand and easy to change.",
+            "evidence": Array [
+              "Can explain difference and value of different types of components.",
+              "Came up with the idea of the internal link component",
+            ],
+            "id": 7,
+            "score": 2.5,
+            "tag": "I'm a developer",
+            "title": "I can write high quality code for React Native",
+          },
+          Object {
+            "actions": Array [
+              "Continue to write more complex tests",
+              "Write unit tests for redux",
+            ],
+            "description": "Test driven development is central to how thoughtbot work.",
+            "evidence": Array [
+              "Over initial hurdle of basics",
+            ],
+            "id": 8,
+            "score": 2.5,
+            "tag": "I'm a developer",
+            "title": "I can write high quality test suites for React Native",
+          },
+          Object {
+            "actions": Array [
+              "Contribute to client projects",
+              "Build breakable toy",
+            ],
+            "description": "Bit difficult to do job otherwise...",
+            "evidence": Array [
+              "Completed a few screens/components",
+            ],
+            "id": 9,
+            "score": 2.5,
+            "tag": "I'm a developer",
+            "title": "I can build apps in React Native",
+          },
+          Object {
+            "actions": Array [],
+            "description": "",
+            "evidence": Array [
+              "Can explain the basics to non-developers",
+            ],
+            "id": 10,
+            "score": 3,
+            "tag": "I'm a developer",
+            "title": "I understand how React Native works",
+          },
+          Object {
+            "actions": Array [
+              "Build an API",
+              "Deploy an app to the marketplace",
+            ],
+            "description": "Fundamentals of the how the internet is possible.",
+            "evidence": Array [
+              "",
+            ],
+            "id": 11,
+            "score": 3,
+            "tag": "I'm a developer",
+            "title": "I understand how the web/databases works",
+          },
+          Object {
+            "actions": Array [
+              "Example of difficult conversations",
+            ],
+            "description": "Central to how thoughtbot work.",
+            "evidence": Array [
+              "Good day-to-day communication with first client",
+            ],
+            "id": 12,
+            "score": 3,
+            "tag": "I'm a consultant",
+            "title": "I communicate clearly with clients",
+          },
+          Object {
+            "actions": Array [
+              "Participate in a sales meeting",
+            ],
+            "description": "All thoughtbot staff contribute to the sales process.",
+            "evidence": Array [
+              "Could give boilerplate thoughtbot explanation",
+            ],
+            "id": 13,
+            "score": 2,
+            "tag": "I'm a consultant",
+            "title": "I can clearly explain to others where/when thoughtbot can add value",
+          },
+          Object {
+            "actions": Array [],
+            "description": "All thoughtbot developers aspire to be CTOs for clients.",
+            "evidence": Array [
+              "Have shown eye for detail in commits, communication and meetings",
+            ],
+            "id": 14,
+            "score": 3,
+            "tag": "I'm a consultant",
+            "title": "I understand how technical/design decisions will impact clients",
+          },
+          Object {
+            "actions": Array [],
+            "description": "thoughtbot build software clients and users want.",
+            "evidence": Array [
+              "First client continue to be happy with output",
+            ],
+            "id": 15,
+            "score": 0,
+            "tag": "I'm a consultant",
+            "title": "My teams build software clients’ love",
+          },
+        ],
+        "navigation": Object {
+          "getParam": [Function],
+          "navigate": [MockFunction],
+        },
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -277,14 +651,220 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "goalsAction": Object {
-          "type": "goals/get",
-        },
-        "navigation": Object {
-          "getParam": [Function],
-          "navigate": [MockFunction],
-        },
-        "state": Object {
+        "children": <GoalsList
+          goals={
+            Array [
+              Object {
+                "actions": Array [
+                  "Help make the office a great place to work",
+                  "Pick up tasks others normally do when appropriate",
+                ],
+                "description": "thoughtbot must be a great place to work for all staff.",
+                "evidence": Array [
+                  "Sorting snacks, etc. for office.",
+                ],
+                "id": 1,
+                "score": 4,
+                "tag": "Team thoughtbot",
+                "title": "I contribute to thoughtbot being a good place to work",
+              },
+              Object {
+                "actions": Array [
+                  "Continue to learn React Native",
+                  "Pick up client projects quickly",
+                  "Solve own bugs/technical challenges without needing support",
+                ],
+                "description": "I can support my own learning.",
+                "evidence": Array [
+                  "Completed a 5 point story with only gentle support.",
+                ],
+                "id": 2,
+                "score": 3,
+                "tag": "Team thoughtbot",
+                "title": "I iterate over my existing knowledge effectively",
+              },
+              Object {
+                "actions": Array [],
+                "description": "Collaborating with colleagues is essential to innovation.",
+                "evidence": Array [
+                  "Refreshing the pairing programming skills of pairs",
+                ],
+                "id": 3,
+                "score": 4,
+                "tag": "Team thoughtbot",
+                "title": "I’m a great pair programmer",
+              },
+              Object {
+                "actions": Array [
+                  "Run workshop for team to discuss effective pairing methods",
+                ],
+                "description": "Everyone in thoughtbot helps each other learn and grow",
+                "evidence": Array [
+                  "Refreshing the pairing programming skills of pairs",
+                ],
+                "id": 4,
+                "score": 2,
+                "tag": "Team thoughtbot",
+                "title": "I help others become better",
+              },
+              Object {
+                "actions": Array [
+                  "1",
+                  "2",
+                ],
+                "description": "",
+                "evidence": Array [
+                  "Eye for detail",
+                  "Wanting to make products better (not just story minimum)",
+                ],
+                "id": 5,
+                "score": 3,
+                "tag": "Team thoughtbot",
+                "title": "I’m passionate about software/products",
+              },
+              Object {
+                "actions": Array [],
+                "description": "Self management requires that you can motivate yourself to do better.",
+                "evidence": Array [
+                  "",
+                ],
+                "id": 6,
+                "score": 4,
+                "tag": "Team thoughtbot",
+                "title": "I set my own direction",
+              },
+              Object {
+                "actions": Array [
+                  "Implement redux",
+                ],
+                "description": "Code is object orientated, easy to read/understand and easy to change.",
+                "evidence": Array [
+                  "Can explain difference and value of different types of components.",
+                  "Came up with the idea of the internal link component",
+                ],
+                "id": 7,
+                "score": 2.5,
+                "tag": "I'm a developer",
+                "title": "I can write high quality code for React Native",
+              },
+              Object {
+                "actions": Array [
+                  "Continue to write more complex tests",
+                  "Write unit tests for redux",
+                ],
+                "description": "Test driven development is central to how thoughtbot work.",
+                "evidence": Array [
+                  "Over initial hurdle of basics",
+                ],
+                "id": 8,
+                "score": 2.5,
+                "tag": "I'm a developer",
+                "title": "I can write high quality test suites for React Native",
+              },
+              Object {
+                "actions": Array [
+                  "Contribute to client projects",
+                  "Build breakable toy",
+                ],
+                "description": "Bit difficult to do job otherwise...",
+                "evidence": Array [
+                  "Completed a few screens/components",
+                ],
+                "id": 9,
+                "score": 2.5,
+                "tag": "I'm a developer",
+                "title": "I can build apps in React Native",
+              },
+              Object {
+                "actions": Array [],
+                "description": "",
+                "evidence": Array [
+                  "Can explain the basics to non-developers",
+                ],
+                "id": 10,
+                "score": 3,
+                "tag": "I'm a developer",
+                "title": "I understand how React Native works",
+              },
+              Object {
+                "actions": Array [
+                  "Build an API",
+                  "Deploy an app to the marketplace",
+                ],
+                "description": "Fundamentals of the how the internet is possible.",
+                "evidence": Array [
+                  "",
+                ],
+                "id": 11,
+                "score": 3,
+                "tag": "I'm a developer",
+                "title": "I understand how the web/databases works",
+              },
+              Object {
+                "actions": Array [
+                  "Example of difficult conversations",
+                ],
+                "description": "Central to how thoughtbot work.",
+                "evidence": Array [
+                  "Good day-to-day communication with first client",
+                ],
+                "id": 12,
+                "score": 3,
+                "tag": "I'm a consultant",
+                "title": "I communicate clearly with clients",
+              },
+              Object {
+                "actions": Array [
+                  "Participate in a sales meeting",
+                ],
+                "description": "All thoughtbot staff contribute to the sales process.",
+                "evidence": Array [
+                  "Could give boilerplate thoughtbot explanation",
+                ],
+                "id": 13,
+                "score": 2,
+                "tag": "I'm a consultant",
+                "title": "I can clearly explain to others where/when thoughtbot can add value",
+              },
+              Object {
+                "actions": Array [],
+                "description": "All thoughtbot developers aspire to be CTOs for clients.",
+                "evidence": Array [
+                  "Have shown eye for detail in commits, communication and meetings",
+                ],
+                "id": 14,
+                "score": 3,
+                "tag": "I'm a consultant",
+                "title": "I understand how technical/design decisions will impact clients",
+              },
+              Object {
+                "actions": Array [],
+                "description": "thoughtbot build software clients and users want.",
+                "evidence": Array [
+                  "First client continue to be happy with output",
+                ],
+                "id": 15,
+                "score": 0,
+                "tag": "I'm a consultant",
+                "title": "My teams build software clients’ love",
+              },
+            ]
+          }
+          navigation={
+            Object {
+              "getParam": [Function],
+              "navigate": [MockFunction],
+            }
+          }
+        />,
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
           "goals": Array [
             Object {
               "actions": Array [
@@ -481,37 +1061,15 @@ ShallowWrapper {
               "title": "My teams build software clients’ love",
             },
           ],
-        },
-        "store": Object {
-          "clearActions": [Function],
-          "dispatch": [Function],
-          "getActions": [Function],
-          "getState": [Function],
-          "replaceReducer": [Function],
-          "subscribe": [Function],
-        },
-        "storeSubscription": Subscription {
-          "listeners": Object {
-            "clear": [Function],
-            "get": [Function],
-            "notify": [Function],
-            "subscribe": [Function],
+          "navigation": Object {
+            "getParam": [Function],
+            "navigate": [MockFunction],
           },
-          "onStateChange": [Function],
-          "parentSub": undefined,
-          "store": Object {
-            "clearActions": [Function],
-            "dispatch": [Function],
-            "getActions": [Function],
-            "getState": [Function],
-            "replaceReducer": [Function],
-            "subscribe": [Function],
-          },
-          "unsubscribe": [Function],
         },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": null,
       "type": [Function],
     },
   ],

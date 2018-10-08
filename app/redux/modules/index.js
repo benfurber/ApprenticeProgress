@@ -1,2 +1,2 @@
-export { goalsAction, goalsReducer } from "./goals";
+export { fetchGoals, goalsReducer } from "./goals";
 export { rootReducer } from "./root";
