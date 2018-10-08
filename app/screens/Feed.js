@@ -5,7 +5,7 @@ import { Container } from "native-base";
 import { connect } from "react-redux";
 
 import { GoalsList } from "components";
-import { goalsAction } from "redux-modules";
+import { fetchGoals } from "redux-modules";
 import type { navigationType } from "types";
 
 type Props = {
@@ -38,12 +38,12 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  goalsAction: dispatch(goalsAction()),
+  goals: fetchGoals(dispatch),
 });
 
-const connectedFeed = connect(
+const ConnectedFeed = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Feed);
 
-export { connectedFeed as Feed };
+export { ConnectedFeed, Feed };

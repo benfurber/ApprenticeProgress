@@ -1,7 +1,7 @@
 import { goalsReducer } from "redux-modules";
 
 const initialState = {
-  goals: {},
+  goals: [],
 };
 
 const rootReducer = (state = initialState, action) => {

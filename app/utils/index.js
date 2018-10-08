@@ -1,2 +1,3 @@
+export { client } from "./client";
 export { lastWordOfString } from "./lastWordOfString";
-export { orderIDsByTitle } from "./orderIDsByTitle";
+export { orderByTitle } from "./orderByTitle";

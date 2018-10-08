@@ -5,21 +5,21 @@ import { Content } from "native-base";
 
 import { GoalSummary } from "components";
 import type { GoalsDataType, navigationType } from "types";
-import { orderIDsByTitle } from "utils";
+import { orderByTitle } from "utils";
 
 type Props = { goals: GoalsDataType, navigation: navigationType };
 
 class GoalsList extends Component<Props> {
   render() {
-    const { goals } = this.props;
-    const goalIds = orderIDsByTitle(goals);
+    let { goals } = this.props;
+    goals = orderByTitle(goals);
 
     return (
       <Content>
-        {goalIds.map(goalId => (
+        {goals.map(goal => (
           <GoalSummary
-            key={goalId}
-            details={goals[goalId]}
+            key={goal.id}
+            details={goal}
             navigation={this.props.navigation}
           />
         ))}

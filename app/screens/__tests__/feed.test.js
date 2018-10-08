@@ -9,16 +9,13 @@ import navigationMock from "mocks";
 
 import { goalsData } from "../../data/goals";
 
-const middlewares = [];
-const mockStore = configureStore(middlewares);
-
 describe("Feed", () => {
   it("renders correctly", () => {
-    const store = mockStore({
+    const state = {
       goals: goalsData,
-    });
+    };
 
-    const component = shallow(<Feed navigation={navigationMock} store={store} />);
+    const component = shallow(<Feed navigation={navigationMock} state={state} />);
 
     expect(component).toMatchSnapshot();
   });
