@@ -10,6 +10,7 @@
     "storybook": "storybook start -p 7007"
   },
   "dependencies": {
+    "apollo-fetch": "^0.7.0",
     "native-base": "^2.8.0",
     "react": "16.5.0",
     "react-native": "0.56.0",
