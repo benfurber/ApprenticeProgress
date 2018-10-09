@@ -43,6 +43,7 @@ ShallowWrapper {
           delay={1200}
         />
       </Styled(ViewNB)>,
+      "noRalph": true,
     },
     "ref": null,
     "rendered": Object {
@@ -169,6 +170,7 @@ ShallowWrapper {
             delay={1200}
           />
         </Styled(ViewNB)>,
+        "noRalph": true,
       },
       "ref": null,
       "rendered": Object {

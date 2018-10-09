@@ -25,7 +25,7 @@ class GoalSummary extends Component<Props> {
     const { score, tag, title } = details;
 
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity onPress={onPress} activeOpacity={0.8}>
         <View style={styles.card}>
           <H3 style={styles.header}>
             {title} ({score}
@@ -45,6 +45,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
     padding: 20,
     borderRadius: 3,
+    borderWidth: 2,
+    borderColor: "#eeec",
   },
   header: {
     marginBottom: 10,
