@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
-import { Container } from "native-base";
+import { Container, Text } from "native-base";
 import { connect } from "react-redux";
 
 import { GoalsList } from "components";
@@ -26,9 +26,23 @@ class Feed extends Component<Props> {
 
     return (
       <Container>
-        <GoalsList goals={goals} navigation={navigation} />
+        {this._renderLoading(goals)}
+        {this._renderGoals(goals, navigation)}
+        
       </Container>
     );
+  };
+
+  _renderLoading(goals) {
+    if (goals.length == 0) {
+      return <Container><Text>Loading</Text></Container>;
+    };
+  };
+
+  _renderGoals(goals, navigation) {
+    if (goals.length > 0) {
+      return <GoalsList goals={goals} navigation={navigation} />;
+    };
   }
 
 };
