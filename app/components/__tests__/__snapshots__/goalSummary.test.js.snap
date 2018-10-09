@@ -34,25 +34,33 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "activeOpacity": 0.2,
-      "children": <Styled(Card)>
-        <Styled(CardItem)
-          header={true}
+      "children": <Styled(ViewNB)
+        style={
+          Object {
+            "backgroundColor": "#fffd",
+            "borderRadius": 3,
+            "marginHorizontal": 10,
+            "marginTop": 10,
+            "padding": 20,
+          }
+        }
+      >
+        <Styled(H3)
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
         >
-          <Styled(H3)>
-            Testing title
-             (
-            0
-            /5)
-          </Styled(H3)>
-        </Styled(CardItem)>
-        <Styled(CardItem)>
-          <Styled(Body)>
-            <Tag
-              text="One"
-            />
-          </Styled(Body)>
-        </Styled(CardItem)>
-      </Styled(Card)>,
+          Testing title
+           (
+          0
+          /5)
+        </Styled(H3)>
+        <Tag
+          text="One"
+        />
+      </Styled(ViewNB)>,
       "onPress": [Function],
     },
     "ref": null,
@@ -62,24 +70,29 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(CardItem)
-            header={true}
+          <Styled(H3)
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
           >
-            <Styled(H3)>
-              Testing title
-               (
-              0
-              /5)
-            </Styled(H3)>
-          </Styled(CardItem)>,
-          <Styled(CardItem)>
-            <Styled(Body)>
-              <Tag
-                text="One"
-              />
-            </Styled(Body)>
-          </Styled(CardItem)>,
+            Testing title
+             (
+            0
+            /5)
+          </Styled(H3)>,
+          <Tag
+            text="One"
+          />,
         ],
+        "style": Object {
+          "backgroundColor": "#fffd",
+          "borderRadius": 3,
+          "marginHorizontal": 10,
+          "marginTop": 10,
+          "padding": 20,
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -89,38 +102,24 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(H3)>
-              Testing title
-               (
-              0
-              /5)
-            </Styled(H3)>,
-            "header": true,
-            "virtual": undefined,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                "Testing title",
-                " (",
-                0,
-                "/5)",
-              ],
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
+            "children": Array [
               "Testing title",
               " (",
               0,
               "/5)",
             ],
-            "type": [Function],
+            "style": Object {
+              "marginBottom": 10,
+            },
+            "virtual": undefined,
           },
+          "ref": null,
+          "rendered": Array [
+            "Testing title",
+            " (",
+            0,
+            "/5)",
+          ],
           "type": [Function],
         },
         Object {
@@ -128,38 +127,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(Body)>
-              <Tag
-                text="One"
-              />
-            </Styled(Body)>,
-            "virtual": undefined,
+            "text": "One",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Tag
-                text="One"
-              />,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "text": "One",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
+          "rendered": null,
           "type": [Function],
         },
       ],
@@ -174,25 +145,33 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "activeOpacity": 0.2,
-        "children": <Styled(Card)>
-          <Styled(CardItem)
-            header={true}
+        "children": <Styled(ViewNB)
+          style={
+            Object {
+              "backgroundColor": "#fffd",
+              "borderRadius": 3,
+              "marginHorizontal": 10,
+              "marginTop": 10,
+              "padding": 20,
+            }
+          }
+        >
+          <Styled(H3)
+            style={
+              Object {
+                "marginBottom": 10,
+              }
+            }
           >
-            <Styled(H3)>
-              Testing title
-               (
-              0
-              /5)
-            </Styled(H3)>
-          </Styled(CardItem)>
-          <Styled(CardItem)>
-            <Styled(Body)>
-              <Tag
-                text="One"
-              />
-            </Styled(Body)>
-          </Styled(CardItem)>
-        </Styled(Card)>,
+            Testing title
+             (
+            0
+            /5)
+          </Styled(H3)>
+          <Tag
+            text="One"
+          />
+        </Styled(ViewNB)>,
         "onPress": [Function],
       },
       "ref": null,
@@ -202,24 +181,29 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(CardItem)
-              header={true}
+            <Styled(H3)
+              style={
+                Object {
+                  "marginBottom": 10,
+                }
+              }
             >
-              <Styled(H3)>
-                Testing title
-                 (
-                0
-                /5)
-              </Styled(H3)>
-            </Styled(CardItem)>,
-            <Styled(CardItem)>
-              <Styled(Body)>
-                <Tag
-                  text="One"
-                />
-              </Styled(Body)>
-            </Styled(CardItem)>,
+              Testing title
+               (
+              0
+              /5)
+            </Styled(H3)>,
+            <Tag
+              text="One"
+            />,
           ],
+          "style": Object {
+            "backgroundColor": "#fffd",
+            "borderRadius": 3,
+            "marginHorizontal": 10,
+            "marginTop": 10,
+            "padding": 20,
+          },
           "virtual": undefined,
         },
         "ref": null,
@@ -229,38 +213,24 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <Styled(H3)>
-                Testing title
-                 (
-                0
-                /5)
-              </Styled(H3)>,
-              "header": true,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  "Testing title",
-                  " (",
-                  0,
-                  "/5)",
-                ],
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
+              "children": Array [
                 "Testing title",
                 " (",
                 0,
                 "/5)",
               ],
-              "type": [Function],
+              "style": Object {
+                "marginBottom": 10,
+              },
+              "virtual": undefined,
             },
+            "ref": null,
+            "rendered": Array [
+              "Testing title",
+              " (",
+              0,
+              "/5)",
+            ],
             "type": [Function],
           },
           Object {
@@ -268,38 +238,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <Styled(Body)>
-                <Tag
-                  text="One"
-                />
-              </Styled(Body)>,
-              "virtual": undefined,
+              "text": "One",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Tag
-                  text="One"
-                />,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "text": "One",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": [Function],
-            },
+            "rendered": null,
             "type": [Function],
           },
         ],

@@ -2,7 +2,6 @@
 
 import React, { Component } from "react";
 import {
-  Container,
   Content,
   List,
   ListItem,
@@ -12,7 +11,7 @@ import {
   View,
 } from "native-base";
 
-import { ProgressBar, Tag } from "components";
+import { Background, ProgressBar, Tag } from "components";
 import { styles } from "styles";
 import type { navigationType } from "types";
 
@@ -30,31 +29,33 @@ class Goal extends Component<Props> {
     const { actions, description, evidence, score, tag, title } = details;
 
     return (
-      <Container>
-        <Content style={styles.content}>
-          <View style={styles.element}>
-            <H2>{title}</H2>
-            <Tag text={tag} />
-          </View>
-          <View style={styles.element}>
-            <Text style={styles.textDescription}>{description}</Text>
-          </View>
-          <View style={styles.highlightBox}>
+      <Background>
+        <Content style={{backgroundColor: "#fffa"}}>
+          <Content style={styles.content}>
             <View style={styles.element}>
-              <H3>Progress: </H3>
+              <H2>{title}</H2>
+              <Tag text={tag} />
             </View>
-            <ProgressBar score={score} />
             <View style={styles.element}>
-              <H3>Evidence: </H3>
-              <List>{this._renderList(evidence)}</List>
+              <Text style={styles.textDescription}>{description}</Text>
             </View>
-          </View>
-          <View style={styles.element}>
-            <H3>Actions: </H3>
-            <List>{this._renderList(actions)}</List>
-          </View>
+            <View style={styles.highlightBox}>
+              <View style={styles.element}>
+                <H3>Progress: </H3>
+              </View>
+              <ProgressBar score={score} />
+              <View style={styles.element}>
+                <H3>Evidence: </H3>
+                <List>{this._renderList(evidence)}</List>
+              </View>
+            </View>
+            <View style={styles.element}>
+              <H3>Actions: </H3>
+              <List>{this._renderList(actions)}</List>
+            </View>
+          </Content>
         </Content>
-      </Container>
+      </Background>
     );
   }
 
