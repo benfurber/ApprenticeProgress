@@ -7,6 +7,10 @@ const standards = {
   },
 };
 
+const colours = {
+  red: "#ED3E44",
+};
+
 const styles = StyleSheet.create({
   content: {
     paddingTop: 20,
@@ -78,4 +82,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { styles };
+export { colours, styles };
