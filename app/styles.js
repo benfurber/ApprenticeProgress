@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
 
   highlightBox: {
-    backgroundColor: "#DBD4CB",
+    backgroundColor: "#DBD4CBAA",
     borderColor: "#5A6268",
     borderTopWidth: 2,
     borderBottomWidth: 2,

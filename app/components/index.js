@@ -1,3 +1,4 @@
+export { Background } from "./Background";
 export { Dot } from "./Dot";
 export { GoalsList } from "./GoalsList";
 export { GoalSummary } from "./GoalSummary";

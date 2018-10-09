@@ -1,8 +1,8 @@
 // @flow
 
 import React, { Component } from "react";
-import { TouchableOpacity } from "react-native";
-import { Body, Card, CardItem, H3 } from "native-base";
+import { StyleSheet, TouchableOpacity } from "react-native";
+import { H3, View } from "native-base";
 
 import { Tag } from "components";
 import type { GoalDetailsType, OnPressType, navigationType } from "types";
@@ -26,22 +26,29 @@ class GoalSummary extends Component<Props> {
 
     return (
       <TouchableOpacity onPress={onPress}>
-        <Card>
-          <CardItem header>
-            <H3>
-              {title} ({score}
-              /5)
-            </H3>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <Tag text={tag} />
-            </Body>
-          </CardItem>
-        </Card>
+        <View style={styles.card}>
+          <H3 style={styles.header}>
+            {title} ({score}
+            /5)
+          </H3>
+          <Tag text={tag} />
+        </View>
       </TouchableOpacity>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  card: {
+    backgroundColor: "#fffd",
+    marginHorizontal: 10,
+    marginTop: 10,
+    padding: 20,
+    borderRadius: 3,
+  },
+  header: {
+    marginBottom: 10,
+  },
+});
 
 export { GoalSummary };
