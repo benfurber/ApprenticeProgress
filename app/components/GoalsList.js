@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
+import { FlatList } from "react-native";
 import { Content } from "native-base";
 
 import { GoalSummary } from "components";
@@ -16,16 +17,23 @@ class GoalsList extends Component<Props> {
 
     return (
       <Content>
-        {goals.map(goal => (
-          <GoalSummary
-            key={goal.id}
-            details={goal}
-            navigation={this.props.navigation}
-          />
-        ))}
+        <FlatList
+          data={goals}
+          renderItem={({item}) => this._renderGoal(item)}
+          keyExtractor={item => item.id.toString()}
+        />
       </Content>
     );
   };
+
+  _renderGoal(goal) {
+    return (
+      <GoalSummary
+        details={goal}
+        navigation={this.props.navigation}
+      />
+    );
+  }
 };
 
 export { GoalsList };

@@ -26,7 +26,7 @@ ShallowWrapper {
           style={
             Object {
               "flex": 1,
-              "zIndex": 1,
+              "zIndex": 2,
             }
           }
         >
@@ -68,12 +68,37 @@ ShallowWrapper {
             }
           />
         </Styled(ViewNB)>,
+        <Styled(ViewNB)
+          style={
+            Object {
+              "flex": 1,
+              "flexDirection": "row",
+              "position": "absolute",
+              "right": -50,
+              "zIndex": 1,
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../app/assets/images/ralph.png",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "flex-end",
+                "flex": 1,
+              }
+            }
+          />
+        </Styled(ViewNB)>,
       ],
       "style": Object {
-        "alignItems": "center",
+        "alignItems": "stretch",
         "flex": 1,
-        "flexDirection": "row",
-        "justifyContent": "center",
+        "flexDirection": "column-reverse",
+        "justifyContent": "flex-start",
       },
       "virtual": undefined,
     },
@@ -89,7 +114,7 @@ ShallowWrapper {
           </Component>,
           "style": Object {
             "flex": 1,
-            "zIndex": 1,
+            "zIndex": 2,
           },
           "virtual": undefined,
         },
@@ -192,6 +217,53 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Image
+            source={
+              Object {
+                "testUri": "../../../app/assets/images/ralph.png",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "flex-end",
+                "flex": 1,
+              }
+            }
+          />,
+          "style": Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "right": -50,
+            "zIndex": 1,
+          },
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "source": Object {
+              "testUri": "../../../app/assets/images/ralph.png",
+            },
+            "style": Object {
+              "alignSelf": "flex-end",
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -206,7 +278,7 @@ ShallowWrapper {
             style={
               Object {
                 "flex": 1,
-                "zIndex": 1,
+                "zIndex": 2,
               }
             }
           >
@@ -248,12 +320,37 @@ ShallowWrapper {
               }
             />
           </Styled(ViewNB)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+                "position": "absolute",
+                "right": -50,
+                "zIndex": 1,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../app/assets/images/ralph.png",
+                }
+              }
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "flex": 1,
+                }
+              }
+            />
+          </Styled(ViewNB)>,
         ],
         "style": Object {
-          "alignItems": "center",
+          "alignItems": "stretch",
           "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "center",
+          "flexDirection": "column-reverse",
+          "justifyContent": "flex-start",
         },
         "virtual": undefined,
       },
@@ -269,7 +366,7 @@ ShallowWrapper {
             </Component>,
             "style": Object {
               "flex": 1,
-              "zIndex": 1,
+              "zIndex": 2,
             },
             "virtual": undefined,
           },
@@ -370,6 +467,53 @@ ShallowWrapper {
               "type": [Function],
             },
           ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Image
+              source={
+                Object {
+                  "testUri": "../../../app/assets/images/ralph.png",
+                }
+              }
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "flex": 1,
+                }
+              }
+            />,
+            "style": Object {
+              "flex": 1,
+              "flexDirection": "row",
+              "position": "absolute",
+              "right": -50,
+              "zIndex": 1,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "source": Object {
+                "testUri": "../../../app/assets/images/ralph.png",
+              },
+              "style": Object {
+                "alignSelf": "flex-end",
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
       ],
