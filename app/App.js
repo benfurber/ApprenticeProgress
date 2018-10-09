@@ -18,7 +18,6 @@ const RootStack = createStackNavigator({
   },
 });
 
-
 class App extends Component<Props> {
   render() {
     return (
