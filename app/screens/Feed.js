@@ -1,10 +1,10 @@
 // @flow
 
 import React, { Component } from "react";
-import { Container, Text } from "native-base";
+import { Container } from "native-base";
 import { connect } from "react-redux";
 
-import { GoalsList } from "components";
+import { GoalsList, Loading } from "components";
 import { fetchGoals } from "redux-modules";
 import type { navigationType } from "types";
 
@@ -28,14 +28,13 @@ class Feed extends Component<Props> {
       <Container>
         {this._renderLoading(goals)}
         {this._renderGoals(goals, navigation)}
-        
       </Container>
     );
   };
 
   _renderLoading(goals) {
     if (goals.length == 0) {
-      return <Container><Text>Loading</Text></Container>;
+      return <Loading />;
     };
   };
 

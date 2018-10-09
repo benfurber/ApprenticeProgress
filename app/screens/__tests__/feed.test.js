@@ -2,7 +2,6 @@
 
 import React from "react";
 import { shallow } from "enzyme";
-import configureStore from "redux-mock-store";
 
 import { Feed } from "../Feed";
 import navigationMock from "mocks";
@@ -10,7 +9,17 @@ import navigationMock from "mocks";
 import { goalsData } from "../../data/goals";
 
 describe("Feed", () => {
-  it("renders correctly", () => {
+  it("BEFORE goals have loaded, renders correctly", () => {
+    const state = {
+      goals: [],
+    };
+
+    const component = shallow(<Feed navigation={navigationMock} state={state} />);
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("WHEN goals have loaded, renders correctly", () => {
     const state = {
       goals: goalsData,
     };
