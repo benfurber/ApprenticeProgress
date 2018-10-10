@@ -2,12 +2,12 @@ import gql from "graphql-tag";
 
 import { client } from "utils";
 
+const GET = "goals/get";
+
 const addGoals = goals => ({
   type: GET,
   payload: goals,
 });
-
-const GET = "goals/get";
 
 const query = {
   query: gql`
@@ -31,7 +31,6 @@ const fetchGoals = dispatch => {
   });
 };
 
-
 const goalsReducer = (state, action) => {
   switch (action.type) {
     case GET:
@@ -41,4 +40,4 @@ const goalsReducer = (state, action) => {
   }
 };
 
-export { fetchGoals, goalsReducer };
+export { addGoals, fetchGoals, goalsReducer };
