@@ -71,10 +71,9 @@ ShallowWrapper {
         <Styled(ViewNB)
           style={
             Object {
-              "flex": 1,
               "flexDirection": "row",
               "position": "absolute",
-              "right": -50,
+              "right": -35,
               "zIndex": 1,
             }
           }
@@ -88,7 +87,6 @@ ShallowWrapper {
             style={
               Object {
                 "alignSelf": "flex-end",
-                "flex": 1,
               }
             }
           />
@@ -231,15 +229,13 @@ ShallowWrapper {
             style={
               Object {
                 "alignSelf": "flex-end",
-                "flex": 1,
               }
             }
           />,
           "style": Object {
-            "flex": 1,
             "flexDirection": "row",
             "position": "absolute",
-            "right": -50,
+            "right": -35,
             "zIndex": 1,
           },
           "virtual": undefined,
@@ -255,7 +251,6 @@ ShallowWrapper {
             },
             "style": Object {
               "alignSelf": "flex-end",
-              "flex": 1,
             },
           },
           "ref": null,
@@ -323,10 +318,9 @@ ShallowWrapper {
           <Styled(ViewNB)
             style={
               Object {
-                "flex": 1,
                 "flexDirection": "row",
                 "position": "absolute",
-                "right": -50,
+                "right": -35,
                 "zIndex": 1,
               }
             }
@@ -340,7 +334,6 @@ ShallowWrapper {
               style={
                 Object {
                   "alignSelf": "flex-end",
-                  "flex": 1,
                 }
               }
             />
@@ -483,15 +476,13 @@ ShallowWrapper {
               style={
                 Object {
                   "alignSelf": "flex-end",
-                  "flex": 1,
                 }
               }
             />,
             "style": Object {
-              "flex": 1,
               "flexDirection": "row",
               "position": "absolute",
-              "right": -50,
+              "right": -35,
               "zIndex": 1,
             },
             "virtual": undefined,
@@ -507,7 +498,6 @@ ShallowWrapper {
               },
               "style": Object {
                 "alignSelf": "flex-end",
-                "flex": 1,
               },
             },
             "ref": null,

@@ -61,15 +61,13 @@ const styles = StyleSheet.create({
     zIndex: 0,
   },
   ralphView: {
-    flex: 1,
-    right: -50,
+    right: -35,
     flexDirection: "row",
     position: "absolute",
     zIndex: 1,
   },
   ralph: {
     alignSelf: "flex-end",
-    flex: 1,
   },
 });
 
