@@ -1,5 +1,8 @@
 import React from "react";
-import { createStackNavigator, createBottomTabNavigator } from "react-navigation";
+import {
+  createStackNavigator,
+  createBottomTabNavigator,
+} from "react-navigation";
 
 import { IconButton } from "components";
 import { ConnectedFeed, Goal, Progress } from "screens";
@@ -18,7 +21,7 @@ const stackConfig = {
   },
 };
 
-const pickIcon = (state) => {
+const pickIcon = state => {
   const { routeName } = state;
   return <IconButton name={routeName} />;
 };
