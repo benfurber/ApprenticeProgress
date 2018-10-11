@@ -29,6 +29,9 @@ const pickIcon = state => {
 const tabConfig = {
   navigationOptions: ({ navigation }) => {
     return {
+      tabBarOptions: {
+        showLabel: false,
+      },
       tabBarIcon: () => pickIcon(navigation.state),
     };
   },
