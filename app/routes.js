@@ -13,7 +13,7 @@ const stackConfig = {
     headerStyle: {
       backgroundColor: colours.red,
     },
-    headerTintColor: "#fff",
+    headerTintColor: colours.white,
     headerTitleStyle: {
       fontWeight: "bold",
       fontSize: 26,
@@ -30,7 +30,11 @@ const tabConfig = {
   navigationOptions: ({ navigation }) => {
     return {
       tabBarOptions: {
+        activeTintColor: colours.white,
         showLabel: false,
+        style: {
+          backgroundColor: colours.black,
+        },
       },
       tabBarIcon: ({ tintColor }) => pickIcon(navigation.state, tintColor),
     };
