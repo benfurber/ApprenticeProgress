@@ -4,23 +4,23 @@ import { Icon, Text, View } from "native-base";
 
 class IconButton extends Component {
   render() {
-    const { name } = this.props;
+    const { tint, name } = this.props;
 
     return (
       <View style={styles.view}>
-        {this._selectIcon(name)}
-        <Text style={styles.text}>{name}</Text>
+        {this._selectIcon(name, tint)}
+        <Text style={[styles.text, {color: tint}]}>{name}</Text>
       </View>
     );
   }
 
-  _selectIcon(name) {
+  _selectIcon(name, tint) {
     if (name == "Goals") {
-      return <Icon name="md-filing" style={styles.icon} />;
+      return <Icon name="md-filing" style={[styles.icon, {color: tint}]} />;
     }
 
     if (name == "Progress") {
-      return <Icon name="md-speedometer" style={styles.icon} />;
+      return <Icon name="md-speedometer" style={[styles.icon, {color: tint}]} />;
     }
 
     return null;

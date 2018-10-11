@@ -21,9 +21,9 @@ const stackConfig = {
   },
 };
 
-const pickIcon = state => {
+const pickIcon = (state, tintColor) => {
   const { routeName } = state;
-  return <IconButton name={routeName} />;
+  return <IconButton name={routeName} tint={tintColor} />;
 };
 
 const tabConfig = {
@@ -32,7 +32,7 @@ const tabConfig = {
       tabBarOptions: {
         showLabel: false,
       },
-      tabBarIcon: () => pickIcon(navigation.state),
+      tabBarIcon: ({ tintColor }) => pickIcon(navigation.state, tintColor),
     };
   },
 };
