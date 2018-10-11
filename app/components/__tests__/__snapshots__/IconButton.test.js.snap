@@ -19,12 +19,80 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "name": "md-filing",
-      "style": Object {},
+      "children": Array [
+        <Styled(Icon)
+          name="md-filing"
+          style={
+            Array [
+              Object {},
+              Object {
+                "color": undefined,
+              },
+            ]
+          }
+        />,
+        <Styled(Text)
+          style={
+            Array [
+              Object {
+                "paddingLeft": 10,
+              },
+              Object {
+                "color": undefined,
+              },
+            ]
+          }
+        >
+          Goals
+        </Styled(Text)>,
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
       "virtual": undefined,
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "name": "md-filing",
+          "style": Array [
+            Object {},
+            Object {
+              "color": undefined,
+            },
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Goals",
+          "style": Array [
+            Object {
+              "paddingLeft": 10,
+            },
+            Object {
+              "color": undefined,
+            },
+          ],
+          "virtual": undefined,
+        },
+        "ref": null,
+        "rendered": "Goals",
+        "type": [Function],
+      },
+    ],
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -33,12 +101,80 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "name": "md-filing",
-        "style": Object {},
+        "children": Array [
+          <Styled(Icon)
+            name="md-filing"
+            style={
+              Array [
+                Object {},
+                Object {
+                  "color": undefined,
+                },
+              ]
+            }
+          />,
+          <Styled(Text)
+            style={
+              Array [
+                Object {
+                  "paddingLeft": 10,
+                },
+                Object {
+                  "color": undefined,
+                },
+              ]
+            }
+          >
+            Goals
+          </Styled(Text)>,
+        ],
+        "style": Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
         "virtual": undefined,
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "name": "md-filing",
+            "style": Array [
+              Object {},
+              Object {
+                "color": undefined,
+              },
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Goals",
+            "style": Array [
+              Object {
+                "paddingLeft": 10,
+              },
+              Object {
+                "color": undefined,
+              },
+            ],
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": "Goals",
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],
