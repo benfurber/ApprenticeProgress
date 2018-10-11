@@ -8,7 +8,9 @@ const standards = {
 };
 
 const colours = {
+  black: "#3D3E44",
   red: "#ED3E44",
+  white: "#FFF",
 };
 
 const styles = StyleSheet.create({
