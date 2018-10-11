@@ -1,5 +1,7 @@
+import React from "react";
 import { createStackNavigator, createBottomTabNavigator } from "react-navigation";
 
+import { IconButton } from "components";
 import { ConnectedFeed, Goal, Progress } from "screens";
 import { colours } from "styles";
 
@@ -13,6 +15,19 @@ const stackConfig = {
       fontWeight: "bold",
       fontSize: 26,
     },
+  },
+};
+
+const pickIcon = (state) => {
+  const { routeName } = state;
+  return <IconButton name={routeName} />;
+};
+
+const tabConfig = {
+  navigationOptions: ({ navigation }) => {
+    return {
+      tabBarIcon: () => pickIcon(navigation.state),
+    };
   },
 };
 
@@ -41,7 +56,8 @@ const RootStack = createBottomTabNavigator(
   {
     Goals: GoalsNavigator,
     Progress: ProgressNavigator,
-  }
+  },
+  tabConfig
 );
 
 export { RootStack };
