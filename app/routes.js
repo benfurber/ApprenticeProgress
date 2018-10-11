@@ -5,7 +5,7 @@ import {
 } from "react-navigation";
 
 import { IconButton } from "components";
-import { ConnectedFeed, Goal, Progress } from "screens";
+import { ConnectedFeed, Goal, ConnectedProgress } from "screens";
 import { colours } from "styles";
 
 const stackConfig = {
@@ -56,7 +56,7 @@ const GoalsNavigator = createStackNavigator(
 const ProgressNavigator = createStackNavigator(
   {
     Progress: {
-      screen: Progress,
+      screen: ConnectedProgress,
     },
   },
   stackConfig
