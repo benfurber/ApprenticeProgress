@@ -5,4 +5,5 @@ export { GoalSummary } from "./GoalSummary";
 export { IconButton } from "./IconButton";
 export { Loading } from "./Loading";
 export { ProgressBar } from "./ProgressBar";
+export { RankGoals } from "./RankGoals";
 export { Tag } from "./Tag";
