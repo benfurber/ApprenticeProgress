@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ApprenticeProgress.app"
-               BlueprintName = "ApprenticeProgress"
-               ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+               BuildableName = "apprenticeprogress.app"
+               BlueprintName = "apprenticeprogress"
+               ReferencedContainer = "container:apprenticeprogress.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ApprenticeProgressTests.xctest"
-               BlueprintName = "ApprenticeProgressTests"
-               ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+               BuildableName = "apprenticeprogressTests.xctest"
+               BlueprintName = "apprenticeprogressTests"
+               ReferencedContainer = "container:apprenticeprogress.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ApprenticeProgressTests.xctest"
-               BlueprintName = "ApprenticeProgressTests"
-               ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+               BuildableName = "apprenticeprogressTests.xctest"
+               BlueprintName = "apprenticeprogressTests"
+               ReferencedContainer = "container:apprenticeprogress.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ApprenticeProgress.app"
-            BlueprintName = "ApprenticeProgress"
-            ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+            BuildableName = "apprenticeprogress.app"
+            BlueprintName = "apprenticeprogress"
+            ReferencedContainer = "container:apprenticeprogress.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ApprenticeProgress.app"
-            BlueprintName = "ApprenticeProgress"
-            ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+            BuildableName = "apprenticeprogress.app"
+            BlueprintName = "apprenticeprogress"
+            ReferencedContainer = "container:apprenticeprogress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ApprenticeProgress.app"
-            BlueprintName = "ApprenticeProgress"
-            ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+            BuildableName = "apprenticeprogress.app"
+            BlueprintName = "apprenticeprogress"
+            ReferencedContainer = "container:apprenticeprogress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
