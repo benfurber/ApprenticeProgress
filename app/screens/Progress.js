@@ -1,45 +1,48 @@
 import React, { Component } from "react";
-import { H2 } from "native-base";
+import { Content, H2, View } from "native-base";
 import { connect } from "react-redux";
 
-import { Background } from "components";
+import { Background, RankGoals } from "components";
+import { styles } from "styles";
 
 class Progress extends Component {
   static navigationOptions = () => {
     return {
       title: "Progress",
     };
-  }
+  };
 
   render() {
+    const { goals } = this.props.state;
+
     return (
       <Background>
-        <H2>Total score: {this._scoreCount()}</H2>
-
+        <Content style={styles.content}>
+          <View style={styles.element}>
+            <H2>Total score: {this._scoreCount(goals)}</H2>
+          </View>
+          <RankGoals goals={goals} />
+        </Content>
       </Background>
     );
   }
 
-  _scoreCount() {
-    const { goals } = this.props.state;
-
+  _scoreCount(goals) {
     let totalScore = 0;
     let totalPossibleScore = goals.length * 5;
 
-    goals.forEach((goal) => {
+    goals.forEach(goal => {
       totalScore += goal.score;
     });
 
     return `(${totalScore}/${totalPossibleScore})`;
   }
-};
+}
 
 const mapStateToProps = state => {
   return { state };
 };
 
-const ConnectedProgress = connect(
-  mapStateToProps
-)(Progress);
+const ConnectedProgress = connect(mapStateToProps)(Progress);
 
 export { ConnectedProgress, Progress };
