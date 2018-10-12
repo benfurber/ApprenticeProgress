@@ -239,6 +239,57 @@ ShallowWrapper {
             (41.5/75)
           </Styled(H2)>
         </Styled(ViewNB)>
+        <Styled(ViewNB)
+          style={
+            Object {
+              "paddingHorizontal": 30,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Tag
+              text="Team thoughtbot"
+            />
+            <Styled(Text)>
+              : x/y
+            </Styled(Text)>
+          </Styled(ViewNB)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Tag
+              text="I'm a developer"
+            />
+            <Styled(Text)>
+              : x/y
+            </Styled(Text)>
+          </Styled(ViewNB)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Tag
+              text="I'm a consultant"
+            />
+            <Styled(Text)>
+              : x/y
+            </Styled(Text)>
+          </Styled(ViewNB)>
+        </Styled(ViewNB)>
         <RankGoals
           goals={
             Array [
@@ -460,6 +511,57 @@ ShallowWrapper {
               Total score: 
               (41.5/75)
             </Styled(H2)>
+          </Styled(ViewNB)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
+              }
+            }
+          >
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tag
+                text="Team thoughtbot"
+              />
+              <Styled(Text)>
+                : x/y
+              </Styled(Text)>
+            </Styled(ViewNB)>
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tag
+                text="I'm a developer"
+              />
+              <Styled(Text)>
+                : x/y
+              </Styled(Text)>
+            </Styled(ViewNB)>
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tag
+                text="I'm a consultant"
+              />
+              <Styled(Text)>
+                : x/y
+              </Styled(Text)>
+            </Styled(ViewNB)>
           </Styled(ViewNB)>,
           <RankGoals
             goals={
@@ -711,6 +813,204 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "children": Array [
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Tag
+                  text="Team thoughtbot"
+                />
+                <Styled(Text)>
+                  : x/y
+                </Styled(Text)>
+              </Styled(ViewNB)>,
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Tag
+                  text="I'm a developer"
+                />
+                <Styled(Text)>
+                  : x/y
+                </Styled(Text)>
+              </Styled(ViewNB)>,
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Tag
+                  text="I'm a consultant"
+                />
+                <Styled(Text)>
+                  : x/y
+                </Styled(Text)>
+              </Styled(ViewNB)>,
+            ],
+            "style": Object {
+              "paddingHorizontal": 30,
+              "paddingVertical": 10,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Tag
+                    text="Team thoughtbot"
+                  />,
+                  <Styled(Text)>
+                    : x/y
+                  </Styled(Text)>,
+                ],
+                "style": Object {
+                  "flexDirection": "row",
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "text": "Team thoughtbot",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": ": x/y",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": ": x/y",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Tag
+                    text="I'm a developer"
+                  />,
+                  <Styled(Text)>
+                    : x/y
+                  </Styled(Text)>,
+                ],
+                "style": Object {
+                  "flexDirection": "row",
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "text": "I'm a developer",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": ": x/y",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": ": x/y",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Tag
+                    text="I'm a consultant"
+                  />,
+                  <Styled(Text)>
+                    : x/y
+                  </Styled(Text)>,
+                ],
+                "style": Object {
+                  "flexDirection": "row",
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "text": "I'm a consultant",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": ": x/y",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": ": x/y",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "goals": Array [
               Object {
                 "actions": Array [
@@ -944,6 +1244,57 @@ ShallowWrapper {
               (41.5/75)
             </Styled(H2)>
           </Styled(ViewNB)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
+              }
+            }
+          >
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tag
+                text="Team thoughtbot"
+              />
+              <Styled(Text)>
+                : x/y
+              </Styled(Text)>
+            </Styled(ViewNB)>
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tag
+                text="I'm a developer"
+              />
+              <Styled(Text)>
+                : x/y
+              </Styled(Text)>
+            </Styled(ViewNB)>
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Tag
+                text="I'm a consultant"
+              />
+              <Styled(Text)>
+                : x/y
+              </Styled(Text)>
+            </Styled(ViewNB)>
+          </Styled(ViewNB)>
           <RankGoals
             goals={
               Array [
@@ -1165,6 +1516,57 @@ ShallowWrapper {
                 Total score: 
                 (41.5/75)
               </Styled(H2)>
+            </Styled(ViewNB)>,
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Tag
+                  text="Team thoughtbot"
+                />
+                <Styled(Text)>
+                  : x/y
+                </Styled(Text)>
+              </Styled(ViewNB)>
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Tag
+                  text="I'm a developer"
+                />
+                <Styled(Text)>
+                  : x/y
+                </Styled(Text)>
+              </Styled(ViewNB)>
+              <Styled(ViewNB)
+                style={
+                  Object {
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Tag
+                  text="I'm a consultant"
+                />
+                <Styled(Text)>
+                  : x/y
+                </Styled(Text)>
+              </Styled(ViewNB)>
             </Styled(ViewNB)>,
             <RankGoals
               goals={
@@ -1409,6 +1811,204 @@ ShallowWrapper {
               ],
               "type": [Function],
             },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Styled(ViewNB)
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Tag
+                    text="Team thoughtbot"
+                  />
+                  <Styled(Text)>
+                    : x/y
+                  </Styled(Text)>
+                </Styled(ViewNB)>,
+                <Styled(ViewNB)
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Tag
+                    text="I'm a developer"
+                  />
+                  <Styled(Text)>
+                    : x/y
+                  </Styled(Text)>
+                </Styled(ViewNB)>,
+                <Styled(ViewNB)
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
+                >
+                  <Tag
+                    text="I'm a consultant"
+                  />
+                  <Styled(Text)>
+                    : x/y
+                  </Styled(Text)>
+                </Styled(ViewNB)>,
+              ],
+              "style": Object {
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Tag
+                      text="Team thoughtbot"
+                    />,
+                    <Styled(Text)>
+                      : x/y
+                    </Styled(Text)>,
+                  ],
+                  "style": Object {
+                    "flexDirection": "row",
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "text": "Team thoughtbot",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": ": x/y",
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": ": x/y",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Tag
+                      text="I'm a developer"
+                    />,
+                    <Styled(Text)>
+                      : x/y
+                    </Styled(Text)>,
+                  ],
+                  "style": Object {
+                    "flexDirection": "row",
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "text": "I'm a developer",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": ": x/y",
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": ": x/y",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Tag
+                      text="I'm a consultant"
+                    />,
+                    <Styled(Text)>
+                      : x/y
+                    </Styled(Text)>,
+                  ],
+                  "style": Object {
+                    "flexDirection": "row",
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "text": "I'm a consultant",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": ": x/y",
+                      "virtual": undefined,
+                    },
+                    "ref": null,
+                    "rendered": ": x/y",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           Object {

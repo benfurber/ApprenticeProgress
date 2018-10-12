@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Content, H2, View } from "native-base";
+import { Content, H2, Text, View } from "native-base";
 import { connect } from "react-redux";
 
-import { Background, RankGoals } from "components";
+import { Background, RankGoals, Tag } from "components";
 import { styles } from "styles";
 
 class Progress extends Component {
@@ -20,6 +20,20 @@ class Progress extends Component {
         <Content style={styles.content}>
           <View style={styles.element}>
             <H2>Total score: {this._scoreCount(goals)}</H2>
+          </View>
+          <View style={styles.element}>
+            <View style={{ flexDirection: "row" }}>
+              <Tag text="Team thoughtbot" />
+              <Text>: x/y</Text>
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Tag text="I'm a developer" />
+              <Text>: x/y</Text>
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Tag text="I'm a consultant" />
+              <Text>: x/y</Text>
+            </View>
           </View>
           <RankGoals goals={goals} />
         </Content>
