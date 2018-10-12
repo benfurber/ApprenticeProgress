@@ -9,12 +9,29 @@ const standards = {
 
 const colours = {
   black: "#3D3E44",
+  grey: "#666",
   red: "#ED3E44",
+  transparentWhite: "#FFFFFFCF",
   white: "#FFF",
+  success20: "#dc143c",
+  success40: "#d35f3c",
+  success60: "#c7893a",
+  success80: "#b5ab37",
+  success100: "#9acd32",
 };
+
+const successScaleArray = [
+  colours.grey,
+  colours.success20,
+  colours.success40,
+  colours.success60,
+  colours.success80,
+  colours.success100,
+];
 
 const styles = StyleSheet.create({
   content: {
+    backgroundColor: colours.transparentWhite,
     paddingTop: 20,
   },
   element: {
@@ -56,11 +73,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#f3f3f3",
   },
   barScore0: { width: "0%" },
-  barScore1: { width: "20%", backgroundColor: "#dc143c" },
-  barScore2: { width: "40%", backgroundColor: "#d35f3c" },
-  barScore3: { width: "60%", backgroundColor: "#c7893a" },
-  barScore4: { width: "80%", backgroundColor: "#b5ab37" },
-  barScore5: { width: "100%", backgroundColor: "#9acd32" },
+  barScore1: { width: "20%", backgroundColor: colours.success20 },
+  barScore2: { width: "40%", backgroundColor: colours.success40 },
+  barScore3: { width: "60%", backgroundColor: colours.success60 },
+  barScore4: { width: "80%", backgroundColor: colours.success80 },
+  barScore5: { width: "100%", backgroundColor: colours.success100 },
 
   dash: {
     height: 5,
@@ -84,4 +101,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { colours, styles };
+export { colours, successScaleArray, styles };
