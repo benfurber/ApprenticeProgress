@@ -1,5 +1,9 @@
 // @flow
 
+export type GoalsType = [
+  GoalDetailsType
+];
+
 export type GoalsDataType = {
   GoalIdType: GoalDetailsType,
 };
