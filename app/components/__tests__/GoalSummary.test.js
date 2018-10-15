@@ -15,7 +15,9 @@ describe("goalSummary", () => {
       title: "Testing title",
       tag: "One",
     };
-    const component = shallow(<GoalSummary details={goalDetails} navigation={navigationMock} />);
+    const component = shallow(
+      <GoalSummary details={goalDetails} navigation={navigationMock} />
+    );
 
     expect(component).toMatchSnapshot();
   });
@@ -29,7 +31,13 @@ describe("goalSummary", () => {
       title: "Testing title",
       tag: "One",
     };
-    const component = shallow(<GoalSummary details={goalDetails} navigation={navigationMock} onPress={onPressMock} />);
+    const component = shallow(
+      <GoalSummary
+        details={goalDetails}
+        navigation={navigationMock}
+        onPress={onPressMock}
+      />
+    );
 
     component.simulate("press");
 

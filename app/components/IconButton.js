@@ -9,18 +9,20 @@ class IconButton extends Component {
     return (
       <View style={styles.view}>
         {this._selectIcon(name, tint)}
-        <Text style={[styles.text, {color: tint}]}>{name}</Text>
+        <Text style={[styles.text, { color: tint }]}>{name}</Text>
       </View>
     );
   }
 
   _selectIcon(name, tint) {
     if (name == "Goals") {
-      return <Icon name="md-filing" style={[styles.icon, {color: tint}]} />;
+      return <Icon name="md-filing" style={[styles.icon, { color: tint }]} />;
     }
 
     if (name == "Progress") {
-      return <Icon name="md-speedometer" style={[styles.icon, {color: tint}]} />;
+      return (
+        <Icon name="md-speedometer" style={[styles.icon, { color: tint }]} />
+      );
     }
 
     return null;

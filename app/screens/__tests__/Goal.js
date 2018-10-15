@@ -8,7 +8,7 @@ import { Goal } from "../Goal";
 describe("Goal", () => {
   it("has a valid snapshot", () => {
     const params = {
-      "details": {
+      details: {
         id: 1,
         actions: ["1", "2"],
         description: "Words here about a goal",

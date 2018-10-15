@@ -7,7 +7,6 @@ import { goalsData } from "../../data/goals";
 
 describe("TotalScore", () => {
   it("has a valid snapshot", () => {
-    
     const component = shallow(<TotalScore goals={goalsData} />);
 
     expect(component).toMatchSnapshot();

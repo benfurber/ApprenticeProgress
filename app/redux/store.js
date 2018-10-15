@@ -6,7 +6,7 @@ import { rootReducer } from "redux-modules";
 
 const store = createStore(
   rootReducer,
-  composeWithDevTools(applyMiddleware(thunk)),
+  composeWithDevTools(applyMiddleware(thunk))
 );
 
 if (module.hot) {

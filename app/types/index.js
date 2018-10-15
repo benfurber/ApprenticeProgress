@@ -31,6 +31,6 @@ export type mockParamsDetailsType = {
 };
 
 export type navigationType = {
-  getParam: (string) => any,
+  getParam: string => any,
   navigate: (string, {}) => any,
 };

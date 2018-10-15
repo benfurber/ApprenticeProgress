@@ -57,7 +57,8 @@ const goalsData = [
   {
     id: 6,
     actions: [],
-    description: "Self management requires that you can motivate yourself to do better.",
+    description:
+      "Self management requires that you can motivate yourself to do better.",
     evidence: [""],
     score: 4,
     tag: "Team thoughtbot",
@@ -66,7 +67,8 @@ const goalsData = [
   {
     id: 7,
     actions: ["Implement redux"],
-    description: "Code is object orientated, easy to read/understand and easy to change.",
+    description:
+      "Code is object orientated, easy to read/understand and easy to change.",
     evidence: [
       "Can explain difference and value of different types of components.",
       "Came up with the idea of the internal link component",
@@ -89,10 +91,7 @@ const goalsData = [
   },
   {
     id: 9,
-    actions: [
-      "Contribute to client projects",
-      "Build breakable toy",
-    ],
+    actions: ["Contribute to client projects", "Build breakable toy"],
     description: "Bit difficult to do job otherwise...",
     evidence: ["Completed a few screens/components"],
     score: 2.5,
@@ -110,10 +109,7 @@ const goalsData = [
   },
   {
     id: 11,
-    actions: [
-      "Build an API",
-      "Deploy an app to the marketplace",
-    ],
+    actions: ["Build an API", "Deploy an app to the marketplace"],
     description: "Fundamentals of the how the internet is possible.",
     evidence: [""],
     score: 3,
@@ -136,7 +132,8 @@ const goalsData = [
     evidence: ["Could give boilerplate thoughtbot explanation"],
     score: 2,
     tag: "I'm a consultant",
-    title: "I can clearly explain to others where/when thoughtbot can add value",
+    title:
+      "I can clearly explain to others where/when thoughtbot can add value",
   },
   {
     id: 14,

@@ -14,7 +14,9 @@ describe("Feed", () => {
       goals: [],
     };
 
-    const component = shallow(<Feed navigation={navigationMock} state={state} />);
+    const component = shallow(
+      <Feed navigation={navigationMock} state={state} />
+    );
 
     expect(component).toMatchSnapshot();
   });
@@ -24,7 +26,9 @@ describe("Feed", () => {
       goals: goalsData,
     };
 
-    const component = shallow(<Feed navigation={navigationMock} state={state} />);
+    const component = shallow(
+      <Feed navigation={navigationMock} state={state} />
+    );
 
     expect(component).toMatchSnapshot();
   });

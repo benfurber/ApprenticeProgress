@@ -8,11 +8,11 @@ class Tag extends Component {
     const { text } = this.props;
 
     return (
-      <Badge style={{backgroundColor: this._tagStyle(text)}}>
+      <Badge style={{ backgroundColor: this._tagStyle(text) }}>
         <Text>{text}</Text>
       </Badge>
     );
-  };
+  }
 
   _tagStyle(text) {
     const option = lastWordOfString(text);
@@ -24,6 +24,6 @@ class Tag extends Component {
 
     return styleOptions[option];
   }
-};
+}
 
 export { Tag };

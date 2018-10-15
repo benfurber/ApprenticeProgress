@@ -8,7 +8,7 @@ import { GoalSummary } from "components";
 import type { GoalsDataType, navigationType } from "types";
 import { orderByTitle } from "utils";
 
-type Props = { goals: GoalsDataType, navigation: navigationType };
+type Props = { goals: string, navigation: navigationType };
 
 class GoalsList extends Component<Props> {
   render() {
@@ -19,21 +19,16 @@ class GoalsList extends Component<Props> {
       <Content>
         <FlatList
           data={goals}
-          renderItem={({item}) => this._renderGoal(item)}
+          renderItem={({ item }) => this._renderGoal(item)}
           keyExtractor={item => item.id.toString()}
         />
       </Content>
     );
-  };
+  }
 
   _renderGoal(goal) {
-    return (
-      <GoalSummary
-        details={goal}
-        navigation={this.props.navigation}
-      />
-    );
+    return <GoalSummary details={goal} navigation={this.props.navigation} />;
   }
-};
+}
 
 export { GoalsList };

@@ -14,7 +14,7 @@ describe("addGoals", () => {
 });
 
 describe("fetchGoals", () => {
-  it("calls the client", async() => {
+  it("calls the client", async () => {
     const goals = jest.fn();
     const dispatch = jest.fn(goals);
 

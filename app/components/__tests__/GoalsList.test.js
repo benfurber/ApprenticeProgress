@@ -16,7 +16,7 @@ describe("GoalsList", () => {
         tag: "I'm team thoughtbot",
       },
     ];
-    
+
     const component = shallow(
       <GoalsList goals={goals} navigation={navigationMock} />
     );
