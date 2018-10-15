@@ -11,8 +11,10 @@ export type GoalsDataType = {
 export type GoalIdType = [number];
 
 export type GoalDetailsType = {
+  id: number,
   actions: Array<string>,
   description: string,
+  evidence: Array<string>,
   score: number,
   tag: string,
   title: string,
