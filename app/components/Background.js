@@ -7,7 +7,7 @@ import { Container, View } from "native-base";
 type Props = {
   children: any,
   noRalph?: boolean,
-}
+};
 
 class Background extends Component<Props> {
   render() {

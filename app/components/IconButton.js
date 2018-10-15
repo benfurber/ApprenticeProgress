@@ -24,8 +24,6 @@ class IconButton extends Component<Props> {
   _selectIcon() {
     const { name, tint } = this.props;
 
-    console.log(tint)
-
     if (name == "Goals") {
       return <Icon name="md-filing" style={[styles.icon, { color: tint }]} />;
     }
