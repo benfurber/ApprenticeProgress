@@ -1,20 +1,31 @@
+// @flow
+
 import React, { Component } from "react";
 import { StyleSheet } from "react-native";
 import { Icon, Text, View } from "native-base";
 
-class IconButton extends Component {
+type Props = {
+  tint: string,
+  name: string,
+};
+
+class IconButton extends Component<Props> {
   render() {
     const { tint, name } = this.props;
 
     return (
       <View style={styles.view}>
-        {this._selectIcon(name, tint)}
+        {this._selectIcon()}
         <Text style={[styles.text, { color: tint }]}>{name}</Text>
       </View>
     );
   }
 
-  _selectIcon(name, tint) {
+  _selectIcon() {
+    const { name, tint } = this.props;
+
+    console.log(tint)
+
     if (name == "Goals") {
       return <Icon name="md-filing" style={[styles.icon, { color: tint }]} />;
     }

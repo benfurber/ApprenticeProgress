@@ -1,8 +1,15 @@
+// @flow
+
 import React, { Component } from "react";
 import { Image, StyleSheet } from "react-native";
 import { Container, View } from "native-base";
 
-class Background extends Component {
+type Props = {
+  children: any,
+  noRalph?: boolean,
+}
+
+class Background extends Component<Props> {
   render() {
     const { children } = this.props;
 

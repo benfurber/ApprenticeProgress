@@ -1,9 +1,15 @@
+// @flow
+
 import React, { Component } from "react";
 import { Badge, Text } from "native-base";
 
 import { lastWordOfString } from "utils";
 
-class Tag extends Component {
+type Props = {
+  text: string,
+};
+
+class Tag extends Component<Props> {
   render() {
     const { text } = this.props;
 
@@ -14,7 +20,7 @@ class Tag extends Component {
     );
   }
 
-  _tagStyle(text) {
+  _tagStyle(text: string) {
     const option = lastWordOfString(text);
     const styleOptions = {
       thoughtbot: "#ED3E44",

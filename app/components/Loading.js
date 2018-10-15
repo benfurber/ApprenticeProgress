@@ -1,10 +1,13 @@
+// @flow
+
 import React, { Component } from "react";
 import { StyleSheet } from "react-native";
 import { View } from "native-base";
 
 import { Background, Dot } from "components";
 
-class Loading extends Component {
+type Props = {};
+class Loading extends Component<Props> {
   render() {
     return (
       <Background noRalph={true}>

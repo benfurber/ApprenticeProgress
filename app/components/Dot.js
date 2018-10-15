@@ -1,9 +1,17 @@
+// @flow
+
 import React, { Component } from "react";
 import { Animated, Easing } from "react-native";
 
 import { colours } from "styles";
 
-class Dot extends Component {
+type Props = {
+  delay: number,
+};
+
+class Dot extends Component<Props> {
+  animatedValue: any;
+
   constructor() {
     super();
     this.animatedValue = new Animated.Value(0);
