@@ -51,7 +51,7 @@ class RankGoals extends Component {
             renderItem={({ item }) => (
               <ListItem>
                 <Text style={{ color: successScaleArray[score] }}>
-                  - {item.title}
+                  {item.title}
                 </Text>
               </ListItem>
             )}
