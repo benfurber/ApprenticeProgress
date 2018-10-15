@@ -54,7 +54,13 @@ ShallowWrapper {
             }
           }
         >
-          <Styled(List)>
+          <Styled(List)
+            style={
+              Object {
+                "minHeight": 240,
+              }
+            }
+          >
             <FlatList
               data={
                 Array [
@@ -99,7 +105,13 @@ ShallowWrapper {
             }
           }
         >
-          <Styled(List)>
+          <Styled(List)
+            style={
+              Object {
+                "minHeight": 240,
+              }
+            }
+          >
             <FlatList
               data={
                 Array [
@@ -133,9 +145,16 @@ ShallowWrapper {
       "prerenderingSiblingsNumber": 0,
       "scrollWithoutAnimation": false,
       "style": Object {
-        "backgroundColor": "transparent",
+        "backgroundColor": "#FFFFFFCF",
+        "borderBottomWidth": 2,
+        "borderColor": "#5A6268",
+        "borderTopWidth": 2,
+        "height": 300,
       },
       "tabBarPosition": "top",
+      "tabBarUnderlineStyle": Object {
+        "backgroundColor": "#3D3E44",
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -144,7 +163,13 @@ ShallowWrapper {
         "key": "4",
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(List)>
+          "children": <Styled(List)
+            style={
+              Object {
+                "minHeight": 240,
+              }
+            }
+          >
             <FlatList
               data={
                 Array [
@@ -211,6 +236,9 @@ ShallowWrapper {
               updateCellsBatchingPeriod={50}
               windowSize={21}
             />,
+            "style": Object {
+              "minHeight": 240,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -250,7 +278,13 @@ ShallowWrapper {
         "key": "2",
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(List)>
+          "children": <Styled(List)
+            style={
+              Object {
+                "minHeight": 240,
+              }
+            }
+          >
             <FlatList
               data={
                 Array [
@@ -317,6 +351,9 @@ ShallowWrapper {
               updateCellsBatchingPeriod={50}
               windowSize={21}
             />,
+            "style": Object {
+              "minHeight": 240,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -382,7 +419,13 @@ ShallowWrapper {
               }
             }
           >
-            <Styled(List)>
+            <Styled(List)
+              style={
+                Object {
+                  "minHeight": 240,
+                }
+              }
+            >
               <FlatList
                 data={
                   Array [
@@ -427,7 +470,13 @@ ShallowWrapper {
               }
             }
           >
-            <Styled(List)>
+            <Styled(List)
+              style={
+                Object {
+                  "minHeight": 240,
+                }
+              }
+            >
               <FlatList
                 data={
                   Array [
@@ -461,9 +510,16 @@ ShallowWrapper {
         "prerenderingSiblingsNumber": 0,
         "scrollWithoutAnimation": false,
         "style": Object {
-          "backgroundColor": "transparent",
+          "backgroundColor": "#FFFFFFCF",
+          "borderBottomWidth": 2,
+          "borderColor": "#5A6268",
+          "borderTopWidth": 2,
+          "height": 300,
         },
         "tabBarPosition": "top",
+        "tabBarUnderlineStyle": Object {
+          "backgroundColor": "#3D3E44",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -472,7 +528,13 @@ ShallowWrapper {
           "key": "4",
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(List)>
+            "children": <Styled(List)
+              style={
+                Object {
+                  "minHeight": 240,
+                }
+              }
+            >
               <FlatList
                 data={
                   Array [
@@ -539,6 +601,9 @@ ShallowWrapper {
                 updateCellsBatchingPeriod={50}
                 windowSize={21}
               />,
+              "style": Object {
+                "minHeight": 240,
+              },
               "virtual": undefined,
             },
             "ref": null,
@@ -578,7 +643,13 @@ ShallowWrapper {
           "key": "2",
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(List)>
+            "children": <Styled(List)
+              style={
+                Object {
+                  "minHeight": 240,
+                }
+              }
+            >
               <FlatList
                 data={
                   Array [
@@ -645,6 +716,9 @@ ShallowWrapper {
                 updateCellsBatchingPeriod={50}
                 windowSize={21}
               />,
+              "style": Object {
+                "minHeight": 240,
+              },
               "virtual": undefined,
             },
             "ref": null,

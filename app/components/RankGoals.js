@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-import { FlatList } from "react-native";
-import { Tabs, Tab, TabHeading, Text, List, ListItem } from "native-base";
+import { FlatList, StyleSheet } from "react-native";
+import { List, ListItem, Tab, TabHeading, Tabs, Text } from "native-base";
 
-import { colours, successScaleArray } from "styles";
+import { colours, standards, successScaleArray } from "styles";
 
 class RankGoals extends Component {
   render() {
     const { goals } = this.props;
 
     return (
-      <Tabs style={{ backgroundColor: "transparent" }}>
+      <Tabs
+        style={styles.tabs}
+        tabBarUnderlineStyle={{ backgroundColor: colours.black }}
+      >
         {this._renderAllTitles(goals)}
       </Tabs>
     );
@@ -53,11 +56,11 @@ class RankGoals extends Component {
         }
         style={{ backgroundColor: "transparent" }}
       >
-        <List>
+        <List style={styles.list}>
           <FlatList
             data={titleSet}
             renderItem={({ item }) => (
-              <ListItem style={{backgroundColor: colours.transparentWhite}}>
+              <ListItem>
                 <Text style={{ color: successScaleArray[score] }}>
                   - {item.title}
                 </Text>
@@ -70,5 +73,16 @@ class RankGoals extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  tabs: {
+    backgroundColor: colours.transparentWhite,
+    height: 300,
+    ...standards.borders,
+  },
+  list: {
+    minHeight: 240,
+  },
+});
 
 export { RankGoals };

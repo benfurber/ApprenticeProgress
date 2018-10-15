@@ -5,6 +5,11 @@ const standards = {
     paddingHorizontal: 30,
     paddingVertical: 10,
   },
+  borders: {
+    borderColor: "#5A6268",
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+  },
 };
 
 const colours = {
@@ -88,9 +93,7 @@ const styles = StyleSheet.create({
 
   highlightBox: {
     backgroundColor: "#DBD4CBAA",
-    borderColor: "#5A6268",
-    borderTopWidth: 2,
-    borderBottomWidth: 2,
+    ...standards.borders,
   },
 
   textDescription: {
@@ -101,4 +104,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { colours, successScaleArray, styles };
+export { colours, standards, styles, successScaleArray };
