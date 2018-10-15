@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "fix": "rm node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
+    "flow": "flow check",
     "format": "prettier --write '{*,{__mocks__,__tests__,app}/**/*}.js'",
     "jest": "jest --watch",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
