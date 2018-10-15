@@ -7,3 +7,4 @@ export { Loading } from "./Loading";
 export { ProgressBar } from "./ProgressBar";
 export { RankGoals } from "./RankGoals";
 export { Tag } from "./Tag";
+export { TotalScore } from "./TotalScore";
