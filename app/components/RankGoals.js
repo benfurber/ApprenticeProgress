@@ -3,6 +3,7 @@ import { FlatList, StyleSheet } from "react-native";
 import { List, ListItem, Tab, TabHeading, Tabs, Text } from "native-base";
 
 import { colours, standards, successScaleArray } from "styles";
+import { findTitles } from "utils";
 
 class RankGoals extends Component {
   render() {
@@ -23,7 +24,7 @@ class RankGoals extends Component {
     let score = 5;
 
     while (score > -1) {
-      const titleSet = this._findTitles(goals, score);
+      const titleSet = findTitles(goals, score);
       if (titleSet.length > 0) {
         allTitles.push(this._renderTitleSet(titleSet, score));
       }
@@ -31,18 +32,6 @@ class RankGoals extends Component {
     }
 
     return allTitles;
-  }
-
-  _findTitles(goals, score) {
-    let titleSet = [];
-
-    goals.forEach(goal => {
-      if (goal.score === score) {
-        titleSet.push({ id: goal.id, title: goal.title });
-      }
-    });
-
-    return titleSet;
   }
 
   _renderTitleSet(titleSet, score) {
