@@ -3,6 +3,7 @@ import { H2, Text, View } from "native-base";
 
 import { Tag } from "components";
 import { styles } from "styles";
+import { filterByTag } from "utils";
 
 class TotalScore extends Component {
   render() {
@@ -32,9 +33,7 @@ class TotalScore extends Component {
   _countScore(tagName = false) {
     let { goals } = this.props;
 
-    if (tagName) {
-      goals = goals.filter(goal => goal.tag == tagName);
-    }
+    goals = filterByTag(goals, tagName);
 
     let totalScore = 0;
     const totalPossibleScore = goals.length * 5;
