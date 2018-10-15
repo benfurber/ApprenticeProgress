@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Content, H2, Text, View } from "native-base";
+import { Content } from "native-base";
 import { connect } from "react-redux";
 
-import { Background, RankGoals, Tag } from "components";
+import { Background, RankGoals, TotalScore } from "components";
 import { styles } from "styles";
 
 class Progress extends Component {
@@ -18,38 +18,11 @@ class Progress extends Component {
     return (
       <Background>
         <Content style={styles.content}>
-          <View style={styles.element}>
-            <H2>Total score: {this._scoreCount(goals)}</H2>
-          </View>
-          <View style={styles.element}>
-            <View style={{ flexDirection: "row" }}>
-              <Tag text="Team thoughtbot" />
-              <Text>: x/y</Text>
-            </View>
-            <View style={{ flexDirection: "row" }}>
-              <Tag text="I'm a developer" />
-              <Text>: x/y</Text>
-            </View>
-            <View style={{ flexDirection: "row" }}>
-              <Tag text="I'm a consultant" />
-              <Text>: x/y</Text>
-            </View>
-          </View>
+          <TotalScore goals={goals} />
           <RankGoals goals={goals} />
         </Content>
       </Background>
     );
-  }
-
-  _scoreCount(goals) {
-    let totalScore = 0;
-    let totalPossibleScore = goals.length * 5;
-
-    goals.forEach(goal => {
-      totalScore += goal.score;
-    });
-
-    return `(${totalScore}/${totalPossibleScore})`;
   }
 }
 
