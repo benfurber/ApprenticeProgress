@@ -14,3 +14,11 @@ node_modules/react-native/flow
 
 [options]
 module.system.node.resolve_dirname=./src
+
+module.name_mapper='^components$' -> '<PROJECT_ROOT>/app/components'
+module.name_mapper='^mocks$' -> '<PROJECT_ROOT>/app/__mocks__'
+module.name_mapper='^redux-modules$' -> '<PROJECT_ROOT>/app/redux/modules'
+module.name_mapper='^redux-store$' -> '<PROJECT_ROOT>/app/redux/store'
+module.name_mapper='^styles$' -> '<PROJECT_ROOT>/app/styles'
+module.name_mapper='^types$' -> '<PROJECT_ROOT>/app/types'
+module.name_mapper='^utils$' -> '<PROJECT_ROOT>/app/utils'
