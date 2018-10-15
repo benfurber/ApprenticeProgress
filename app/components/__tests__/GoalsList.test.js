@@ -6,19 +6,12 @@ import { shallow } from "enzyme";
 import { GoalsList } from "../GoalsList";
 import navigationMock from "mocks";
 
+import { goalsData } from "../../data/goals";
+
 describe("GoalsList", () => {
   it("has a valid snapshot", () => {
-    const goals = [
-      {
-        id: 1,
-        description: "Hello world 1",
-        title: "Testing title",
-        tag: "I'm team thoughtbot",
-      },
-    ];
-
     const component = shallow(
-      <GoalsList goals={goals} navigation={navigationMock} />
+      <GoalsList goals={goalsData} navigation={navigationMock} />
     );
 
     expect(component).toMatchSnapshot();
