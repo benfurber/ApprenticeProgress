@@ -6,13 +6,11 @@ import { connect } from "react-redux";
 
 import { Background, GoalsList, Loading } from "components";
 import { fetchGoals } from "redux-modules";
-import type { navigationType } from "types";
+import type { navigationType, stateType } from "types";
 
 type Props = {
   navigation: navigationType,
-  state: {
-    goals: {},
-  },
+  state: stateType,
 };
 
 class Feed extends Component<Props> {
@@ -21,26 +19,28 @@ class Feed extends Component<Props> {
   };
 
   render() {
-    const { navigation, state } = this.props;
-    const { goals } = state;
-
     return (
       <Background>
         <Content>
-          {this._renderLoading(goals)}
-          {this._renderGoals(goals, navigation)}
+          {this._renderLoading()}
+          {this._renderGoals()}
         </Content>
       </Background>
     );
   }
 
-  _renderLoading(goals) {
+  _renderLoading() {
+    const { goals } = this.props.state;
+
     if (goals.length == 0) {
       return <Loading />;
     }
   }
 
-  _renderGoals(goals, navigation) {
+  _renderGoals() {
+    const { navigation, state } = this.props;
+    const { goals } = state;
+
     if (goals.length > 0) {
       return <GoalsList goals={goals} navigation={navigation} />;
     }
@@ -51,7 +51,7 @@ const mapStateToProps = state => {
   return { state };
 };
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch: any) => ({
   goals: fetchGoals(dispatch),
 });
 
