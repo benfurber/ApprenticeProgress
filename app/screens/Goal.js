@@ -1,15 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
-import {
-  Content,
-  List,
-  ListItem,
-  H2,
-  H3,
-  Text,
-  View,
-} from "native-base";
+import { Content, List, ListItem, H2, H3, Text, View } from "native-base";
 
 import { Background, ProgressBar, Tag } from "components";
 import { styles } from "styles";
@@ -30,30 +22,28 @@ class Goal extends Component<Props> {
 
     return (
       <Background>
-        <Content style={{backgroundColor: "#fffa"}}>
-          <Content style={styles.content}>
+        <Content style={styles.content}>
+          <View style={styles.element}>
+            <H2>{title}</H2>
+            <Tag text={tag} />
+          </View>
+          <View style={styles.element}>
+            <Text style={styles.textDescription}>{description}</Text>
+          </View>
+          <View style={styles.highlightBox}>
             <View style={styles.element}>
-              <H2>{title}</H2>
-              <Tag text={tag} />
+              <H3>Progress: </H3>
             </View>
+            <ProgressBar score={score} />
             <View style={styles.element}>
-              <Text style={styles.textDescription}>{description}</Text>
+              <H3>Evidence: </H3>
+              <List>{this._renderList(evidence)}</List>
             </View>
-            <View style={styles.highlightBox}>
-              <View style={styles.element}>
-                <H3>Progress: </H3>
-              </View>
-              <ProgressBar score={score} />
-              <View style={styles.element}>
-                <H3>Evidence: </H3>
-                <List>{this._renderList(evidence)}</List>
-              </View>
-            </View>
-            <View style={styles.element}>
-              <H3>Actions: </H3>
-              <List>{this._renderList(actions)}</List>
-            </View>
-          </Content>
+          </View>
+          <View style={styles.element}>
+            <H3>Actions: </H3>
+            <List>{this._renderList(actions)}</List>
+          </View>
         </Content>
       </Background>
     );

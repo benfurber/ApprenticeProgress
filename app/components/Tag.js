@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { StyleSheet } from "react-native";
 import { Badge, Text } from "native-base";
 
 import { lastWordOfString } from "utils";
@@ -9,7 +8,7 @@ class Tag extends Component {
     const { text } = this.props;
 
     return (
-      <Badge style={this._tagStyle(text)}>
+      <Badge style={{backgroundColor: this._tagStyle(text)}}>
         <Text>{text}</Text>
       </Badge>
     );
@@ -18,25 +17,13 @@ class Tag extends Component {
   _tagStyle(text) {
     const option = lastWordOfString(text);
     const styleOptions = {
-      thoughtbot: styles.thoughtbot,
-      developer: styles.developer,
-      consultant: styles.consultant,
+      thoughtbot: "#ED3E44",
+      developer: "#EF8D3F",
+      consultant: "#BE3284",
     };
 
     return styleOptions[option];
   }
 };
-
-const styles = StyleSheet.create({
-  thoughtbot: {
-    backgroundColor: "#ED3E44",
-  },
-  developer: {
-    backgroundColor: "#EF8D3F",
-  },
-  consultant: {
-    backgroundColor: "#BE3284",
-  },
-});
 
 export { Tag };

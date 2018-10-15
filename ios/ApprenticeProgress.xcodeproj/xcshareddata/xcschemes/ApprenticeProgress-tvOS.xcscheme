@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "ApprenticeProgress-tvOS.app"
-               BlueprintName = "ApprenticeProgress-tvOS"
-               ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+               BuildableName = "apprenticeprogress-tvOS.app"
+               BlueprintName = "apprenticeprogress-tvOS"
+               ReferencedContainer = "container:apprenticeprogress.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "ApprenticeProgress-tvOSTests.xctest"
-               BlueprintName = "ApprenticeProgress-tvOSTests"
-               ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+               BuildableName = "apprenticeprogress-tvOSTests.xctest"
+               BlueprintName = "apprenticeprogress-tvOSTests"
+               ReferencedContainer = "container:apprenticeprogress.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "ApprenticeProgress-tvOSTests.xctest"
-               BlueprintName = "ApprenticeProgress-tvOSTests"
-               ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+               BuildableName = "apprenticeprogress-tvOSTests.xctest"
+               BlueprintName = "apprenticeprogress-tvOSTests"
+               ReferencedContainer = "container:apprenticeprogress.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "ApprenticeProgress-tvOS.app"
-            BlueprintName = "ApprenticeProgress-tvOS"
-            ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+            BuildableName = "apprenticeprogress-tvOS.app"
+            BlueprintName = "apprenticeprogress-tvOS"
+            ReferencedContainer = "container:apprenticeprogress.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "ApprenticeProgress-tvOS.app"
-            BlueprintName = "ApprenticeProgress-tvOS"
-            ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+            BuildableName = "apprenticeprogress-tvOS.app"
+            BlueprintName = "apprenticeprogress-tvOS"
+            ReferencedContainer = "container:apprenticeprogress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "ApprenticeProgress-tvOS.app"
-            BlueprintName = "ApprenticeProgress-tvOS"
-            ReferencedContainer = "container:ApprenticeProgress.xcodeproj">
+            BuildableName = "apprenticeprogress-tvOS.app"
+            BlueprintName = "apprenticeprogress-tvOS"
+            ReferencedContainer = "container:apprenticeprogress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
