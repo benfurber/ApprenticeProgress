@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <IconButton
     name="Goals"
+    tint="#929292"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,7 +27,7 @@ ShallowWrapper {
             Array [
               Object {},
               Object {
-                "color": undefined,
+                "color": "#929292",
               },
             ]
           }
@@ -38,7 +39,7 @@ ShallowWrapper {
                 "paddingLeft": 10,
               },
               Object {
-                "color": undefined,
+                "color": "#929292",
               },
             ]
           }
@@ -63,7 +64,7 @@ ShallowWrapper {
           "style": Array [
             Object {},
             Object {
-              "color": undefined,
+              "color": "#929292",
             },
           ],
           "virtual": undefined,
@@ -83,7 +84,7 @@ ShallowWrapper {
               "paddingLeft": 10,
             },
             Object {
-              "color": undefined,
+              "color": "#929292",
             },
           ],
           "virtual": undefined,
@@ -108,7 +109,7 @@ ShallowWrapper {
               Array [
                 Object {},
                 Object {
-                  "color": undefined,
+                  "color": "#929292",
                 },
               ]
             }
@@ -120,7 +121,7 @@ ShallowWrapper {
                   "paddingLeft": 10,
                 },
                 Object {
-                  "color": undefined,
+                  "color": "#929292",
                 },
               ]
             }
@@ -145,7 +146,7 @@ ShallowWrapper {
             "style": Array [
               Object {},
               Object {
-                "color": undefined,
+                "color": "#929292",
               },
             ],
             "virtual": undefined,
@@ -165,7 +166,7 @@ ShallowWrapper {
                 "paddingLeft": 10,
               },
               Object {
-                "color": undefined,
+                "color": "#929292",
               },
             ],
             "virtual": undefined,

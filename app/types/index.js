@@ -1,36 +1,45 @@
 // @flow
 
+// import { type NavigationState } from "react-navigation";
+
+export type GoalsType = Array<GoalDetailsType>;
+
 export type GoalsDataType = {
   GoalIdType: GoalDetailsType,
 };
 
-export type GoalIdType = [number];
+export type GoalIdType = Array<number>;
 
 export type GoalDetailsType = {
+  id: number,
   actions: Array<string>,
   description: string,
+  evidence: Array<string>,
   score: number,
   tag: string,
   title: string,
 };
 
-export type OnPressType = () => void;
+export type ListDetailsType = {
+  index: number,
+  action: string,
+};
+
+export type ListType = Array<ListDetailsType>;
 
 export type mockParamsType = {
   mockParams: {
-    details: mockParamsDetailsType,
+    details: GoalDetailsType,
   },
-};
-
-export type mockParamsDetailsType = {
-  actions: Array<string>,
-  description: string,
-  score: number,
-  tag: string,
-  title: string,
 };
 
 export type navigationType = {
   getParam: string => any,
   navigate: (string, {}) => any,
+};
+
+export type OnPressType = () => void;
+
+export type stateType = {
+  goals: GoalsType,
 };

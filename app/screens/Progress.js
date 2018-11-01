@@ -1,11 +1,18 @@
+// @flow
+
 import React, { Component } from "react";
 import { Content } from "native-base";
 import { connect } from "react-redux";
 
 import { Background, RankGoals, TotalScore } from "components";
 import { styles } from "styles";
+import type { stateType } from "types";
 
-class Progress extends Component {
+type Props = {
+  state: stateType,
+};
+
+class Progress extends Component<Props> {
   static navigationOptions = () => {
     return {
       title: "Progress",

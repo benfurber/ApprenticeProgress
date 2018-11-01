@@ -1,4 +1,6 @@
-const lastWordOfString = string => {
+// @flow
+
+const lastWordOfString = (string: string) => {
   return string.split(" ").splice(-1)[0];
 };
 

@@ -1,11 +1,17 @@
+// @flow
+
 import React, { Component } from "react";
 import { H2, Text, View } from "native-base";
 
 import { Tag } from "components";
 import { styles } from "styles";
+import type { stateType } from "types";
 import { calculateTotalScore, filterByTag } from "utils";
 
-class TotalScore extends Component {
+type Props = stateType;
+type TagNameProp = string | boolean;
+
+class TotalScore extends Component<Props> {
   render() {
     return (
       <View style={{ paddingBottom: 10 }}>
@@ -21,7 +27,7 @@ class TotalScore extends Component {
     );
   }
 
-  _renderTag(name) {
+  _renderTag(name: string) {
     return (
       <View style={{ flexDirection: "row" }}>
         <Tag text={name} />
@@ -30,7 +36,7 @@ class TotalScore extends Component {
     );
   }
 
-  _countScore(tagName = false) {
+  _countScore(tagName: TagNameProp = false) {
     let { goals } = this.props;
     goals = filterByTag(goals, tagName);
 

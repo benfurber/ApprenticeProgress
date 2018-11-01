@@ -1,25 +1,30 @@
+// @flow
+
 import React, { Component } from "react";
 import { FlatList, StyleSheet } from "react-native";
 import { List, ListItem, Tab, TabHeading, Tabs, Text } from "native-base";
 
 import { colours, standards, successScaleArray } from "styles";
+import type { stateType } from "types";
 import { findTitles } from "utils";
 
-class RankGoals extends Component {
-  render() {
-    const { goals } = this.props;
+type Props = stateType;
 
+class RankGoals extends Component<Props> {
+  render() {
     return (
       <Tabs
         style={styles.tabs}
         tabBarUnderlineStyle={{ backgroundColor: colours.black }}
       >
-        {this._renderAllTitles(goals)}
+        {this._renderAllTitles()}
       </Tabs>
     );
   }
 
-  _renderAllTitles(goals) {
+  _renderAllTitles() {
+    const { goals } = this.props;
+
     let allTitles = [];
     let score = 5;
 
@@ -34,7 +39,7 @@ class RankGoals extends Component {
     return allTitles;
   }
 
-  _renderTitleSet(titleSet, score) {
+  _renderTitleSet(titleSet: {}, score: number) {
     return (
       <Tab
         key={score}

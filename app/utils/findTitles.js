@@ -1,4 +1,8 @@
-const findTitles = (goals, score) => {
+// @flow
+
+import type { GoalsType } from "types";
+
+const findTitles = (goals: GoalsType, score: number) => {
   let titleSet = [];
 
   goals.forEach(goal => {

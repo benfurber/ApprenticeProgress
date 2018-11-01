@@ -1,4 +1,8 @@
-const calculateTotalScore = array => {
+// @flow
+
+type Props = Array<any>;
+
+const calculateTotalScore = (array: Props) => {
   let totalScore = 0;
 
   array.forEach(item => {
