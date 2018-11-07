@@ -1,5 +1,6 @@
 export { Background } from "./Background";
 export { Dot } from "./Dot";
+export { FormLogin } from "./FormLogin";
 export { GoalsList } from "./GoalsList";
 export { GoalSummary } from "./GoalSummary";
 export { IconButton } from "./IconButton";
