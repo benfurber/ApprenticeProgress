@@ -4,14 +4,11 @@ import React, { Component } from "react";
 import { Button, Content, Text } from "native-base";
 
 import type { navigationType, OnPressType } from "types";
+import { handlePress } from "utils";
 
 type Props = {
   navigation: navigationType,
   onPress?: OnPressType,
-};
-
-const handlePress = (destination, navigation, options = {}) => () => {
-  navigation.navigate(destination, options);
 };
 
 class FormLogin extends Component<Props> {

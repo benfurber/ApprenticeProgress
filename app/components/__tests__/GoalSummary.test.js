@@ -16,19 +16,4 @@ describe("goalSummary", () => {
 
     expect(component).toMatchSnapshot();
   });
-
-  it("reacts onPress", () => {
-    const onPressMock = jest.fn();
-    const component = shallow(
-      <GoalSummary
-        details={goalsData[2]}
-        navigation={navigationMock}
-        onPress={onPressMock}
-      />
-    );
-
-    component.simulate("press");
-
-    expect(onPressMock).toHaveBeenCalled();
-  });
 });

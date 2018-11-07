@@ -6,6 +6,7 @@ import { H3, View } from "native-base";
 
 import { Tag } from "components";
 import type { GoalDetailsType, OnPressType, navigationType } from "types";
+import { handlePress } from "utils";
 
 type Props = {
   details: GoalDetailsType,
@@ -13,14 +14,11 @@ type Props = {
   navigation: navigationType,
 };
 
-const handlePress = (navigation, details) => () => {
-  navigation.navigate("Goal", { details, title: details.title });
-};
-
 class GoalSummary extends Component<Props> {
   render() {
     const { details, navigation } = this.props;
-    const onPress = this.props.onPress || handlePress(navigation, details);
+    const options = { details, title: details.title };
+    const onPress = handlePress("Goal", navigation, options);
 
     const { score, tag, title } = details;
 
