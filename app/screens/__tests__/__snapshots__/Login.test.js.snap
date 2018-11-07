@@ -18,9 +18,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <Styled(Content)>
-        <Styled(Text)>
-          Blank Login
-        </Styled(Text)>
+        <FormLogin />
       </Styled(Content)>,
     },
     "ref": null,
@@ -29,9 +27,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Styled(Text)>
-          Blank Login
-        </Styled(Text)>,
+        "children": <FormLogin />,
         "virtual": undefined,
       },
       "ref": null,
@@ -40,11 +36,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Blank Login",
-          "virtual": undefined,
+          "navigation": undefined,
         },
         "ref": null,
-        "rendered": "Blank Login",
+        "rendered": null,
         "type": [Function],
       },
       "type": [Function],
@@ -58,9 +53,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <Styled(Content)>
-          <Styled(Text)>
-            Blank Login
-          </Styled(Text)>
+          <FormLogin />
         </Styled(Content)>,
       },
       "ref": null,
@@ -69,9 +62,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(Text)>
-            Blank Login
-          </Styled(Text)>,
+          "children": <FormLogin />,
           "virtual": undefined,
         },
         "ref": null,
@@ -80,11 +71,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Blank Login",
-            "virtual": undefined,
+            "navigation": undefined,
           },
           "ref": null,
-          "rendered": "Blank Login",
+          "rendered": null,
           "type": [Function],
         },
         "type": [Function],

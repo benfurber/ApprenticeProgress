@@ -1,18 +1,23 @@
 // @flow
 
 import React, { Component } from "react";
-import { Content, Text } from "native-base";
+import { Content } from "native-base";
 
-import { Background } from "components";
+import { Background, FormLogin } from "components";
+import type { navigationType } from "types";
 
-type Props = {};
+type Props = {
+  navigation: navigationType,
+};
 
 class Login extends Component<Props> {
   render() {
+    const { navigation } = this.props;
+
     return (
       <Background>
         <Content>
-          <Text>Blank Login</Text>
+          <FormLogin navigation={navigation} />
         </Content>
       </Background>
     );
