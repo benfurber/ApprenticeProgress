@@ -1,11 +1,12 @@
 import React from "react";
 import {
-  createStackNavigator,
   createBottomTabNavigator,
+  createStackNavigator,
+  createSwitchNavigator,
 } from "react-navigation";
 
 import { IconButton } from "components";
-import { FeedWrapper, Goal, ProgressWrapper } from "screens";
+import { FeedWrapper, Goal, Login, Goal, ProgressWrapper } from "screens";
 import { colours } from "styles";
 
 const stackConfig = {
@@ -41,6 +42,12 @@ const tabConfig = {
   },
 };
 
+const AuthenticationNavigator = createStackNavigator({
+  Login: {
+    screen: Login,
+  },
+});
+
 const GoalsNavigator = createStackNavigator(
   {
     Home: {
@@ -62,12 +69,17 @@ const ProgressNavigator = createStackNavigator(
   stackConfig
 );
 
-const RootStack = createBottomTabNavigator(
+const MainNavigator = createBottomTabNavigator(
   {
     Goals: GoalsNavigator,
     Progress: ProgressNavigator,
   },
   tabConfig
 );
+
+const RootStack = createSwitchNavigator({
+  Authentication: AuthenticationNavigator,
+  Main: MainNavigator,
+});
 
 export { RootStack };
