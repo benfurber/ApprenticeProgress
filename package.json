@@ -7,6 +7,7 @@
     "flow": "flow check",
     "format": "prettier --write '{*,{__mocks__,__tests__,app}/**/*}.js'",
     "jest": "jest --watch",
+    "run-ios": "react-native run-ios --simulator='iPhone X' --scheme ApprenticeProgress",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "test": "yarn format && lint . && jest && flow",
     "storybook": "storybook start -p 7007"
