@@ -1,8 +1,19 @@
 // @flow
 
 import React, { Component } from "react";
-import { Button, Content, Text } from "native-base";
+import { StyleSheet } from "react-native";
+import {
+  Button,
+  Content,
+  Form,
+  Input,
+  Item,
+  Label,
+  Text,
+  View,
+} from "native-base";
 
+import { colours, standards } from "styles";
 import type { navigationType, OnPressType } from "types";
 import { handlePress } from "utils";
 
@@ -18,13 +29,37 @@ class FormLogin extends Component<Props> {
 
     return (
       <Content>
-        <Text>Login Field</Text>
-        <Button onPress={onPress}>
-          <Text>Login</Text>
-        </Button>
+        <Form>
+          <Item style={styles.formField} floatingLabel>
+            <Label>Email</Label>
+            <Input />
+          </Item>
+          <Item style={styles.formField} floatingLabel last>
+            <Label>Password</Label>
+            <Input />
+          </Item>
+        </Form>
+        <View style={styles.buttonView}>
+          <Button onPress={onPress} style={styles.button}>
+            <Text>Login</Text>
+          </Button>
+        </View>
       </Content>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  formField: {
+    backgroundColor: colours.transparentWhite,
+    ...standards.elementPadding,
+  },
+  button: {
+    backgroundColor: colours.red,
+  },
+  buttonView: {
+    ...standards.elementPadding,
+  },
+});
 
 export { FormLogin };
