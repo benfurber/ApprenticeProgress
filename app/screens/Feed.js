@@ -2,7 +2,9 @@
 
 import React, { Component } from "react";
 
-import { Background, GoalsList, Loading } from "components";
+import { Background, Data, GoalsList } from "components";
+import { goalsQuery } from "queries";
+import type { navigationType } from "types";
 
 type Props = {
   navigation: navigationType,
@@ -16,6 +18,12 @@ class Feed extends Component<Props> {
   render() {
     return (
       <Background>
+        <Data
+          presentData={data => (
+            <GoalsList navigation={this.props.navigation} goals={data.goals} />
+          )}
+          query={goalsQuery}
+        />
       </Background>
     );
   }

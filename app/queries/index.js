@@ -1,0 +1,1 @@
+export { goalsQuery } from "./goalsQuery";
