@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { Content } from "native-base";
 import { Query } from "react-apollo";
 
-import { Loading } from "components";
+import { Pending } from "components";
 
 type Props = {
   presentData: any => any,
@@ -20,10 +20,10 @@ class Data extends Component<Props> {
         <Query query={query}>
           {({ loading, error, data }) => {
             if (loading) {
-              return <Loading />;
+              return <Pending />;
             }
             if (error) {
-              return <Loading />;
+              return <Pending />;
             }
             return presentData(data);
           }}

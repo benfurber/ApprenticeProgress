@@ -7,7 +7,7 @@ import { View } from "native-base";
 import { Background, Dot } from "components";
 
 type Props = {};
-class Loading extends Component<Props> {
+class Pending extends Component<Props> {
   render() {
     return (
       <Background noRalph={true}>
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { Loading };
+export { Pending };

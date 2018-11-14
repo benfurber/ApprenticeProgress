@@ -4,7 +4,7 @@ export { Dot } from "./Dot";
 export { GoalsList } from "./GoalsList";
 export { GoalSummary } from "./GoalSummary";
 export { IconButton } from "./IconButton";
-export { Loading } from "./Loading";
+export { Pending } from "./Pending";
 export { ProgressBar } from "./ProgressBar";
 export { RankGoals } from "./RankGoals";
 export { Tag } from "./Tag";
