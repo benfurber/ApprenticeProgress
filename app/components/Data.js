@@ -20,10 +20,10 @@ class Data extends Component<Props> {
         <Query query={query}>
           {({ loading, error, data }) => {
             if (loading) {
-              return <Pending />;
+              return <Pending condition="Loading" />;
             }
             if (error) {
-              return <Pending />;
+              return <Pending condition="Error" />;
             }
             return presentData(data);
           }}
