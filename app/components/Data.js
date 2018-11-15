@@ -5,10 +5,11 @@ import { Content } from "native-base";
 import { Query } from "react-apollo";
 
 import { Pending } from "components";
+import type { GraphDataType } from "types";
 
 type Props = {
-  presentData: any => any,
-  query: any,
+  presentData: any => React$Element<*>,
+  query: GraphDataType,
 };
 
 class Data extends Component<Props> {

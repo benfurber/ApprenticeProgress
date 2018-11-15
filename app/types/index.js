@@ -8,6 +8,10 @@ export type GoalsDataType = {
   GoalIdType: GoalDetailsType,
 };
 
+export type GoalsGraphDataType = {
+  goals: GoalDetailsType,
+};
+
 export type GoalIdType = Array<number>;
 
 export type GoalDetailsType = {
@@ -19,6 +23,8 @@ export type GoalDetailsType = {
   tag: string,
   title: string,
 };
+
+export type GraphDataType = GoalsGraphDataType;
 
 export type ListDetailsType = {
   index: number,
