@@ -1,3 +1,3 @@
-export { Feed } from "./Feed";
+export { Feed, FeedWrapper } from "./Feed";
 export { Goal } from "./Goal";
-export { Progress } from "./Progress";
+export { Progress, ProgressWrapper } from "./Progress";

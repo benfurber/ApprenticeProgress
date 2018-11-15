@@ -1,13 +1,15 @@
 // @flow
 
 import React, { Component } from "react";
+import { graphql } from "react-apollo";
 
-import { Background, Data, GoalsList } from "components";
+import { Background, GoalsList, Pending } from "components";
 import { goalsQuery } from "queries";
-import type { navigationType } from "types";
+import type { GraphDataType, navigationType } from "types";
 
 type Props = {
   navigation: navigationType,
+  data: GraphDataType,
 };
 
 class Feed extends Component<Props> {
@@ -16,17 +18,24 @@ class Feed extends Component<Props> {
   };
 
   render() {
-    return (
-      <Background>
-        <Data
-          presentData={data => (
-            <GoalsList navigation={this.props.navigation} goals={data.goals} />
-          )}
-          query={goalsQuery}
-        />
-      </Background>
-    );
+    const { data, navigation } = this.props;
+
+    if (data.goals) {
+      return (
+        <Background>
+          <GoalsList navigation={navigation} goals={data.goals} />
+        </Background>
+      );
+    }
+
+    if (data.error) {
+      return <Pending condition="Error" errorMessage={data.error.message} />;
+    }
+
+    return <Pending condition="Loading" />;
   }
 }
 
-export { Feed };
+const FeedWrapper = graphql(goalsQuery)(Feed);
+
+export { Feed, FeedWrapper };

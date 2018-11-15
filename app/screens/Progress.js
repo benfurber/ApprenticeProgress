@@ -1,15 +1,14 @@
 // @flow
 
 import React, { Component } from "react";
-import { Content } from "native-base";
+import { graphql } from "react-apollo";
 
-import { Background, Data, RankGoals, TotalScore } from "components";
+import { Background, Pending, RankGoals, TotalScore } from "components";
 import { goalsQuery } from "queries";
-import { styles } from "styles";
-import type { stateType } from "types";
+import type { GraphDataType } from "types";
 
 type Props = {
-  state: stateType,
+  data: GraphDataType,
 };
 
 class Progress extends Component<Props> {
@@ -20,21 +19,25 @@ class Progress extends Component<Props> {
   };
 
   render() {
-    return (
-      <Background>
-        <Content style={styles.content}>
-          <Data
-            presentData={data => <TotalScore goals={data.goals} />}
-            query={goalsQuery}
-          />
-          <Data
-            presentData={data => <RankGoals goals={data.goals} />}
-            query={goalsQuery}
-          />
-        </Content>
-      </Background>
-    );
+    const { data } = this.props;
+
+    if (data.goals) {
+      return (
+        <Background>
+          <TotalScore goals={data.goals} />
+          <RankGoals goals={data.goals} />
+        </Background>
+      );
+    }
+
+    if (data.error) {
+      return <Pending condition="Error" errorMessage={data.error.message} />;
+    }
+
+    return <Pending condition="Loading" />;
   }
 }
 
-export { Progress };
+const ProgressWrapper = graphql(goalsQuery)(Progress);
+
+export { Progress, ProgressWrapper };
