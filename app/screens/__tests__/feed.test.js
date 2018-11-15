@@ -7,6 +7,7 @@ import { Feed } from "../Feed";
 import navigationMock from "mocks";
 
 import { goalsData } from "../../data/goals";
+import { navigationMock } from "mocks";
 
 describe("Feed", () => {
   it("BEFORE goals have loaded, renders correctly", () => {

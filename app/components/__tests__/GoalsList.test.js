@@ -4,7 +4,7 @@ import React from "react";
 import { shallow } from "enzyme";
 
 import { GoalsList } from "../GoalsList";
-import navigationMock from "mocks";
+import { navigationMock } from "mocks";
 
 import { goalsData } from "../../data/goals";
 
