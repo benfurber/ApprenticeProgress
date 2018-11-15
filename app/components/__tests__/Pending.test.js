@@ -13,7 +13,12 @@ describe("Pending", () => {
   });
 
   it("has a valid snapshot when an Error", () => {
-    const component = shallow(<Pending condition="Error" />);
+    const component = shallow(
+      <Pending
+        condition="Error"
+        errorMessage="Network error: Network request failed"
+      />
+    );
 
     expect(component).toMatchSnapshot();
   });

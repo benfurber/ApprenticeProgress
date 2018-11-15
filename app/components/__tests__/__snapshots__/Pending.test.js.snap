@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loading has a valid snapshot when for an Error 1`] = `
+exports[`Pending has a valid snapshot when an Error 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Pending
     condition="Error"
+    errorMessage="Network error: Network request failed"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -34,22 +35,44 @@ ShallowWrapper {
           style={
             Object {
               "flex": 1,
-              "flexDirection": "row",
+              "flexDirection": "column",
               "justifyContent": "center",
               "paddingHorizontal": 30,
               "paddingVertical": 10,
             }
           }
         >
-          <Styled(H2)
+          <Styled(ViewNB)
             style={
               Object {
-                "color": "#ED3E44",
+                "flex": 1,
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
               }
             }
           >
-            Error
-          </Styled(H2)>
+            <Styled(H2)
+              style={
+                Object {
+                  "color": "#ED3E44",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Error
+            </Styled(H2)>
+            <Styled(Text)
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              Network error: Network request failed
+            </Styled(Text)>
+          </Styled(ViewNB)>
         </Styled(ViewNB)>,
         <Styled(ViewNB)
           style={
@@ -92,18 +115,40 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(H2)
+          "children": <Styled(ViewNB)
             style={
               Object {
-                "color": "#ED3E44",
+                "flex": 1,
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
               }
             }
           >
-            Error
-          </Styled(H2)>,
+            <Styled(H2)
+              style={
+                Object {
+                  "color": "#ED3E44",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Error
+            </Styled(H2)>
+            <Styled(Text)
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              Network error: Network request failed
+            </Styled(Text)>
+          </Styled(ViewNB)>,
           "style": Object {
             "flex": 1,
-            "flexDirection": "row",
+            "flexDirection": "column",
             "justifyContent": "center",
             "paddingHorizontal": 30,
             "paddingVertical": 10,
@@ -116,14 +161,70 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Error",
+            "children": Array [
+              <Styled(H2)
+                style={
+                  Object {
+                    "color": "#ED3E44",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Error
+              </Styled(H2)>,
+              <Styled(Text)
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Network error: Network request failed
+              </Styled(Text)>,
+            ],
             "style": Object {
-              "color": "#ED3E44",
+              "flex": 1,
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "paddingHorizontal": 30,
+              "paddingVertical": 10,
             },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": "Error",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Error",
+                "style": Object {
+                  "color": "#ED3E44",
+                  "textAlign": "center",
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Error",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Network error: Network request failed",
+                "style": Object {
+                  "textAlign": "center",
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Network error: Network request failed",
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         "type": [Function],
@@ -169,22 +270,44 @@ ShallowWrapper {
             style={
               Object {
                 "flex": 1,
-                "flexDirection": "row",
+                "flexDirection": "column",
                 "justifyContent": "center",
                 "paddingHorizontal": 30,
                 "paddingVertical": 10,
               }
             }
           >
-            <Styled(H2)
+            <Styled(ViewNB)
               style={
                 Object {
-                  "color": "#ED3E44",
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
                 }
               }
             >
-              Error
-            </Styled(H2)>
+              <Styled(H2)
+                style={
+                  Object {
+                    "color": "#ED3E44",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Error
+              </Styled(H2)>
+              <Styled(Text)
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Network error: Network request failed
+              </Styled(Text)>
+            </Styled(ViewNB)>
           </Styled(ViewNB)>,
           <Styled(ViewNB)
             style={
@@ -227,18 +350,40 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(H2)
+            "children": <Styled(ViewNB)
               style={
                 Object {
-                  "color": "#ED3E44",
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "paddingHorizontal": 30,
+                  "paddingVertical": 10,
                 }
               }
             >
-              Error
-            </Styled(H2)>,
+              <Styled(H2)
+                style={
+                  Object {
+                    "color": "#ED3E44",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Error
+              </Styled(H2)>
+              <Styled(Text)
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Network error: Network request failed
+              </Styled(Text)>
+            </Styled(ViewNB)>,
             "style": Object {
               "flex": 1,
-              "flexDirection": "row",
+              "flexDirection": "column",
               "justifyContent": "center",
               "paddingHorizontal": 30,
               "paddingVertical": 10,
@@ -251,14 +396,70 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Error",
+              "children": Array [
+                <Styled(H2)
+                  style={
+                    Object {
+                      "color": "#ED3E44",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Error
+                </Styled(H2)>,
+                <Styled(Text)
+                  style={
+                    Object {
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Network error: Network request failed
+                </Styled(Text)>,
+              ],
               "style": Object {
-                "color": "#ED3E44",
+                "flex": 1,
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "paddingHorizontal": 30,
+                "paddingVertical": 10,
               },
               "virtual": undefined,
             },
             "ref": null,
-            "rendered": "Error",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Error",
+                  "style": Object {
+                    "color": "#ED3E44",
+                    "textAlign": "center",
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "Error",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Network error: Network request failed",
+                  "style": Object {
+                    "textAlign": "center",
+                  },
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "Network error: Network request failed",
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           "type": [Function],
@@ -306,7 +507,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Loading has a valid snapshot when for loading 1`] = `
+exports[`Pending has a valid snapshot when loading 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Pending
@@ -356,14 +557,20 @@ ShallowWrapper {
           style={
             Object {
               "flex": 1,
-              "flexDirection": "row",
+              "flexDirection": "column",
               "justifyContent": "center",
               "paddingHorizontal": 30,
               "paddingVertical": 10,
             }
           }
         >
-          <Styled(H2)>
+          <Styled(H2)
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
             Loading
           </Styled(H2)>
         </Styled(ViewNB)>,
@@ -481,12 +688,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(H2)>
+          "children": <Styled(H2)
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
             Loading
           </Styled(H2)>,
           "style": Object {
             "flex": 1,
-            "flexDirection": "row",
+            "flexDirection": "column",
             "justifyContent": "center",
             "paddingHorizontal": 30,
             "paddingVertical": 10,
@@ -500,6 +713,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "Loading",
+            "style": Object {
+              "textAlign": "center",
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -565,14 +781,20 @@ ShallowWrapper {
             style={
               Object {
                 "flex": 1,
-                "flexDirection": "row",
+                "flexDirection": "column",
                 "justifyContent": "center",
                 "paddingHorizontal": 30,
                 "paddingVertical": 10,
               }
             }
           >
-            <Styled(H2)>
+            <Styled(H2)
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
               Loading
             </Styled(H2)>
           </Styled(ViewNB)>,
@@ -690,12 +912,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(H2)>
+            "children": <Styled(H2)
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
               Loading
             </Styled(H2)>,
             "style": Object {
               "flex": 1,
-              "flexDirection": "row",
+              "flexDirection": "column",
               "justifyContent": "center",
               "paddingHorizontal": 30,
               "paddingVertical": 10,
@@ -709,6 +937,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": "Loading",
+              "style": Object {
+                "textAlign": "center",
+              },
               "virtual": undefined,
             },
             "ref": null,
