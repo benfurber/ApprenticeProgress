@@ -5,4 +5,4 @@ const navigationMock = {
   navigate: jest.fn(),
 };
 
-export default navigationMock;
+export { navigationMock };

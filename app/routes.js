@@ -5,7 +5,7 @@ import {
 } from "react-navigation";
 
 import { IconButton } from "components";
-import { ConnectedFeed, Goal, ConnectedProgress } from "screens";
+import { FeedWrapper, Goal, ProgressWrapper } from "screens";
 import { colours } from "styles";
 
 const stackConfig = {
@@ -44,7 +44,7 @@ const tabConfig = {
 const GoalsNavigator = createStackNavigator(
   {
     Home: {
-      screen: ConnectedFeed,
+      screen: FeedWrapper,
     },
     Goal: {
       screen: Goal,
@@ -56,7 +56,7 @@ const GoalsNavigator = createStackNavigator(
 const ProgressNavigator = createStackNavigator(
   {
     Progress: {
-      screen: ConnectedProgress,
+      screen: ProgressWrapper,
     },
   },
   stackConfig

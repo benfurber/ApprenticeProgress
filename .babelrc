@@ -6,6 +6,7 @@
         "alias": {
           "components": "./app/components",
           "mocks": "./app/__mocks__",
+          "queries": "./app/queries",
           "redux-modules": "./app/redux/modules",
           "redux-store": "./app/redux/store",
           "screens": "./app/screens",

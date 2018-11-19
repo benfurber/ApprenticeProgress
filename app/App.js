@@ -1,19 +1,19 @@
 // @flow
 
 import React, { Component } from "react";
-import { Provider } from "react-redux";
-
-import store from "redux-store";
 import { RootStack } from "./routes";
+
+import { ApolloProvider } from "react-apollo";
+import { client } from "utils";
 
 type Props = {};
 
 class App extends Component<Props> {
   render() {
     return (
-      <Provider store={store}>
+      <ApolloProvider client={client}>
         <RootStack />
-      </Provider>
+      </ApolloProvider>
     );
   }
 }

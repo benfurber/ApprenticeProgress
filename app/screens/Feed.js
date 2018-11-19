@@ -1,16 +1,15 @@
 // @flow
 
 import React, { Component } from "react";
-import { Content } from "native-base";
-import { connect } from "react-redux";
+import { graphql } from "react-apollo";
 
-import { Background, GoalsList, Loading } from "components";
-import { fetchGoals } from "redux-modules";
-import type { navigationType, stateType } from "types";
+import { Background, GoalsList, Pending } from "components";
+import { goalsQuery } from "queries";
+import type { GraphDataType, navigationType } from "types";
 
 type Props = {
   navigation: navigationType,
-  state: stateType,
+  data: GraphDataType,
 };
 
 class Feed extends Component<Props> {
@@ -19,45 +18,24 @@ class Feed extends Component<Props> {
   };
 
   render() {
-    return (
-      <Background>
-        <Content>
-          {this._renderLoading()}
-          {this._renderGoals()}
-        </Content>
-      </Background>
-    );
-  }
+    const { data, navigation } = this.props;
 
-  _renderLoading() {
-    const { goals } = this.props.state;
-
-    if (goals.length == 0) {
-      return <Loading />;
+    if (data.goals) {
+      return (
+        <Background>
+          <GoalsList navigation={navigation} goals={data.goals} />
+        </Background>
+      );
     }
-  }
 
-  _renderGoals() {
-    const { navigation, state } = this.props;
-    const { goals } = state;
-
-    if (goals.length > 0) {
-      return <GoalsList goals={goals} navigation={navigation} />;
+    if (data.error) {
+      return <Pending condition="Error" errorMessage={data.error.message} />;
     }
+
+    return <Pending condition="Loading" />;
   }
 }
 
-const mapStateToProps = state => {
-  return { state };
-};
+const FeedWrapper = graphql(goalsQuery)(Feed);
 
-const mapDispatchToProps = (dispatch: any) => ({
-  goals: fetchGoals(dispatch),
-});
-
-const ConnectedFeed = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Feed);
-
-export { ConnectedFeed, Feed };
+export { Feed, FeedWrapper };

@@ -7,10 +7,10 @@ import { goalsData } from "../../data/goals";
 
 describe("Progress", () => {
   it("has a valid snapshot", () => {
-    const state = {
+    const data = {
       goals: goalsData,
     };
-    const screen = shallow(<Progress state={state} />);
+    const screen = shallow(<Progress data={data} />);
 
     expect(screen).toMatchSnapshot();
   });
