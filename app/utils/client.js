@@ -7,7 +7,7 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { AsyncStorage } from "react-native";
 
 const httpLink = createHttpLink({
-  uri: "Config.PRODUCTION_API_ENDPOINT",
+  uri: Config.PRODUCTION_API_ENDPOINT,
 });
 
 const authLink = setContext((_, { headers }) => {
