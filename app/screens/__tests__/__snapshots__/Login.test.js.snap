@@ -3,7 +3,16 @@
 exports[`Login has a valid snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Login />,
+  Symbol(enzyme.__unrendered__): <Login
+    email="ben@testing.com"
+    navigation={
+      Object {
+        "getParam": [Function],
+        "navigate": [MockFunction],
+      }
+    }
+    password="L33tPassword"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,7 +27,14 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <Styled(Content)>
-        <FormLogin />
+        <FormLogin
+          navigation={
+            Object {
+              "getParam": [Function],
+              "navigate": [MockFunction],
+            }
+          }
+        />
       </Styled(Content)>,
     },
     "ref": null,
@@ -27,7 +43,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <FormLogin />,
+        "children": <FormLogin
+          navigation={
+            Object {
+              "getParam": [Function],
+              "navigate": [MockFunction],
+            }
+          }
+        />,
         "virtual": undefined,
       },
       "ref": null,
@@ -36,7 +59,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "navigation": undefined,
+          "navigation": Object {
+            "getParam": [Function],
+            "navigate": [MockFunction],
+          },
         },
         "ref": null,
         "rendered": null,
@@ -53,7 +79,14 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <Styled(Content)>
-          <FormLogin />
+          <FormLogin
+            navigation={
+              Object {
+                "getParam": [Function],
+                "navigate": [MockFunction],
+              }
+            }
+          />
         </Styled(Content)>,
       },
       "ref": null,
@@ -62,7 +95,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <FormLogin />,
+          "children": <FormLogin
+            navigation={
+              Object {
+                "getParam": [Function],
+                "navigate": [MockFunction],
+              }
+            }
+          />,
           "virtual": undefined,
         },
         "ref": null,
@@ -71,7 +111,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "navigation": undefined,
+            "navigation": Object {
+              "getParam": [Function],
+              "navigate": [MockFunction],
+            },
           },
           "ref": null,
           "rendered": null,
