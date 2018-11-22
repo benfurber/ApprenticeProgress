@@ -1,6 +1,6 @@
 import { handlePress } from "../handlePress";
 
-import navigationMock from "mocks";
+import { navigationMock } from "mocks";
 
 describe("handlePress", () => {
   it("executes", () => {
