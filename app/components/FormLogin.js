@@ -12,11 +12,13 @@ type Props = {
   email: ?string,
   navigation: navigationType,
   onPress?: OnPressType,
-  setEmail: string => any,
+  password: ?string,
 };
 
 class FormLogin extends Component<Props> {
   render() {
+    const { email, password } = this.props;
+
     return (
       <Content>
         <View style={styles.content}>
@@ -29,10 +31,7 @@ class FormLogin extends Component<Props> {
               <Label>Password</Label>
               <Input />
             </Item>
-            <FormLoginButton
-              email="ben@fu.rber.io"
-              password="temppasswordhere"
-            />
+            <FormLoginButton email={email} password={password} />
           </Form>
         </View>
       </Content>
