@@ -15,26 +15,26 @@ class IconButton extends Component<Props> {
 
     return (
       <View style={styles.view}>
-        {this._selectIcon()}
+        <Icon
+          name={this._selectIcon(name)}
+          style={[styles.icon, { color: tint }]}
+        />
         <Text style={[styles.text, { color: tint }]}>{name}</Text>
       </View>
     );
   }
 
-  _selectIcon() {
-    const { name, tint } = this.props;
-
-    if (name == "Goals") {
-      return <Icon name="md-filing" style={[styles.icon, { color: tint }]} />;
+  _selectIcon(name: string) {
+    switch (name) {
+      case "Goals":
+        return "md-filing";
+      case "Progress":
+        return "md-speedometer";
+      case "Logout":
+        return "md-log-out";
+      default:
+        return "md-egg";
     }
-
-    if (name == "Progress") {
-      return (
-        <Icon name="md-speedometer" style={[styles.icon, { color: tint }]} />
-      );
-    }
-
-    return null;
   }
 }
 
