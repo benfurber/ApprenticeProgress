@@ -1,5 +1,3 @@
-// @flow
-
 import React from "react";
 import { AsyncStorage, StyleSheet } from "react-native";
 import { graphql } from "react-apollo";
@@ -8,13 +6,7 @@ import { Button, Text, View } from "native-base";
 import { loginMutation } from "queries";
 import { colours } from "styles";
 
-type Props = {
-  email: string,
-  mutate: any => any,
-  password: string,
-};
-
-const FormLoginButtonUnwrapped = (props: Props) => {
+const FormLoginButtonUnwrapped = props => {
   const { email, mutate, password } = props;
 
   return (
@@ -47,13 +39,15 @@ const styles = StyleSheet.create({
   },
 });
 
-const FormLoginButton = graphql(loginMutation, {
-  options: () => ({
-    onCompleted: data => {
-      const token = data.loginUser.user.authenticationToken;
-      AsyncStorage.setItem("token", token);
-    },
-  }),
-})(FormLoginButtonUnwrapped);
+const options = () => ({
+  onCompleted: data => {
+    const token = data.loginUser.user.authenticationToken;
+    AsyncStorage.setItem("token", token);
+  },
+});
+
+const FormLoginButton = graphql(loginMutation, { options })(
+  FormLoginButtonUnwrapped
+);
 
 export { FormLoginButton, FormLoginButtonUnwrapped };

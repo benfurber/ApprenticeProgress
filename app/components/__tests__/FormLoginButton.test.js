@@ -5,13 +5,13 @@ import { shallow } from "enzyme";
 
 import { Button } from "native-base";
 
-import { FormLoginButton } from "../FormLoginButton";
+import { FormLoginButtonUnwrapped } from "../FormLoginButton";
 
 describe("Loading", () => {
   it("has a valid snapshot", () => {
     const mutateMock = () => jest.fn();
     const component = shallow(
-      <FormLoginButton
+      <FormLoginButtonUnwrapped
         mutate={mutateMock}
         email="test@test.com"
         password="WELLSECURE1"
@@ -27,7 +27,11 @@ describe("Loading", () => {
     const password = "WELLSECURE1";
 
     const component = shallow(
-      <FormLoginButton mutate={mutateMock} email={email} password={password} />
+      <FormLoginButtonUnwrapped
+        mutate={mutateMock}
+        email={email}
+        password={password}
+      />
     );
 
     component.find(Button).simulate("press");
