@@ -6,7 +6,7 @@ import {
 } from "react-navigation";
 
 import { IconButton } from "components";
-import { FeedWrapper, Goal, Login, ProgressWrapper } from "screens";
+import { FeedWrapper, Goal, Login, Logout, ProgressWrapper } from "screens";
 import { colours } from "styles";
 
 const stackConfig = {
@@ -69,10 +69,20 @@ const ProgressNavigator = createStackNavigator(
   stackConfig
 );
 
+const LogoutNavigator = createStackNavigator(
+  {
+    Logout: {
+      screen: Logout,
+    },
+  },
+  stackConfig
+);
+
 const MainNavigator = createBottomTabNavigator(
   {
     Goals: GoalsNavigator,
     Progress: ProgressNavigator,
+    Logout: LogoutNavigator,
   },
   tabConfig
 );
