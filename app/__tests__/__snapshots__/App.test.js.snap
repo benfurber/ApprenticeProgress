@@ -18,22 +18,43 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <NavigationContainer />,
-      "client": DefaultClient {
+      "client": ApolloClient {
         "cache": InMemoryCache {
           "addTypename": true,
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
           "config": Object {
             "addTypename": true,
             "dataIdFromObject": [Function],
             "fragmentMatcher": HeuristicFragmentMatcher {},
-            "storeFactory": [Function],
           },
-          "data": ObjectCache {
+          "data": DepTrackingCache {
             "data": Object {},
+            "depend": [Function],
           },
+          "maybeBroadcastWatch": [Function],
           "optimistic": Array [],
           "silenceBroadcast": false,
-          "typenameDocumentCache": WeakMap {},
-          "watches": Array [],
+          "storeReader": StoreReader {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "keyMaker": QueryKeyMaker {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "perQueryKeyMakers": Map {},
+            },
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
         },
         "defaultOptions": Object {},
         "disableNetworkFetches": false,
@@ -50,22 +71,43 @@ ShallowWrapper {
         "store": DataStore {
           "cache": InMemoryCache {
             "addTypename": true,
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
             "config": Object {
               "addTypename": true,
               "dataIdFromObject": [Function],
               "fragmentMatcher": HeuristicFragmentMatcher {},
-              "storeFactory": [Function],
             },
-            "data": ObjectCache {
+            "data": DepTrackingCache {
               "data": Object {},
+              "depend": [Function],
             },
+            "maybeBroadcastWatch": [Function],
             "optimistic": Array [],
             "silenceBroadcast": false,
-            "typenameDocumentCache": WeakMap {},
-            "watches": Array [],
+            "storeReader": StoreReader {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "keyMaker": QueryKeyMaker {
+                "cacheKeyRoot": CacheKeyNode {
+                  "children": null,
+                  "key": null,
+                },
+                "perQueryKeyMakers": Map {},
+              },
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
           },
         },
-        "version": "2.4.2",
+        "version": "2.4.5",
         "watchQuery": [Function],
       },
     },
@@ -88,22 +130,43 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <NavigationContainer />,
-        "client": DefaultClient {
+        "client": ApolloClient {
           "cache": InMemoryCache {
             "addTypename": true,
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
             "config": Object {
               "addTypename": true,
               "dataIdFromObject": [Function],
               "fragmentMatcher": HeuristicFragmentMatcher {},
-              "storeFactory": [Function],
             },
-            "data": ObjectCache {
+            "data": DepTrackingCache {
               "data": Object {},
+              "depend": [Function],
             },
+            "maybeBroadcastWatch": [Function],
             "optimistic": Array [],
             "silenceBroadcast": false,
-            "typenameDocumentCache": WeakMap {},
-            "watches": Array [],
+            "storeReader": StoreReader {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "keyMaker": QueryKeyMaker {
+                "cacheKeyRoot": CacheKeyNode {
+                  "children": null,
+                  "key": null,
+                },
+                "perQueryKeyMakers": Map {},
+              },
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
           },
           "defaultOptions": Object {},
           "disableNetworkFetches": false,
@@ -120,22 +183,43 @@ ShallowWrapper {
           "store": DataStore {
             "cache": InMemoryCache {
               "addTypename": true,
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
               "config": Object {
                 "addTypename": true,
                 "dataIdFromObject": [Function],
                 "fragmentMatcher": HeuristicFragmentMatcher {},
-                "storeFactory": [Function],
               },
-              "data": ObjectCache {
+              "data": DepTrackingCache {
                 "data": Object {},
+                "depend": [Function],
               },
+              "maybeBroadcastWatch": [Function],
               "optimistic": Array [],
               "silenceBroadcast": false,
-              "typenameDocumentCache": WeakMap {},
-              "watches": Array [],
+              "storeReader": StoreReader {
+                "cacheKeyRoot": CacheKeyNode {
+                  "children": null,
+                  "key": null,
+                },
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "keyMaker": QueryKeyMaker {
+                  "cacheKeyRoot": CacheKeyNode {
+                    "children": null,
+                    "key": null,
+                  },
+                  "perQueryKeyMakers": Map {},
+                },
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
             },
           },
-          "version": "2.4.2",
+          "version": "2.4.5",
           "watchQuery": [Function],
         },
       },
