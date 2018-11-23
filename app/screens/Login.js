@@ -24,11 +24,7 @@ class Login extends Component<Props> {
     return (
       <Background>
         <Content>
-          <FormLogin
-            navigation={navigation}
-            email="ben@fu.rber.io"
-            password="SECURE1234"
-          />
+          <FormLogin navigation={navigation} />
         </Content>
       </Background>
     );

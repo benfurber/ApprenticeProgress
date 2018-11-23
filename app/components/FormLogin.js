@@ -9,15 +9,26 @@ import { colours, standards } from "styles";
 import type { navigationType, OnPressType } from "types";
 
 type Props = {
-  email: ?string,
   navigation: navigationType,
   onPress?: OnPressType,
+};
+
+type State = {
+  email: ?string,
   password: ?string,
 };
 
-class FormLogin extends Component<Props> {
+class FormLogin extends Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      email: null,
+      password: null,
+    };
+  }
   render() {
-    const { email, navigation, password } = this.props;
+    const { navigation } = this.props;
+    const { email, password } = this.state;
 
     return (
       <Content>
@@ -25,11 +36,17 @@ class FormLogin extends Component<Props> {
           <Form>
             <Item style={styles.formField} floatingLabel>
               <Label>Email</Label>
-              <Input />
+              <Input
+                textContentType="emailAddress"
+                onChangeText={email => this.setState({ email })}
+              />
             </Item>
             <Item style={styles.formField} floatingLabel last>
               <Label>Password</Label>
-              <Input />
+              <Input
+                secureTextEntry={true}
+                onChangeText={password => this.setState({ password })}
+              />
             </Item>
             <FormLoginButton
               email={email}
