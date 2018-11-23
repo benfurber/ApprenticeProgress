@@ -16,7 +16,7 @@ class Logout extends Component<Props> {
     const { navigation } = this.props;
     const clearToken = () => AsyncStorage.removeItem("token");
 
-    const redirectToLogin = handlePress("Authentication", navigation)();
+    const redirectToLogin = () => handlePress("Login", navigation)();
 
     const logUserOut = async () => {
       await clearToken();

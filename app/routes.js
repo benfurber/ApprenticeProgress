@@ -6,7 +6,14 @@ import {
 } from "react-navigation";
 
 import { IconButton } from "components";
-import { FeedWrapper, Goal, Login, Logout, ProgressWrapper } from "screens";
+import {
+  AuthLoading,
+  FeedWrapper,
+  Goal,
+  Login,
+  Logout,
+  ProgressWrapper,
+} from "screens";
 import { colours } from "styles";
 
 const stackConfig = {
@@ -42,7 +49,13 @@ const tabConfig = {
   },
 };
 
-const AuthenticationNavigator = createStackNavigator({
+const AuthLoadingNavigator = createStackNavigator({
+  AuthLoading: {
+    screen: AuthLoading,
+  },
+});
+
+const LoginNavigator = createStackNavigator({
   Login: {
     screen: Login,
   },
@@ -88,7 +101,8 @@ const MainNavigator = createBottomTabNavigator(
 );
 
 const RootStack = createSwitchNavigator({
-  Authentication: AuthenticationNavigator,
+  AuthLoading: AuthLoadingNavigator,
+  Login: LoginNavigator,
   Main: MainNavigator,
 });
 
