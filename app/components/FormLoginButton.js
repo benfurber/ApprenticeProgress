@@ -3,7 +3,6 @@ import { AsyncStorage, StyleSheet } from "react-native";
 import { graphql } from "react-apollo";
 import { Button, Text, View } from "native-base";
 
-import { Pending } from "components";
 import { loginMutation } from "queries";
 import { colours } from "styles";
 import { handlePress } from "utils";
