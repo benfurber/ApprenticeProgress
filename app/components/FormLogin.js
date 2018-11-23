@@ -26,6 +26,7 @@ class FormLogin extends Component<Props, State> {
       password: null,
     };
   }
+
   render() {
     const { navigation } = this.props;
     const { email, password } = this.state;
@@ -39,6 +40,7 @@ class FormLogin extends Component<Props, State> {
               <Input
                 textContentType="emailAddress"
                 onChangeText={email => this.setState({ email })}
+                value={this.state.email}
               />
             </Item>
             <Item style={styles.formField} floatingLabel last>
@@ -46,6 +48,7 @@ class FormLogin extends Component<Props, State> {
               <Input
                 secureTextEntry={true}
                 onChangeText={password => this.setState({ password })}
+                value={this.state.password}
               />
             </Item>
             <FormLoginButton
