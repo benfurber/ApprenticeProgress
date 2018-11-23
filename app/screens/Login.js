@@ -8,8 +8,6 @@ import type { navigationType } from "types";
 
 type Props = {
   navigation: navigationType,
-  email: ?string,
-  password: ?string,
 };
 
 class Login extends Component<Props> {
