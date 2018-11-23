@@ -3,8 +3,10 @@ import { AsyncStorage, StyleSheet } from "react-native";
 import { graphql } from "react-apollo";
 import { Button, Text, View } from "native-base";
 
+import { Pending } from "components";
 import { loginMutation } from "queries";
 import { colours } from "styles";
+import { handlePress } from "utils";
 
 const FormLoginButtonUnwrapped = props => {
   const { email, mutate, password } = props;
@@ -39,10 +41,11 @@ const styles = StyleSheet.create({
   },
 });
 
-const options = () => ({
-  onCompleted: data => {
+const options = props => ({
+  onCompleted: async data => {
     const token = data.loginUser.user.authenticationToken;
-    AsyncStorage.setItem("token", token);
+    await AsyncStorage.setItem("token", token);
+    return handlePress("Main", props.navigation)();
   },
 });
 

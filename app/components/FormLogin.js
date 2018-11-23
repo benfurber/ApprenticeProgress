@@ -17,7 +17,7 @@ type Props = {
 
 class FormLogin extends Component<Props> {
   render() {
-    const { email, password } = this.props;
+    const { email, navigation, password } = this.props;
 
     return (
       <Content>
@@ -31,7 +31,11 @@ class FormLogin extends Component<Props> {
               <Label>Password</Label>
               <Input />
             </Item>
-            <FormLoginButton email={email} password={password} />
+            <FormLoginButton
+              email={email}
+              password={password}
+              navigation={navigation}
+            />
           </Form>
         </View>
       </Content>
