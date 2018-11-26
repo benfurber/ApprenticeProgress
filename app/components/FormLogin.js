@@ -6,7 +6,12 @@ import { Content, Form, Input, Item, Label, View } from "native-base";
 
 import { FormLoginButton } from "components";
 import { colours, standards } from "styles";
-import type { navigationType, OnPressType } from "types";
+import type {
+  EmailType,
+  navigationType,
+  OnPressType,
+  PasswordType,
+} from "types";
 
 type Props = {
   navigation: navigationType,
@@ -14,8 +19,8 @@ type Props = {
 };
 
 type State = {
-  email: ?string,
-  password: ?string,
+  email: EmailType,
+  password: PasswordType,
 };
 
 class FormLogin extends Component<Props, State> {

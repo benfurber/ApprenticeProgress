@@ -2,6 +2,8 @@
 
 // import { type NavigationState } from "react-navigation";
 
+export type EmailType = ?string;
+
 export type GoalsType = Array<GoalDetailsType>;
 
 export type GoalsDataType = {
@@ -46,6 +48,8 @@ export type navigationType = {
   getParam: string => any,
   navigate: (string, {}) => any,
 };
+
+export type PasswordType = ?string;
 
 export type OnPressType = () => void;
 
