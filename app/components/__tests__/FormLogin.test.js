@@ -9,13 +9,7 @@ import { FormLogin } from "../FormLogin";
 
 describe("Loading", () => {
   it("has a valid snapshot", () => {
-    const component = shallow(
-      <FormLogin
-        navigation={navigationMock}
-        email="testing@ben.com"
-        password="YOMANCHANGEYOPASSWORD"
-      />
-    );
+    const component = shallow(<FormLogin navigation={navigationMock} />);
 
     expect(component).toMatchSnapshot();
   });

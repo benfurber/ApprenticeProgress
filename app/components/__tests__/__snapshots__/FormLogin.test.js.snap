@@ -38,7 +38,11 @@ ShallowWrapper {
             <Styled(Label)>
               Email
             </Styled(Label)>
-            <Styled(Input) />
+            <Styled(Input)
+              onChangeText={[Function]}
+              textContentType="emailAddress"
+              value={null}
+            />
           </Styled(Item)>
           <Styled(Item)
             floatingLabel={true}
@@ -54,11 +58,15 @@ ShallowWrapper {
             <Styled(Label)>
               Password
             </Styled(Label)>
-            <Styled(Input) />
+            <Styled(Input)
+              onChangeText={[Function]}
+              secureTextEntry={true}
+              value={null}
+            />
           </Styled(Item)>
           <Apollo(FormLoginButtonUnwrapped)
-            email="ben@fu.rber.io"
-            password="temppasswordhere"
+            email={null}
+            password={null}
           />
         </Styled(Form)>
       </Styled(ViewNB)>,
@@ -84,7 +92,11 @@ ShallowWrapper {
             <Styled(Label)>
               Email
             </Styled(Label)>
-            <Styled(Input) />
+            <Styled(Input)
+              onChangeText={[Function]}
+              textContentType="emailAddress"
+              value={null}
+            />
           </Styled(Item)>
           <Styled(Item)
             floatingLabel={true}
@@ -100,11 +112,15 @@ ShallowWrapper {
             <Styled(Label)>
               Password
             </Styled(Label)>
-            <Styled(Input) />
+            <Styled(Input)
+              onChangeText={[Function]}
+              secureTextEntry={true}
+              value={null}
+            />
           </Styled(Item)>
           <Apollo(FormLoginButtonUnwrapped)
-            email="ben@fu.rber.io"
-            password="temppasswordhere"
+            email={null}
+            password={null}
           />
         </Styled(Form)>,
         "style": Object {
@@ -132,7 +148,11 @@ ShallowWrapper {
               <Styled(Label)>
                 Email
               </Styled(Label)>
-              <Styled(Input) />
+              <Styled(Input)
+                onChangeText={[Function]}
+                textContentType="emailAddress"
+                value={null}
+              />
             </Styled(Item)>,
             <Styled(Item)
               floatingLabel={true}
@@ -148,11 +168,15 @@ ShallowWrapper {
               <Styled(Label)>
                 Password
               </Styled(Label)>
-              <Styled(Input) />
+              <Styled(Input)
+                onChangeText={[Function]}
+                secureTextEntry={true}
+                value={null}
+              />
             </Styled(Item)>,
             <Apollo(FormLoginButtonUnwrapped)
-              email="ben@fu.rber.io"
-              password="temppasswordhere"
+              email={null}
+              password={null}
             />,
           ],
           "virtual": undefined,
@@ -168,7 +192,11 @@ ShallowWrapper {
                 <Styled(Label)>
                   Email
                 </Styled(Label)>,
-                <Styled(Input) />,
+                <Styled(Input)
+                  onChangeText={[Function]}
+                  textContentType="emailAddress"
+                  value={null}
+                />,
               ],
               "floatingLabel": true,
               "style": Object {
@@ -197,6 +225,9 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "onChangeText": [Function],
+                  "textContentType": "emailAddress",
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -215,7 +246,11 @@ ShallowWrapper {
                 <Styled(Label)>
                   Password
                 </Styled(Label)>,
-                <Styled(Input) />,
+                <Styled(Input)
+                  onChangeText={[Function]}
+                  secureTextEntry={true}
+                  value={null}
+                />,
               ],
               "floatingLabel": true,
               "last": true,
@@ -245,6 +280,9 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "onChangeText": [Function],
+                  "secureTextEntry": true,
+                  "value": null,
                   "virtual": undefined,
                 },
                 "ref": null,
@@ -259,8 +297,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "email": "ben@fu.rber.io",
-              "password": "temppasswordhere",
+              "email": null,
+              "navigation": undefined,
+              "password": null,
             },
             "ref": null,
             "rendered": null,
@@ -300,7 +339,11 @@ ShallowWrapper {
               <Styled(Label)>
                 Email
               </Styled(Label)>
-              <Styled(Input) />
+              <Styled(Input)
+                onChangeText={[Function]}
+                textContentType="emailAddress"
+                value={null}
+              />
             </Styled(Item)>
             <Styled(Item)
               floatingLabel={true}
@@ -316,11 +359,15 @@ ShallowWrapper {
               <Styled(Label)>
                 Password
               </Styled(Label)>
-              <Styled(Input) />
+              <Styled(Input)
+                onChangeText={[Function]}
+                secureTextEntry={true}
+                value={null}
+              />
             </Styled(Item)>
             <Apollo(FormLoginButtonUnwrapped)
-              email="ben@fu.rber.io"
-              password="temppasswordhere"
+              email={null}
+              password={null}
             />
           </Styled(Form)>
         </Styled(ViewNB)>,
@@ -346,7 +393,11 @@ ShallowWrapper {
               <Styled(Label)>
                 Email
               </Styled(Label)>
-              <Styled(Input) />
+              <Styled(Input)
+                onChangeText={[Function]}
+                textContentType="emailAddress"
+                value={null}
+              />
             </Styled(Item)>
             <Styled(Item)
               floatingLabel={true}
@@ -362,11 +413,15 @@ ShallowWrapper {
               <Styled(Label)>
                 Password
               </Styled(Label)>
-              <Styled(Input) />
+              <Styled(Input)
+                onChangeText={[Function]}
+                secureTextEntry={true}
+                value={null}
+              />
             </Styled(Item)>
             <Apollo(FormLoginButtonUnwrapped)
-              email="ben@fu.rber.io"
-              password="temppasswordhere"
+              email={null}
+              password={null}
             />
           </Styled(Form)>,
           "style": Object {
@@ -394,7 +449,11 @@ ShallowWrapper {
                 <Styled(Label)>
                   Email
                 </Styled(Label)>
-                <Styled(Input) />
+                <Styled(Input)
+                  onChangeText={[Function]}
+                  textContentType="emailAddress"
+                  value={null}
+                />
               </Styled(Item)>,
               <Styled(Item)
                 floatingLabel={true}
@@ -410,11 +469,15 @@ ShallowWrapper {
                 <Styled(Label)>
                   Password
                 </Styled(Label)>
-                <Styled(Input) />
+                <Styled(Input)
+                  onChangeText={[Function]}
+                  secureTextEntry={true}
+                  value={null}
+                />
               </Styled(Item)>,
               <Apollo(FormLoginButtonUnwrapped)
-                email="ben@fu.rber.io"
-                password="temppasswordhere"
+                email={null}
+                password={null}
               />,
             ],
             "virtual": undefined,
@@ -430,7 +493,11 @@ ShallowWrapper {
                   <Styled(Label)>
                     Email
                   </Styled(Label)>,
-                  <Styled(Input) />,
+                  <Styled(Input)
+                    onChangeText={[Function]}
+                    textContentType="emailAddress"
+                    value={null}
+                  />,
                 ],
                 "floatingLabel": true,
                 "style": Object {
@@ -459,6 +526,9 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "onChangeText": [Function],
+                    "textContentType": "emailAddress",
+                    "value": null,
                     "virtual": undefined,
                   },
                   "ref": null,
@@ -477,7 +547,11 @@ ShallowWrapper {
                   <Styled(Label)>
                     Password
                   </Styled(Label)>,
-                  <Styled(Input) />,
+                  <Styled(Input)
+                    onChangeText={[Function]}
+                    secureTextEntry={true}
+                    value={null}
+                  />,
                 ],
                 "floatingLabel": true,
                 "last": true,
@@ -507,6 +581,9 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
+                    "onChangeText": [Function],
+                    "secureTextEntry": true,
+                    "value": null,
                     "virtual": undefined,
                   },
                   "ref": null,
@@ -521,8 +598,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "email": "ben@fu.rber.io",
-                "password": "temppasswordhere",
+                "email": null,
+                "navigation": undefined,
+                "password": null,
               },
               "ref": null,
               "rendered": null,
