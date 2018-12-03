@@ -23,13 +23,14 @@ class AuthLoading extends Component<Props> {
     this.asyncLogin();
   }
 
-  asyncLogin = async () => {
+  async asyncLogin() {
     const { navigation } = this.props;
 
     const token = await AsyncStorage.getItem("token");
 
-    navigation.navigate(token ? "Main" : "Login", {});
-  };
+    const routeName = token ? "Main" : "Login";
+    navigation.navigate(routeName);
+  }
 
   render() {
     return <Pending condition="Loading" />;
