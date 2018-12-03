@@ -49,26 +49,16 @@ const tabConfig = {
   },
 };
 
-const AuthLoadingNavigator = createStackNavigator({
-  AuthLoading: {
-    screen: AuthLoading,
-  },
-});
+const AuthLoadingNavigator = createStackNavigator({ AuthLoading });
 
-const LoginNavigator = createStackNavigator({
-  Login: {
-    screen: Login,
-  },
-});
+const LoginNavigator = createStackNavigator({ Login });
 
 const GoalsNavigator = createStackNavigator(
   {
     Home: {
       screen: FeedWrapper,
     },
-    Goal: {
-      screen: Goal,
-    },
+    Goal,
   },
   stackConfig
 );
