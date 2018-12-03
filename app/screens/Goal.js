@@ -8,7 +8,6 @@ import { styles } from "styles";
 import type { ListType, navigationType } from "types";
 
 type Props = { navigation: navigationType };
-type ListProps = ListType;
 
 class Goal extends Component<Props> {
   static navigationOptions = () => {
@@ -50,7 +49,7 @@ class Goal extends Component<Props> {
     );
   }
 
-  _renderList(list: ListProps) {
+  _renderList(list: ListType) {
     if (list.length === 0) {
       return <Text>None (should probably add some)</Text>;
     }

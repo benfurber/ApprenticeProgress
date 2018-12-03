@@ -34,12 +34,7 @@ export type GraphDataType = {
   error?: GraphErrorType,
 };
 
-export type ListDetailsType = {
-  index: number,
-  action: string,
-};
-
-export type ListType = Array<ListDetailsType>;
+export type ListType = Array<string>;
 
 export type mockParamsType = {
   mockParams: {
