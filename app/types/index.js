@@ -1,6 +1,9 @@
 // @flow
 
-// import { type NavigationState } from "react-navigation";
+import type {
+  NavigationScreenProp,
+  NavigationStateRoute,
+} from "react-navigation";
 
 export type EmailType = ?string;
 
@@ -45,8 +48,9 @@ export type mockParamsType = {
 };
 
 export type navigationType = {
-  getParam: string => any,
-  navigate: (string, {}) => any,
+  ...NavigationScreenProp<NavigationStateRoute>,
+  getParam: ("details") => GoalDetailsType,
+  navigate: (string, {}) => boolean,
 };
 
 export type PasswordType = ?string;

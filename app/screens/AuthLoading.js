@@ -29,7 +29,7 @@ class AuthLoading extends Component<Props> {
     const token = await AsyncStorage.getItem("token");
 
     const routeName = token ? "Main" : "Login";
-    navigation.navigate(routeName);
+    navigation.navigate(routeName, {});
   }
 
   render() {
