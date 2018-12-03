@@ -1,2 +1,3 @@
 *.pbxproj -text
 *.snap linguist-generated
+flow-typed/* linguist-generated
