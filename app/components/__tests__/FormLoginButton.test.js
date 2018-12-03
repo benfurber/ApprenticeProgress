@@ -9,7 +9,7 @@ import { FormLoginButtonUnwrapped } from "../FormLoginButton";
 
 describe("Loading", () => {
   it("has a valid snapshot", () => {
-    const mutateMock = () => jest.fn();
+    const mutateMock = () => {};
     const component = shallow(
       <FormLoginButtonUnwrapped
         mutate={mutateMock}
