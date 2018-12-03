@@ -6,16 +6,10 @@ import { Content, Form, Input, Item, Label, View } from "native-base";
 
 import { FormLoginButton } from "components";
 import { colours, standards } from "styles";
-import type {
-  EmailType,
-  navigationType,
-  OnPressType,
-  PasswordType,
-} from "types";
+import type { EmailType, navigationType, PasswordType } from "types";
 
 type Props = {
   navigation: navigationType,
-  onPress?: OnPressType,
 };
 
 type State = {
