@@ -1,6 +1,11 @@
 // @flow
 
-// import { type NavigationState } from "react-navigation";
+import type {
+  NavigationScreenProp,
+  NavigationStateRoute,
+} from "react-navigation";
+
+export type EmailType = ?string;
 
 export type GoalsType = Array<GoalDetailsType>;
 
@@ -29,12 +34,7 @@ export type GraphDataType = {
   error?: GraphErrorType,
 };
 
-export type ListDetailsType = {
-  index: number,
-  action: string,
-};
-
-export type ListType = Array<ListDetailsType>;
+export type ListType = Array<string>;
 
 export type mockParamsType = {
   mockParams: {
@@ -43,9 +43,12 @@ export type mockParamsType = {
 };
 
 export type navigationType = {
-  getParam: string => any,
-  navigate: (string, {}) => any,
+  ...NavigationScreenProp<NavigationStateRoute>,
+  getParam: ("details") => GoalDetailsType,
+  navigate: (string, {}) => boolean,
 };
+
+export type PasswordType = ?string;
 
 export type OnPressType = () => void;
 
