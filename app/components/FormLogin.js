@@ -37,6 +37,7 @@ class FormLogin extends Component<Props, State> {
             <Item style={styles.formField} floatingLabel>
               <Label>Email</Label>
               <Input
+                autoCapitalize="none"
                 textContentType="emailAddress"
                 onChangeText={email => this.setState({ email })}
                 value={this.state.email}
