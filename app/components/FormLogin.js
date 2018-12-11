@@ -43,7 +43,7 @@ class FormLogin extends Component<Props, State> {
                 value={this.state.email}
               />
             </Item>
-            <Item style={styles.formField} floatingLabel last>
+            <Item style={styles.formField} floatingLabel>
               <Label>Password</Label>
               <Input
                 secureTextEntry={true}
