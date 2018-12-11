@@ -12,4 +12,8 @@ describe("validEmail()", () => {
 
     expect(validEmail(notEmail)).toEqual(false);
   });
+
+  it("returns false if given null", () => {
+    expect(validEmail(null)).toEqual(false);
+  });
 });
