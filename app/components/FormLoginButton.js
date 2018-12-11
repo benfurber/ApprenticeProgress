@@ -5,7 +5,7 @@ import { Button, Text, View } from "native-base";
 
 import { loginMutation } from "queries";
 import { colours } from "styles";
-import { handlePress } from "utils";
+import { handlePress, validEmail } from "utils";
 
 const CONSTANTS = {
   login: "Login",
@@ -19,7 +19,7 @@ class FormLoginButtonUnwrapped extends Component {
   renderButton() {
     const { email, password } = this.props;
 
-    if (email && password) {
+    if (validEmail(email) && password) {
       return this.activeButton();
     }
 
