@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { AsyncStorage, StyleSheet } from "react-native";
 import { graphql } from "react-apollo";
 import { Button, Text, View } from "native-base";
@@ -7,11 +7,29 @@ import { loginMutation } from "queries";
 import { colours } from "styles";
 import { handlePress } from "utils";
 
-const FormLoginButtonUnwrapped = props => {
-  const { email, mutate, password } = props;
+const CONSTANTS = {
+  login: "Login",
+};
 
-  return (
-    <View style={styles.formField}>
+class FormLoginButtonUnwrapped extends Component {
+  render() {
+    return <View style={styles.formField}>{this.renderButton()}</View>;
+  }
+
+  renderButton() {
+    const { email, password } = this.props;
+
+    if (email && password) {
+      return this.activeButton();
+    }
+
+    return this.disabledButton();
+  }
+
+  activeButton() {
+    const { email, mutate, password } = this.props;
+
+    return (
       <Button
         onPress={() => {
           mutate({
@@ -23,11 +41,19 @@ const FormLoginButtonUnwrapped = props => {
         }}
         style={styles.button}
       >
-        <Text>Login</Text>
+        <Text>{CONSTANTS.login}</Text>
       </Button>
-    </View>
-  );
-};
+    );
+  }
+
+  disabledButton() {
+    return (
+      <Button disabled>
+        <Text>{CONSTANTS.login}</Text>
+      </Button>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   button: {
