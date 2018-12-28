@@ -66,12 +66,22 @@ const styles = StyleSheet.create({
   },
 });
 
+const onCompleted = async (props, data) => {
+  if (data.loginUser === null) {
+    return onError(props);
+  }
+  const token = data.loginUser.user.authenticationToken;
+  await AsyncStorage.setItem("token", token);
+  return handlePress("Main", props.navigation)();
+};
+
+const onError = props => {
+  const { addError } = props;
+  addError("There was an error with the login details provided.");
+};
+
 const options = props => ({
-  onCompleted: async data => {
-    const token = data.loginUser.user.authenticationToken;
-    await AsyncStorage.setItem("token", token);
-    return handlePress("Main", props.navigation)();
-  },
+  onCompleted: data => onCompleted(props, data),
 });
 
 const FormLoginButton = graphql(loginMutation, { options })(

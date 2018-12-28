@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Component } from "react";
+import { Root } from "native-base";
 import { RootStack } from "./routes";
 
 import { ApolloProvider } from "react-apollo";
@@ -12,7 +13,9 @@ class App extends Component<Props> {
   render() {
     return (
       <ApolloProvider client={client}>
-        <RootStack />
+        <Root>
+          <RootStack />
+        </Root>
       </ApolloProvider>
     );
   }

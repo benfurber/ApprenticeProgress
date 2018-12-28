@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import { StyleSheet } from "react-native";
-import { Content, Form, Input, Item, Label, View } from "native-base";
+import { Content, Form, Input, Item, Label, Toast, View } from "native-base";
 
 import { FormLoginButton } from "components";
 import { colours, standards } from "styles";
@@ -15,6 +15,7 @@ type Props = {
 type State = {
   email: EmailType,
   password: PasswordType,
+  error: ?String,
 };
 
 class FormLogin extends Component<Props, State> {
@@ -23,7 +24,31 @@ class FormLogin extends Component<Props, State> {
     this.state = {
       email: null,
       password: null,
+      error: null,
     };
+  }
+
+  componentDidUpdate(_, prevState) {
+    if (this.state.error !== prevState.error) {
+      return this.presentError();
+    }
+  }
+
+  presentError() {
+    const { error } = this.state;
+
+    const showToast = () => {
+      Toast.show({
+        text: error,
+        buttonText: "X",
+        type: "danger",
+        duration: 99999,
+      });
+    };
+
+    if (error) {
+      return showToast();
+    }
   }
 
   render() {
@@ -55,6 +80,7 @@ class FormLogin extends Component<Props, State> {
               email={email}
               password={password}
               navigation={navigation}
+              addError={error => this.setState({ error })}
             />
           </Form>
         </View>
