@@ -5,4 +5,5 @@ export { findTitles } from "./findTitles";
 export { handlePress } from "./handlePress";
 export { lastWordOfString } from "./lastWordOfString";
 export { orderByTitle } from "./orderByTitle";
+export { presentError } from "./presentError";
 export { validEmail } from "./validEmail";
