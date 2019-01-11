@@ -17,6 +17,7 @@ type State = {
   email: EmailType,
   password: PasswordType,
   error: ?String,
+  isLoading: boolean,
 };
 
 class FormLogin extends Component<Props, State> {
@@ -26,6 +27,7 @@ class FormLogin extends Component<Props, State> {
       email: null,
       password: null,
       error: null,
+      isLoading: false,
     };
   }
 
@@ -67,11 +69,21 @@ class FormLogin extends Component<Props, State> {
               password={password}
               navigation={navigation}
               addError={error => this.setState({ error })}
+              setLoadingState={boolean => this.setLoadingState(boolean)}
+              isLoading={() => this.isLoading()}
             />
           </Form>
         </View>
       </Content>
     );
+  }
+
+  setLoadingState(boolean) {
+    this.setState({ isLoading: boolean });
+  }
+
+  isLoading() {
+    return this.state.isLoading;
   }
 }
 

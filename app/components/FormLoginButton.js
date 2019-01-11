@@ -27,31 +27,47 @@ class FormLoginButtonUnwrapped extends Component {
   }
 
   activeButton() {
-    const { email, mutate, password } = this.props;
+    const { addError, email, mutate, password, setLoadingState } = this.props;
 
     return (
-      <Button
-        onPress={() => {
-          mutate({
-            variables: {
-              email,
-              password,
-            },
-          });
-        }}
-        style={styles.button}
-      >
-        <Text>{CONSTANTS.login}</Text>
-      </Button>
+      <View>
+        <Button
+          onPress={() => {
+            addError(null);
+            setLoadingState(true);
+            mutate({
+              variables: {
+                email,
+                password,
+              },
+            });
+          }}
+          style={styles.button}
+        >
+          <Text>{CONSTANTS.login}</Text>
+        </Button>
+        {this.loadingIcon()}
+      </View>
     );
   }
 
   disabledButton() {
     return (
-      <Button disabled>
-        <Text>{CONSTANTS.login}</Text>
-      </Button>
+      <View>
+        <Button disabled>
+          <Text>{CONSTANTS.login}</Text>
+        </Button>
+        {this.loadingIcon()}
+      </View>
     );
+  }
+
+  loadingIcon() {
+    const { isLoading } = this.props;
+
+    if (isLoading()) {
+      return <Text>Loading</Text>;
+    }
   }
 }
 
@@ -68,6 +84,7 @@ const styles = StyleSheet.create({
 
 const onCompleted = async (props, data) => {
   if (data.loginUser === null) {
+    props.setLoadingState(false);
     return onError(props);
   }
   const token = data.loginUser.user.authenticationToken;
@@ -76,8 +93,7 @@ const onCompleted = async (props, data) => {
 };
 
 const onError = props => {
-  const { addError } = props;
-  addError("There was an error with the login details provided.");
+  props.addError("There was an error with the login details provided.");
 };
 
 const options = props => ({
